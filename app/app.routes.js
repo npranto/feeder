@@ -6,7 +6,7 @@ angular.module('feeder')
         $stateProvider
             .state('home', {
                 url: '/',
-                templateUrl: 'app/components/home/home.html',
+                templateUrl: 'app/components/home/home-view.html',
                 controller: 'homeController'
             })
     });
