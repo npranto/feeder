@@ -18,3 +18,6 @@ Structure of Feeder
     ----- js/       // JavaScript files written for your app that are not for angular
     ----- libs/     // Third-party libraries such as jQuery, Moment, Underscore, etc.
     index.html
+
+
+Today is a Tuesday!
