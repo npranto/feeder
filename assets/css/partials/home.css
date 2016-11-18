@@ -34,6 +34,19 @@
 .home-view .header-section section aside{
     background: greenyellow;
 }
+.home-view .header-section section .aside-left{
+    justify-content: center;
+}
+.home-view .header-section section aside .TLP-block{
+    width: 90%;
+    height: calc( (75VH / 3));
+    margin: 10px auto;
+    justify-content: center;
+}
+.home-view .header-section section aside .TLP-block img{
+    height: 50px;
+    width: auto;
+}
 .home-view .header-section section article{
     background: yellow;
 }
