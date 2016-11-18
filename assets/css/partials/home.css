@@ -34,6 +34,31 @@
 .home-view .header-section section aside{
     background: greenyellow;
 }
+.home-view .header-section section .aside-left{
+    justify-content: center;
+}
+.home-view .header-section section aside .TLP-block{
+    width: 90%;
+    height: calc( (75VH / 3));
+    margin: 10px auto;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+.home-view .header-section section aside .TLP-block:hover{
+    transform: scale(1.075);
+}
+.home-view .header-section section aside .TLP-block img{
+    height: 50px;
+    width: 50px;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 50%;
+}
+.home-view .header-section section aside .TLP-block p{
+    font-size: 25px;
+    font-weight: 200;
+}
 .home-view .header-section section article{
     background: yellow;
 }
