@@ -1,11 +1,11 @@
 /*layout*/
 .flex-down{
-    display: flex;
-    flex-flow: column;
+    display: flex !important;
+    flex-flow: column !important;
 }
 .flex-sides{
-    display: flex;
-    flex-flow: row;
+    display: flex !important;
+    flex-flow: row !important;
 }
 .text-center{
     text-align: center;
