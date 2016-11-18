@@ -1,3 +1,4 @@
-/**
- * Created by npranto on 11/14/16.
- */
+angular.module('feeder')
+    .service('homeServices', function ($http) {
+
+    })
