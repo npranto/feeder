@@ -1,0 +1,30 @@
+/*layout*/
+.flex-down{
+    display: flex;
+    flex-flow: column;
+}
+.flex-sides{
+    display: flex;
+    flex-flow: row;
+}
+.text-center{
+    text-align: center;
+}
+.block-center{
+    margin: 0 auto;
+}
+
+
+
+/*text*/
+.roboto{
+    font-family: 'Roboto';
+}
+.lobster{
+    font-family: 'Lobster';
+}
+
+
+
+/*images*/
+

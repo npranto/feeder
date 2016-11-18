@@ -1,0 +1,39 @@
+.home-view{
+    border: 1px solid red;
+    margin: 0 auto;
+    height: 100VH;
+    width: 100VW;
+    justify-content: center;
+}
+
+
+
+.home-view .header-section{
+    background: lightgray;
+    height: 95VH;
+    justify-content: space-between;
+}
+
+
+
+.home-view .header-section header{
+    background: blanchedalmond;
+    height: 20VH;
+    justify-content: center;
+}
+.home-view .header-section header img{
+    height: 15VH;
+    width: 30VH;
+}
+
+
+
+.home-view .header-section section{
+    height: 75VH;
+}
+.home-view .header-section section aside{
+    background: greenyellow;
+}
+.home-view .header-section section article{
+    background: yellow;
+}
