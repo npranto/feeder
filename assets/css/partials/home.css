@@ -17,13 +17,12 @@
 
 
 .home-view .header-section header{
-    background: blanchedalmond;
     height: 20VH;
     justify-content: center;
 }
 .home-view .header-section header img{
-    height: 15VH;
-    width: 30VH;
+    height: 20VH;
+    width: auto;
 }
 
 
@@ -35,36 +34,59 @@
     /*background: greenyellow;*/
 }
 .home-view .header-section section .aside-left{
-    justify-content: center;
+    /*justify-content: center;*/
 }
 .home-view .header-section section aside .TLP-block{
     width: 90%;
     height: calc( (75VH / 3));
-    margin: 10px auto;
+    margin: 0px auto;
     display: flex;
     flex-flow: column;
     justify-content: center;
-    transition: all 0.4s ease;
+    transition: all 0.5s ease;
     color: gray;
     cursor: pointer;
 }
 .home-view .header-section section aside .TLP-block:hover{
     transform: scale(1.075);
-    transition: all 0.4s ease;
+    /*transition: all 0.5s ease;*/
     background: #F10026;
     color: white;
+    width: 150%;
+    z-index: 100 !important;
 }
 
 .home-view .header-section section aside .TLP-block img{
-    height: 50px;
-    width: 50px;
+    height: calc( (75VH / 3) * 0.25);
+    width: auto;
     margin: 0 auto;
-    padding: 12.5px;
+    padding: 5%;
     border-radius: 50%;
 }
-.home-view .header-section section aside .TLP-block p{
+.home-view .header-section section aside .TLP-block .TLP-title{
     font-size: 25px;
     font-weight: 200;
+}
+.home-view .header-section section aside .TLP-block .TLP-desc{
+    color: gray;
+}
+.home-view .header-section section .aside-right .categories-title{
+    font-size: 20px;
+    font-weight: 200;
+    color: black;
+    border-bottom: 5px solid lightgray;
+    padding: 6px;
+    margin-left: 8px;
+    margin-right: 8px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    height: 4VH;
+}
+.home-view .header-section section .aside-right .categories{
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    transition: all 0.5s ease;
 }
 .home-view .header-section section article{
     background: yellow;

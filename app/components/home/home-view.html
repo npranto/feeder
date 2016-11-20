@@ -6,27 +6,39 @@
         </header>
 
         <section layout="row">
-            <aside flex="25" class="aside-left flex-down text-center">
+            <aside layout="column" flex="25" class="aside-left text-center">
 
-                <div class="TLP-block top card card-3">
+                <div layout="column" class="TLP-block top card card-3" style="z-index: 3">
                     <img src="assets/img/top-news-icon.png" class="card card-5" alt="top-news-icon.png">
-                    <p> Top </p>
+                    <p class="TLP-title"> Top </p>
+                    <!-- <p class="TLP-desc"> Top News in Order </p> -->
                 </div>
-                <div class="TLP-block latest card card-3">
+                <div layout="column" class="TLP-block latest card card-3" style="z-index: 2">
                     <img src="assets/img/latest-news-icon.png" class="card card-5" alt="latest-news-icon.png">
-                    <p> Latest </p>
-                </div>
-                <div class="TLP-block popular card card-3">
+                    <p class="TLP-title"> Latest </p>
+                    <!-- <p class="TLP-desc"> Sorted in Chronological Order, Newest First </p> -->
+                </div> 
+                <div layout="column" class="TLP-block popular card card-3" style="z-index: 1">
                     <img src="assets/img/popular-news-icon.png" class="card card-5" alt="popular-news-icon.png">
-                    <p> Popular </p>
+                    <p class="TLP-title"> Popular </p>
+                    <!-- <p class="TLP-desc"> Most Popular or Currently Trending  </p> -->
                 </div>
 
             </aside>
             <article flex="75">
                 <p class="text-center"> News Story </p>
             </article>
-            <aside flex="25" class="aside-right">
-                <p class="text-center"> Categories </p>
+            <aside flex="25" class="aside-right text-center">
+                <p class="categories-title text-right">
+                    Categories
+                </p>
+                <div layout="column" class="categories card card-3 text-left">
+                    <md-button class="md-primary text-left"> Business </md-button>
+                    <md-button class="md-primary text-left"> Entertainment </md-button>
+                    <md-button class="md-primary text-left"> Science &amp; Nature </md-button>
+                    <md-button class="md-primary text-left"> Sports </md-button>
+                    <md-button class="md-primary text-left"> Technology </md-button>
+                </div>
             </aside>
         </section>
 
