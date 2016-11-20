@@ -21,7 +21,7 @@
     justify-content: center;
 }
 .home-view .header-section header img{
-    height: 17.5VH;
+    height: 20VH;
     width: auto;
 }
 .home-view .header-section header section{
@@ -64,6 +64,9 @@
     width: 150%;
     z-index: 100 !important;
 }
+.home-view .header-section section aside .TLP-block:hover p{
+    font-weight: 300;
+}
 
 .home-view .header-section section aside .TLP-block img{
     height: calc( (75VH / 3) * 0.20);
@@ -80,24 +83,26 @@
 .home-view .header-section section aside .TLP-block .TLP-desc{
     color: gray;
 }
-/*.home-view .header-section section .aside-right .categories-title{
+.home-view .header-section section .aside-right .categories-title{
     font-size: 20px;
-    font-weight: 200;
+    font-weight: 100;
     color: black;
     border-bottom: 5px solid lightgray;
-    padding: 6px;
-    margin-left: 8px;
-    margin-right: 8px;
-    margin-top: 0px;
-    margin-bottom: 0px;
+    padding: 10px;
+    margin: 0px 8px;
     height: 4VH;
 }
 .home-view .header-section section .aside-right .categories{
-    width: 90%;
+    width: 100%;
     height: auto;
     margin: 0 auto;
     transition: all 0.5s ease;
-}*/
+}
+.home-view .header-section section .aside-right .categories:hover{
+    transform: scale(1.095);
+    color: white;
+    z-index: 100 !important;
+}
 .home-view .header-section section article{
     background: yellow;
 }

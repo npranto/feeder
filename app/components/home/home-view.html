@@ -1,19 +1,21 @@
 <div layout="column" class="home-view flex-down">
     <div class="header-section flex-down">
 
-        <header layout="row">
-            <section layout="column" flex="25" class="text-center flex-down">
+        <!-- <header layout="row"> -->
+        <header layout="column">
+            <!-- <section layout="column" flex="25" class="text-center flex-down"> -->
                 <img src="./assets/img/feeder-logo.png" class="block-center" alt="feeder-logo.png">
-            </section>
-            <nav flex="75" layout="column" class="categories">
+            <!-- </section> -->
+            <!-- <nav flex="75" layout="column" class="categories">
                 <div layout="row" class="text-left">
                     <md-button class="md-raised text-center" ng-repeat="category in newsCategories"> {{category}} </md-button>
                 </div>
-            </nav>
+            </nav> -->
         </header>
+        <!-- </header> -->
 
         <section layout="row">
-            <aside layout="column" flex="25" class="aside-left text-center">
+            <aside layout="column" flex="20" class="aside-left text-center">
 
                 <div layout="column" class="TLP-block top card card-3" style="z-index: 3">
                     <img src="assets/img/top-news-icon.png" class="card card-5" alt="top-news-icon.png">
@@ -32,21 +34,17 @@
                 </div>
 
             </aside>
-            <article flex="75">
+            <article flex="60">
                 <p class="text-center"> News Story </p>
             </article>
-            <!-- <aside flex="25" class="aside-right text-center">
+            <aside flex="20" class="aside-right text-center">
                 <p class="categories-title text-right">
                     Categories
                 </p>
-                <div layout="column" class="categories card card-3 text-left">
-                    <md-button class="md-primary text-left"> Business </md-button>
-                    <md-button class="md-primary text-left"> Entertainment </md-button>
-                    <md-button class="md-primary text-left"> Science &amp; Nature </md-button>
-                    <md-button class="md-primary text-left"> Sports </md-button>
-                    <md-button class="md-primary text-left"> Technology </md-button>
+                <div layout="column" class="categories text-left">
+                    <md-button class="md-raised text-left button hvr-grow hvr-sweep-to-left" style="transition: all 0.5s ease;" ng-repeat="category in newsCategories"> {{category}} </md-button>
                 </div>
-            </aside> -->
+            </aside>
         </section>
 
     </div>
