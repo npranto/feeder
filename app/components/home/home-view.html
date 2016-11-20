@@ -1,8 +1,15 @@
 <div layout="column" class="home-view flex-down">
     <div class="header-section flex-down">
 
-        <header layout="column" class="flex-down">
-            <img src="./assets/img/feeder-logo.png" class="block-center" alt="feeder-logo.png">
+        <header layout="row">
+            <section layout="column" flex="25" class="text-center flex-down">
+                <img src="./assets/img/feeder-logo.png" class="block-center" alt="feeder-logo.png">
+            </section>
+            <nav flex="75" layout="column" class="categories">
+                <div layout="row" class="text-left">
+                    <md-button class="md-raised text-center" ng-repeat="category in newsCategories"> {{category}} </md-button>
+                </div>
+            </nav>
         </header>
 
         <section layout="row">

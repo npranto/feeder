@@ -21,8 +21,15 @@
     justify-content: center;
 }
 .home-view .header-section header img{
-    height: 20VH;
+    height: 17.5VH;
     width: auto;
+}
+.home-view .header-section header section{
+    justify-content: center;
+}
+.home-view .header-section header nav{
+    justify-content: center;
+    overflow: auto;
 }
 
 
