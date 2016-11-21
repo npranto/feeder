@@ -34,52 +34,52 @@
                 </div>
 
             </aside>
-            <article flex="60">
+            <article flex="60" class="card card-3">
 
-
-                <md-card>
-                    <md-card-header>
-                        <md-card-avatar>
-                            <img class="md-user-avatar" src="assets/img/feeder-logo.png"/>
-                        </md-card-avatar>
-                        <md-card-header-text>
-                            <span class="md-title"> The Next Web </span>
-                            <span class="md-subhead"> Juan Buis </span>
-                        </md-card-header-text>
-                    </md-card-header>
-                    <img src="https://cdn1.tnwcdn.com/wp-content/blogs.dir/1/files/2016/07/weekly-2.jpg" class="md-card-image" alt="Washed Out">
-                    <md-card-title>
-                        <md-card-title-text>
-                            <span class="md-headline"> Instagram introduces Live video and disappearing messages </span>
-                        </md-card-title-text>
-                    </md-card-title>
-                    <md-card-content>
-                        <p>
-                            After Instagram tried to move further away from Snapchat by adding Boomerangs, mentions and URLs, today marks another step in the same direction.
-                        </p>
-                    </md-card-content>
-                    <md-card-actions layout="row" layout-align="start center">
-                        <md-card-icon-actions>
-                            <md-button class="md-icon-button" aria-label="Favorite">
-                                <md-icon md-svg-icon="img/icons/favorite.svg"></md-icon>
-                            </md-button>
-                            <md-button class="md-icon-button" aria-label="Share">
-                                <md-icon md-svg-icon="img/icons/share-arrow.svg"></md-icon>
-                            </md-button>
-                        </md-card-icon-actions>
-                        <md-button>Action 1</md-button>
-                        <md-button>Action 2</md-button>
-                    </md-card-actions>
-                </md-card>
+                <news-story-directive></news-story-directive>
+                <!--<md-card>-->
+                    <!--<md-card-header>-->
+                        <!--<md-card-avatar>-->
+                            <!--<img class="md-user-avatar" src="assets/img/feeder-logo.png"/>-->
+                        <!--</md-card-avatar>-->
+                        <!--<md-card-header-text>-->
+                            <!--<span class="md-title"> The Next Web </span>-->
+                            <!--<span class="md-subhead"> Juan Buis </span>-->
+                        <!--</md-card-header-text>-->
+                    <!--</md-card-header>-->
+                    <!--<img src="https://cdn1.tnwcdn.com/wp-content/blogs.dir/1/files/2016/07/weekly-2.jpg" class="md-card-image" alt="Washed Out">-->
+                    <!--<md-card-title>-->
+                        <!--<md-card-title-text>-->
+                            <!--<span class="md-headline"> Instagram introduces Live video and disappearing messages </span>-->
+                        <!--</md-card-title-text>-->
+                    <!--</md-card-title>-->
+                    <!--<md-card-content>-->
+                        <!--<p>-->
+                            <!--After Instagram tried to move further away from Snapchat by adding Boomerangs, mentions and URLs, today marks another step in the same direction.-->
+                        <!--</p>-->
+                    <!--</md-card-content>-->
+                    <!--<md-card-actions layout="row" layout-align="start center">-->
+                        <!--<md-card-icon-actions>-->
+                            <!--<md-button class="md-icon-button" aria-label="Favorite">-->
+                                <!--<md-icon md-svg-icon="img/icons/favorite.svg"></md-icon>-->
+                            <!--</md-button>-->
+                            <!--<md-button class="md-icon-button" aria-label="Share">-->
+                                <!--<md-icon md-svg-icon="img/icons/share-arrow.svg"></md-icon>-->
+                            <!--</md-button>-->
+                        <!--</md-card-icon-actions>-->
+                        <!--<md-button>Action 1</md-button>-->
+                        <!--<md-button>Action 2</md-button>-->
+                    <!--</md-card-actions>-->
+                <!--</md-card>-->
 
 
             </article>
-            <aside flex="20" class="aside-right text-center">
+            <aside flex="20" class="aside-right text-center card card-3">
                 <p class="categories-title text-right">
                     Categories
                 </p>
                 <div layout="column" class="categories text-left">
-                    <md-button class="md-raised text-left button hvr-grow hvr-sweep-to-left" style="transition: all 0.5s ease;" ng-repeat="category in newsCategories"> {{category}} </md-button>
+                    <md-button class="md-primary text-left button hvr-grow hvr-sweep-to-left" style="transition: all 0.5s ease" ng-repeat="category in newsCategories"> {{category}} </md-button>
                 </div>
             </aside>
         </section>
