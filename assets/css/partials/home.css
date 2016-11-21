@@ -61,11 +61,17 @@
     /*transition: all 0.5s ease;*/
     background: #F10026;
     color: white;
-    width: 150%;
+    width: 125%;
     z-index: 100 !important;
+}
+.home-view .header-section section aside .TLP-block p{
+    /*color: #F10026;*/
+    color: slategray;
+    font-weight: 300;
 }
 .home-view .header-section section aside .TLP-block:hover p{
     font-weight: 300;
+    color: white;
 }
 
 .home-view .header-section section aside .TLP-block img{
@@ -73,8 +79,10 @@
     width: auto;
     /*object-fit: contain;*/
     margin: 0 auto;
-    padding: 5%;
+    padding: 3%;
     border-radius: 50%;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+
 }
 .home-view .header-section section aside .TLP-block .TLP-title{
     font-size: calc( (75VH / 3) * 0.125);
@@ -105,4 +113,6 @@
 }
 .home-view .header-section section article{
     background: lightgray;
+    padding: 2.5%;
+    overflow: auto;
 }
