@@ -1,5 +1,26 @@
 .news-story{
 	width: 100%;
 	height: 100%;
-	background: lightgray;
+	/*background: lightgray;*/
+    border: 1px solid red;
+}
+.news-story header .news-source-logo {
+}
+.news-story header .news-source-logo img{
+    height: 100%;
+    width: auto;
+}
+.news-story header .news-source{
+    justify-content: center;
+}
+.news-story header .news-source .news-source, .news-story header .news-source .news-source-author{
+    margin: 0px;
+}
+.news-story header .news-source .news-source{
+    font-weight: bold;
+    font-size: 17.5px;
+}
+.news-story header .news-source .news-source-author{
+    font-size: 15px;
+    color: darkgrey;
 }
