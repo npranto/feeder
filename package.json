@@ -16,6 +16,8 @@
     "angular-messages": "^1.5.8",
     "angular-ui-router": "^0.3.2",
     "animate.css": "^3.5.2",
-    "hover.css": "^2.0.2"
+    "bootstrap": "^3.3.7",
+    "hover.css": "^2.0.2",
+    "jquery": "1.9.1"
   }
 }
