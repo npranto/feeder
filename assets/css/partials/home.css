@@ -103,7 +103,7 @@
 }
 .home-view .header-section section .aside-right:hover{
     z-index: 100;
-    transform: scale(1.050);
+    /*transform: scale(1.050);*/
 }
 .home-view .header-section section .aside-right .categories-title{
     font-size: 1.75VW;;
