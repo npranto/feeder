@@ -106,12 +106,12 @@
     transform: scale(1.050);
 }
 .home-view .header-section section .aside-right .categories-title{
-    font-size: 20px;
+    font-size: 1.75VW;;
     font-weight: 100;
     color: black;
     /*border-bottom: 5px solid lightgray;*/
-    padding: 10px;
-    margin: 0px 8px;
+    padding: 5%;
+    margin: 0px 4%;
     height: 4VH;
 }
 .home-view .header-section section .aside-right .categories{
