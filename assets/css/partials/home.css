@@ -115,7 +115,7 @@
     height: 4VH;
 }
 .home-view .header-section section .aside-right .categories{
-    width: 100%;
+    width: auto;
     height: auto;
     margin: 0 auto;
     transition: all 0.75s ease;
