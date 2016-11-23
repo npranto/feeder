@@ -116,7 +116,7 @@
 }
 .home-view .header-section section .aside-right .categories{
     width: auto;
-    max-height: 60VH !important;
+    /*max-height: 60VH !important;*/
     margin: 0 auto;
     transition: all 0.75s ease;
 }

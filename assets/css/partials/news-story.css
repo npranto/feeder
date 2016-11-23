@@ -65,20 +65,22 @@
 }
 .news-story .thumbnail .news-desc{
     color: gray;
-    font-size: 1.125VW;
+    font-size: 1.35VW;
 }
 .news-story .thumbnail .story-reactions-actions{
     justify-content: space-between;
 }
 .news-story .thumbnail .story-reactions-actions .left-reactions i{
-    padding: 5%;
-    font-size: 2.50VW;
+    padding-right: 12.5%;
+    padding-top: 15%;
+    font-size: 3VW;
     cursor: pointer;
     transition: all 0.5s ease;
 }
 .news-story .thumbnail .story-reactions-actions .left-reactions i:hover{
-    padding-bottom: 10%;
-    transform: scale(1.50);
+    /*padding-top: -10%;*/
+    /*transform: scale(1.25);*/
+    /*padding-bottom: 15%;*/
 }
 .news-story .thumbnail .story-reactions-actions .left-reactions .hide-initial{
     color: #F10026;
