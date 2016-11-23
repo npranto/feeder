@@ -65,9 +65,24 @@
 }
 .news-story .thumbnail .news-desc{
     color: gray;
-    font-size: 1.25VW;
+    font-size: 1.125VW;
 }
-
+.news-story .thumbnail .story-reactions-actions{
+    justify-content: space-between;
+}
+.news-story .thumbnail .story-reactions-actions .left-reactions i{
+    padding: 5%;
+    font-size: 2.50VW;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+.news-story .thumbnail .story-reactions-actions .left-reactions i:hover{
+    padding-bottom: 10%;
+    transform: scale(1.50);
+}
+.news-story .thumbnail .story-reactions-actions .left-reactions .hide-initial{
+    color: #F10026;
+}
 
 
 
