@@ -112,11 +112,11 @@
     /*border-bottom: 5px solid lightgray;*/
     padding: 5%;
     margin: 0px 4%;
-    height: 4VH;
+    /*height: 4VH;*/
 }
 .home-view .header-section section .aside-right .categories{
     width: auto;
-    height: auto;
+    max-height: 60VH !important;
     margin: 0 auto;
     transition: all 0.75s ease;
 }
