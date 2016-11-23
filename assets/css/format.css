@@ -47,6 +47,9 @@
 .lucky{
     font-family: 'Luckiest Guy', cursive;
 }
+a:hover{
+    text-decoration: none;
+}
 
 
 
