@@ -78,8 +78,7 @@
     transition: all 0.5s ease;
 }
 .news-story .thumbnail .story-reactions-actions .left-reactions i:hover{
-    /*padding-top: -10%;*/
-    /*transform: scale(1.25);*/
+    transform: scale(1.25);
     /*padding-bottom: 15%;*/
 }
 .news-story .thumbnail .story-reactions-actions .left-reactions .hide-initial{
