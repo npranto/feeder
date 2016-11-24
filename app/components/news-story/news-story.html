@@ -63,15 +63,30 @@
                             </i>
 
                         </div>
-                        <div class="left-actions">
-                            <md-button class="md-raised"> 
+                        <div class="left-actions flex-sides">
+                            <md-button> 
                                 <i class="fa fa-lightbulb-o" aria-hidden="true"></i>
                                 Interesting 
                             </md-button>
-                            <md-button class="md-raised"> 
-                                <i class="fa fa-share-alt" aria-hidden="true"></i>
-                                Share 
-                            </md-button>
+                            <div class="md-menu-demo" ng-controller="newsStoryController as ctrl" ng-cloak>
+    
+                                <md-menu>
+                                  <md-button aria-label="Open demo menu" ng-click="$mdOpenMenu($event)">
+                                        <i class="fa fa-share-alt" aria-hidden="true"></i>
+                                        Share 
+                                  </md-button>
+                                  <md-menu-content width="6">
+                                    <md-menu-item ng-repeat="item in [1, 2, 3]">
+                                      <md-button ng-click="ctrl.announceClick($index)">
+                                        <i class="fa fa-lightbulb-o" aria-hidden="true"></i>
+                                        Option {{item}}
+                                      </md-button>
+                                    </md-menu-item>
+                                  </md-menu-content>
+                                </md-menu>
+                              
+                            </div>
+
                         </div>
                     </div>
 

@@ -78,6 +78,7 @@
     font-size: 3VW;
     cursor: pointer;
     transition: all 0.5s ease;
+
     display: inline-block;
     vertical-align: middle;
     -webkit-transform: perspective(1px) translateZ(0);
@@ -93,6 +94,7 @@
 .news-story .thumbnail .story-reactions-actions .left-reactions i:hover{
     -webkit-transform: translateY(-8px);
     transform: translateY(-8px);
+    color: red;
 }
 .news-story .thumbnail .story-reactions-actions .left-reactions .hide-initial{
     color: #F10026;
@@ -102,52 +104,3 @@
 
 
 
-
-
-
-
-
-
-/*.news-story header .news-source-logo {*/
-/*}*/
-/*.news-story header .news-source-logo img{*/
-    /*height: 100%;*/
-    /*width: auto;*/
-/*}*/
-/*.news-story header .news-source{*/
-    /*justify-content: flex-start;*/
-/*}*/
-/*.news-story header .news-source .news-source, .news-story header .news-source .news-source-author{*/
-    /*margin: 0px;*/
-/*}*/
-/*.news-story header .news-source .news-source{*/
-    /*font-weight: bold;*/
-    /*font-size: 2.5VH;*/
-/*}*/
-/*.news-story header .news-source .news-source-author{*/
-    /*font-size: 2VH;*/
-    /*color: darkgrey;*/
-/*}*/
-
-
-
-/*.news-story section {*/
-    /*background-image: url("https://cdn1.tnwcdn.com/wp-content/blogs.dir/1/files/2016/11/featured-tnynyc-videos.jpg");*/
-    /*background-size: cover;*/
-    /*height: auto;*/
-    /*min-width: 100%;*/
-/*}*/
-/*.news-story section .news-source-date{*/
-    /*height: 10%;*/
-    /*width: 10%;*/
-    /*border-radius: 50%;*/
-    /*background: coral;*/
-/*}*/
-/*.news-story section .news-source-date .date, .news-story section .news-source-date .month{*/
-    /*font-size: 25px;*/
-    /*padding: 0px;*/
-    /*margin: 0px;*/
-/*}*/
-/*.news-story section .news-source-date .date{*/
-    /*font-weight: bold;*/
-/*}*/
