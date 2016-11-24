@@ -18,9 +18,9 @@
 
                 </div>
 
-                <div class="share flex-down">
+                <!-- <div class="share flex-down">
                     <span class="glyphicon glyphicon-share-alt"></span>
-                </div>
+                </div> -->
 
             </header>
 
@@ -42,9 +42,9 @@
                         <div class="left-reactions">
                             <i 
                                 class="hide-initial fa fa-heart" 
-                                ng-cloak
                                 ng-hide=true  
-                                aria-hidden="true">        
+                                aria-hidden="true"
+                                ng-cloak>        
                             </i>
                             <i 
                                 class="hide-clicked fa fa-heart-o" 
@@ -53,16 +53,25 @@
 
                             <i 
                                 class="hide-initial fa fa-thumbs-down" 
-                                ng-cloak
                                 ng-hide=true  
-                                aria-hidden="true">        
+                                aria-hidden="true"
+                                ng-cloak>        
                             </i>
                             <i 
-                                class="hide-clicked fa fa-thumbs-o-down" aria-hidden="true">
+                                class="hide-clicked fa fa-thumbs-o-down" 
+                                aria-hidden="true">
                             </i>
+
                         </div>
                         <div class="left-actions">
-
+                            <md-button class="md-raised"> 
+                                <i class="fa fa-lightbulb-o" aria-hidden="true"></i>
+                                Interesting 
+                            </md-button>
+                            <md-button class="md-raised"> 
+                                <i class="fa fa-share-alt" aria-hidden="true"></i>
+                                Share 
+                            </md-button>
                         </div>
                     </div>
 
