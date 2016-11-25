@@ -1,17 +1,33 @@
 angular.module('feeder')
     .controller("newsStoryController", function ($scope, $mdDialog) {
-    	var originatorEv;
-    	$scope.options = [
-    		{
-    			
-    		}
-    	]
 
+    	// news-story reactions status
+    	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    	// share options dialog box
+    	$scope.shareOptions = ["Facebook", "Twitter", "Google+", "LinkedIn"];
+    	var originatorEv;
 	    this.openMenu = function($mdOpenMenu, ev) {
 	      originatorEv = ev;
 	      $mdOpenMenu(ev);
 	    };
-
 	    this.announceClick = function(index) {
 	      $mdDialog.show(
 	        $mdDialog.alert()
@@ -22,4 +38,5 @@ angular.module('feeder')
 	      );
 	      originatorEv = null;
 	    };
+
     })
