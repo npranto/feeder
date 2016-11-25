@@ -3,7 +3,7 @@
 	height: 100%;
     /*padding: 2.5%;*/
 	/*background: lightgray;*/
-    border: 1px solid red;
+    /*border: 1px solid red;*/
     overflow: auto;
     margin: 0 auto;
 
@@ -73,7 +73,7 @@
     justify-content: space-between;
 }
 .news-story .thumbnail .story-reactions-actions .left-reactions i{
-    padding-right: 12.5%;
+    padding-right: 20%;
     padding-top: 10%;
     font-size: 3VW;
     cursor: pointer;
@@ -94,7 +94,7 @@
 .news-story .thumbnail .story-reactions-actions .left-reactions i:hover{
     -webkit-transform: translateY(-8px);
     transform: translateY(-8px);
-    color: red;
+    color: #F10026;
 }
 .news-story .thumbnail .story-reactions-actions .left-reactions .hide-initial{
     color: #F10026;
