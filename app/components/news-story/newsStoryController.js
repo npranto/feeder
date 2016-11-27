@@ -31,9 +31,9 @@ angular.module('feeder')
 	    this.announceClick = function(index) {
 	      $mdDialog.show(
 	        $mdDialog.alert()
-	          .title('You clicked!')
-	          .textContent('You clicked the menu item at index ' + index)
-	          .ok('Nice')
+	          .title('Google+')
+	          .textContent('The news has been shared on Google+')
+	          .ok('Ok')
 	          .targetEvent(originatorEv)
 	      );
 	      originatorEv = null;

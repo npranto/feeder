@@ -135,7 +135,7 @@
     transition: all 0.75s ease;
 }
 .home-view .header-section section article:hover{
-    transform: scale(1.050);
+    /*transform: scale(1.050);*/
     z-index: 100;
 }
 /*.home-view .header-section section article news-story-directive{

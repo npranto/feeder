@@ -59,7 +59,7 @@
 
 }
 .news-story .thumbnail .news-title{
-    font-size: 3.25VW;
+    font-size: 2.75VW;
     color: slategray;
     font-weight: 800;
     margin-top: 1.5%;
@@ -67,7 +67,7 @@
 }
 .news-story .thumbnail .news-desc{
     color: gray;
-    font-size: 1.35VW;
+    font-size: 1.125VW;
 }
 .news-story .thumbnail .story-reactions-actions{
     justify-content: space-between;
