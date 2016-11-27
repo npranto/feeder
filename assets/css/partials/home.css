@@ -136,7 +136,7 @@
 }
 .home-view .header-section section article:hover{
     /*transform: scale(1.050);*/
-    z-index: 100;
+    z-index: 3;
 }
 /*.home-view .header-section section article news-story-directive{
     width: 100%;
