@@ -70,7 +70,7 @@
     font-size: 1.125VW;
 }
 .news-story .thumbnail .story-reactions-actions{
-    justify-content: space-between;
+    justify-content: flex-end;
 }
 .news-story .thumbnail .story-reactions-actions .left-reactions i{
     padding-right: 20%;
