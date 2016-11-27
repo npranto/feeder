@@ -2,9 +2,10 @@ Structure of Feeder
 
     app/
     ----- shared/   // acts as reusable components or partials of our site
-    ---------- navbar/
-    --------------- navbarDirective.js
-    --------------- navbar-view.html
+    ---------- news-story/
+    --------------- newsStoryDirective.js
+    --------------- newsStoryController.js
+    --------------- news-story.html
     ----- components/   // each component is treated as a mini Angular app
     ---------- home/
     --------------- homeController.js
