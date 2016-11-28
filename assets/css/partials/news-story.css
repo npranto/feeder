@@ -88,13 +88,12 @@
     transition-property: transform;
     -webkit-transition-timing-function: ease-out;
     transition-timing-function: ease-out;
-}
-.news-story .thumbnail .story-reactions-actions .left-reactions .heart{
-    color: #8F0303;
-}
-.news-story .thumbnail .story-reactions-actions .left-reactions .dislike{
     color: gray;
 }
+.news-story .thumbnail .story-reactions-actions .left-reactions .reaction-chosen{
+    color: #8F0303;
+}
+
 /*.news-story .thumbnail .story-reactions-actions .left-reactions i:hover{
     -webkit-transform: translateY(-8px);
     transform: translateY(-8px);
