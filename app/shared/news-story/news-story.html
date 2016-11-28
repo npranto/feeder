@@ -54,10 +54,9 @@
                                 class="heart fa fa-heart-o button"
                                 aria-hidden="true"
                                 ng-class="{
-                                    reactionChosen: disableHeart,
-                                    'hvr-pulse': disableHeart,
+                                    'reaction-chosen': disableHeart,
                                     animated: disableHeart,
-                                    pulse: disableHeart
+                                    pulse: disableHeart,
                                 }"
                                 ng-click="changeReactionStatus('heart')">
                             </i>
@@ -67,10 +66,9 @@
                                 class="dislike fa fa-thumbs-o-down button"
                                 aria-hidden="true"
                                 ng-class="{
-                                    reactionChosen: disableDislike,
-                                    'hvr-pulse': disableDislike,
+                                    'reaction-chosen': disableDislike,
                                     animated: disableDislike,
-                                    jump: disableDislike
+                                    swing: disableDislike
                                 }"
                                 ng-click="changeReactionStatus('dislike')">
                             </i>
