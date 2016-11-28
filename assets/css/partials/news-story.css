@@ -71,12 +71,14 @@
 }
 .news-story .thumbnail .story-reactions-actions{
     justify-content: space-between;
+    padding-top: 3%;
+    padding-bottom: 1%;
 }
 .news-story .thumbnail .story-reactions-actions .left-reactions i{
     padding-right: 2.5%;
     font-size: 3VW;
     cursor: pointer;
-    transition: all 0.5s ease;
+    transition: all 1s ease;
     display: inline-block;
     vertical-align: middle;
     -webkit-transform: perspective(1px) translateZ(0);
@@ -90,7 +92,7 @@
     transition-timing-function: ease-out;
     color: gray;
 }
-.news-story .thumbnail .story-reactions-actions .left-reactions .reaction-chosen{
+.news-story .thumbnail .story-reactions-actions .left-reactions .reactionChosen{
     color: #8F0303;
 }
 

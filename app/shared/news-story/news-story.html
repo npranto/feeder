@@ -49,13 +49,30 @@
 
 
                         <div class="left-reactions flex" ng-cloak>
-                            <i 
-                                class="heart fa fa-heart-o button hvr-pulse"
-                                aria-hidden="true">    
+                            <i
+                                id="heart"
+                                class="heart fa fa-heart-o button"
+                                aria-hidden="true"
+                                ng-class="{
+                                    reactionChosen: disableHeart,
+                                    'hvr-pulse': disableHeart,
+                                    animated: disableHeart,
+                                    pulse: disableHeart
+                                }"
+                                ng-click="changeReactionStatus('heart')">
                             </i>
-                            <i 
-                                class="dislike fa fa-thumbs-o-down"
-                                aria-hidden="true">
+                            <i
+                                id="dislike"
+                                ng-init=""
+                                class="dislike fa fa-thumbs-o-down button"
+                                aria-hidden="true"
+                                ng-class="{
+                                    reactionChosen: disableDislike,
+                                    'hvr-pulse': disableDislike,
+                                    animated: disableDislike,
+                                    jump: disableDislike
+                                }"
+                                ng-click="changeReactionStatus('dislike')">
                             </i>
                         </div>
                         <div class="left-actions flex-sides">
