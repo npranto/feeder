@@ -1,20 +1,15 @@
 <div layout="column" class="home-view flex-down">
+
     <div class="header-section flex-down">
 
-        <!-- <header layout="row"> -->
         <header layout="column">
-            <!-- <section layout="column" flex="25" class="text-center flex-down"> -->
+             <!--<section layout="column" flex="25" class="text-center flex-down">-->
                 <!--<img src="./assets/img/feeder-logo.png" class="block-center" alt="feeder-logo.png">-->
-            <!-- </section> -->
-            <!-- <nav flex="75" layout="column" class="categories">
-                <div layout="row" class="text-left">
-                    <md-button class="md-raised text-center" ng-repeat="category in newsCategories"> {{category}} </md-button>
-                </div>
-            </nav> -->
+             <!--</section>-->
         </header>
-        <!-- </header> -->
 
         <section layout="row">
+
             <aside layout="column" flex="20" class="aside-left text-center">
 
                 <div layout="column" class="TLP-block top card card-3" style="z-index: 3">
@@ -34,15 +29,19 @@
                 </div>
 
             </aside>
+
             <article flex="60" class="">
 
                 <news-story-directive></news-story-directive>
 
             </article>
+
             <aside flex="20" class="aside-right text-center card card-3">
+
                 <p class="categories-title text-right">
                     Categories
                 </p>
+
                 <div layout="column" class="categories text-left">
                     <md-button
                             class="md-primary text-left button hvr-grow hvr-sweep-to-left"
@@ -51,10 +50,13 @@
                         {{category}}
                     </md-button>
                 </div>
+
             </aside>
+
         </section>
 
     </div>
+
 </div>
 
 

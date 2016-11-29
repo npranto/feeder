@@ -1,72 +1,73 @@
 <!DOCTYPE html>
 
 <html lang="en" ng-app="feeder">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
-    <meta name="description" content="Feeder - All You Need to Know">
-    <meta name="keywords" content="news, articles, latest, top, popular, business, entertainment, gaming, general, music, science-and-nature, sport, technology">
-    <meta name="author" content="Nazmuz Shakib Pranto">
 
-    <title>Feeder - All You Need to Know</title>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
+        <meta name="description" content="Feeder - All You Need to Know">
+        <meta name="keywords" content="news, articles, latest, top, popular, business, entertainment, gaming, general, music, science-and-nature, sport, technology">
+        <meta name="author" content="Nazmuz Shakib Pranto">
 
-    <!--bootstrap(css)-->
-        <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
-    <!--angular-material(css)-->
-        <link rel="stylesheet" href="./node_modules/angular-material/angular-material.css">
-    <!-- font-awesome -->
-        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <!-- animate.css -->
-        <link rel="stylesheet" type="text/css" href="./node_modules/animate.css/animate.css">
-    <!-- hover.css -->
-        <link rel="stylesheet" type="text/css" href="./node_modules/hover.css/css/hover.css">
-    <!--fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Lobster|Roboto:100,200,300,400,500,700,900" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Baloo+Bhaina|Fredoka+One" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Exo:200,300,400,500,600,700,800,900|Luckiest+Guy|Raleway:200,300,400,500,600,700,800,900" rel="stylesheet">
+        <title>Feeder - All You Need to Know</title>
 
-    <!--icons-->
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!--bootstrap(css)-->
+            <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+        <!--angular-material(css)-->
+            <link rel="stylesheet" href="./node_modules/angular-material/angular-material.css">
+        <!-- font-awesome -->
+            <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <!-- animate.css -->
+            <link rel="stylesheet" type="text/css" href="./node_modules/animate.css/animate.css">
+        <!-- hover.css -->
+            <link rel="stylesheet" type="text/css" href="./node_modules/hover.css/css/hover.css">
+        <!--fonts-->
+            <link href="https://fonts.googleapis.com/css?family=Lobster|Roboto:100,200,300,400,500,700,900" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Baloo+Bhaina|Fredoka+One" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css?family=Exo:200,300,400,500,600,700,800,900|Luckiest+Guy|Raleway:200,300,400,500,600,700,800,900" rel="stylesheet">
+        <!--icons-->
+            <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!--local-->
+            <link rel="stylesheet" href="./assets/css/main.css">
+        <!--[if lt IE 9]>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+        <![endif]-->
+
+    </head>
+
+    <body>
+
+        <main ui-view></main>
+
+    <!--angular-->
+        <script src="./node_modules/angular/angular.js"></script>
+        <script src="./node_modules/angular-ui-router/release/angular-ui-router.js"></script>
+
+    <!--angular-material(js)-->
+        <script src="./node_modules/angular-material/angular-material.js"></script>
+        <script src="./node_modules/angular-animate/angular-animate.js"></script>
+        <script src="./node_modules/angular-aria/angular-aria.js"></script>
+        <script src="./node_modules/angular-messages/angular-messages.js"></script>
+
+    <!--jQuery-->
+        <script src="./node_modules/jquery/jquery.js"></script>
+
+    <!--bootstrap(js)-->
+        <link rel="stylesheet" href="./node_modules/bootstrap/dist/js/bootstrap.js">
+
     <!--local-->
-        <link rel="stylesheet" href="./assets/css/main.css">
-    <!--[if lt IE 9]>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
-    <![endif]-->
-
-</head>
-
-<body>
-
-    <main ui-view></main>
-
-<!--angular-->
-    <script src="./node_modules/angular/angular.js"></script>
-    <script src="./node_modules/angular-ui-router/release/angular-ui-router.js"></script>
-
-<!--angular-material(js)-->
-    <script src="./node_modules/angular-material/angular-material.js"></script>
-    <script src="./node_modules/angular-animate/angular-animate.js"></script>
-    <script src="./node_modules/angular-aria/angular-aria.js"></script>
-    <script src="./node_modules/angular-messages/angular-messages.js"></script>
-
-<!--jQuery-->
-    <script src="./node_modules/jquery/jquery.js"></script>
-
-<!--bootstrap(js)-->
-    <link rel="stylesheet" href="./node_modules/bootstrap/dist/js/bootstrap.js">
-
-<!--local-->
-    <script src="./app/app.module.js"></script>
-    <script src="./app/app.routes.js"></script>
-    <!--directives-->
-        <script src="./app/shared/news-story/newsStoryDirective.js"></script>
-    <!--controllers-->
-        <script src="./app/components/home/homeController.js"></script>
-        <script src="./app/shared/news-story/newsStoryController.js"></script>
-    <!--services-->
-        <script src="./app/components/home/homeServices.js"></script>
+        <script src="./app/app.module.js"></script>
+        <script src="./app/app.routes.js"></script>
+        <!--directives-->
+            <script src="./app/shared/news-story/newsStoryDirective.js"></script>
+        <!--controllers-->
+            <script src="./app/components/home/homeController.js"></script>
+            <script src="./app/shared/news-story/newsStoryController.js"></script>
+        <!--services-->
+            <script src="./app/components/home/homeServices.js"></script>
 
 
 
-</body>
+    </body>
+
 </html>

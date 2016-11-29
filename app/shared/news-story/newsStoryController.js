@@ -1,7 +1,6 @@
 angular.module('feeder')
     .controller("newsStoryController", function ($scope, $mdDialog) {
 
-
         $scope.changeReactionStatus = function(keyword){
             if(keyword === "heart"){
                 $scope.disableHeart = !$scope.disableHeart;
