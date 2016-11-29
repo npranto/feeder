@@ -9,4 +9,5 @@ angular.module('feeder')
                 templateUrl: 'app/components/home/home-view.html',
                 controller: 'homeController'
             })
+
     });
