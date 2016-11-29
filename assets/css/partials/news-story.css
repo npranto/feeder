@@ -72,11 +72,15 @@
 .news-story .thumbnail .story-reactions-actions .left-reactions i{
     padding-right: 2.5%;
     font-size: 3VW;
+    font-weight: 100;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: all 0.5s ease;
     border: none;
     outline: none;
     color: gray;
+}
+.news-story .thumbnail .story-reactions-actions .left-reactions i:hover{
+    color: #8F0303;
 }
 .news-story .thumbnail .story-reactions-actions .left-reactions .reaction-chosen{
     color: #8F0303;
