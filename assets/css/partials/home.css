@@ -57,7 +57,7 @@
     cursor: pointer;
 }
 .home-view .header-section section .aside-left .TLP-block:hover{
-    transform: scale(1.050);    
+    transform: scale(1.050);
     background: #F10026;
     color: white;
     width: 125%;
@@ -80,7 +80,8 @@
     border-radius: 50%;
 }
 .home-view .header-section section .aside-left .TLP-block .TLP-title{
-    font-size: calc( (75VH / 3) * 0.125);
+    /*font-size: calc( (75VH / 3) * 0.125);*/
+    font-size: 3VW;
     font-weight: 200;
 }
 .home-view .header-section section .aside-left .TLP-block .TLP-desc{
@@ -118,11 +119,3 @@
 .home-view .header-section section article:hover{
     z-index: 3;
 }
-
-
-
-
-
-
-
-

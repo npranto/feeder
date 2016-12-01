@@ -20,7 +20,7 @@
 .news-story header .news-source-logo img{
     height: 4VW;
     border-radius: 50%;
-    border: 1px solid black;    
+    border: 1px solid black;
     width: auto;
 }
 .news-story header .news-source{
@@ -67,7 +67,7 @@
 .news-story .thumbnail .story-reactions-actions{
     justify-content: space-between;
     padding-top: 3%;
-    padding-bottom: 1%;
+    padding-bottom: 3%;
 }
 .news-story .thumbnail .story-reactions-actions .left-reactions i{
     padding-right: 2.5%;
@@ -90,23 +90,31 @@
 
 
 .news-story .thumbnail .story-reactions-actions .right-actions button{
+		width: 9VW;
+		font-size: 1.5VW;
     border-radius: 0px;
     margin-left: 0%;
-    margin-right: 2.5%;
+    margin-right: 1.5%;
+		padding: 0px;
     border: none;
     outline: none;
-    font-weight: bold;
     transition: all 0.5s ease;
+		text-decoration: none;
+		color: slategray;
+}
+.news-story .thumbnail .story-reactions-actions .right-actions button:hover{
+		color: black;
+}
+.news-story .thumbnail .story-reactions-actions .right-actions .bold{
+		font-weight: bold;
+		color: black;
+}
+.news-story .thumbnail .story-reactions-actions .right-actions i{
+		transition: all 0.5s ease;
 }
 .news-story .thumbnail .story-reactions-actions .right-actions .interesting{
-    color: gold;
+    color: blue;
 }
 .news-story .thumbnail .story-reactions-actions .right-actions .save{
     color: limegreen;
 }
-
-
-
-
-
-
