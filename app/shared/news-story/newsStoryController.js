@@ -19,15 +19,11 @@ angular.module('feeder')
         };
 
         function getLatestNews(){
-            console.log("Getting News...");
             homeServices.getLatestNews(newsAPI.articleExample)
             .then(function (response) {
-                console.log(response);
                 $scope.latestNews = response.data.articles;
             })
         }
-
-        console.log("Done!");
 
         // getLatestNews();
 
