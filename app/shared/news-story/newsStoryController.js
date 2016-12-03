@@ -19,7 +19,14 @@ angular.module('feeder')
         };
 
         function getLatestNews(){
-            homeServices.getLatestNews(newsAPI.articleExample)
+            let route = newsAPI.article.endpoint +
+                        newsAPI.article.source +
+                        "the-next-web" +
+                        newsAPI.and +
+                        newsAPI.article.sortBy.latest +
+                        newsAPI.and +
+                        newsAPI.apiKey;
+            homeServices.getLatestNews(route)
             .then(function (response) {
                 $scope.latestNews = response.data.articles;
             })
