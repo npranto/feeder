@@ -3,6 +3,7 @@ angular.module('feeder')
 
         $scope.changeReactionStatus = function(reaction){
             if(reaction === "heart"){
+                console.log($scope.content);
                 $scope.disableHeart = !$scope.disableHeart;
                 $scope.disableDislike = false;
             }else{
@@ -32,6 +33,12 @@ angular.module('feeder')
             })
         }
 
+        function getLatestNews(){
+            let data = homeServices.getNewsSourceInfo()
+            console.log(data);
+        }
+
+        getLatestNews();
         // getLatestNews();
 
     })
