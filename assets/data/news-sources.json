@@ -1,3 +1,7 @@
 {
-  "news-sources": "hello world!"
+  "newsSources": [
+    {
+      
+    }
+  ]
 }
