@@ -1,5 +1,5 @@
 angular.module('feeder')
-    .controller("newsStoryController", function ($scope, $mdDialog, newsAPI, homeServices) {
+    .controller("newsStoryController", function (uuid, $scope, $mdDialog, newsAPI, homeServices) {
 
         $scope.changeReactionStatus = function(reaction){
             if(reaction === "heart"){
@@ -33,12 +33,18 @@ angular.module('feeder')
             })
         }
 
-        function getLatestNews(){
+        function getLatestNewsJSON(){
             let data = homeServices.getNewsSourceInfo()
             console.log(data);
         }
 
-        getLatestNews();
+        function generateUUID (uuid){
+            var hash = uuid.v4();
+            console.log(hash);
+        }
+
+        getLatestNewsJSON();
+        generateUUID(uuid);
         // getLatestNews();
 
     })
