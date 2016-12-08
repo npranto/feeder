@@ -1,0 +1,9 @@
+{
+  "newsSources": [
+    {
+      "newsSourceLogo": "./../img/news-sources/cnn.png",
+      "newsSourceTitle": "CNN",
+      "newsSourceFormat": "cnn"
+    }
+  ]
+}
