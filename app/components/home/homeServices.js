@@ -1,7 +1,7 @@
 angular.module('feeder')
     .service('homeServices', function ($http) {
 
-        this.getNewsSourceInfo = function () {
+        this.getAllNewsSources = function () {
             return $http.get('assets/sources/news-sources.json');
         }
 
