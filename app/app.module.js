@@ -1,1 +1,1 @@
-angular.module('feeder', ['ui.router', 'ngMaterial', 'angular-uuid']);
+angular.module('feeder', ['ui.router', 'ngMaterial']);

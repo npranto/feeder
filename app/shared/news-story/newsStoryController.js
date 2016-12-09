@@ -1,5 +1,5 @@
 angular.module('feeder')
-    .controller("newsStoryController", function (uuid, $scope, $mdDialog, newsAPI, homeServices) {
+    .controller("newsStoryController", function ($scope, $mdDialog, newsAPI, homeServices) {
 
         $scope.changeReactionStatus = function(reaction){
             if(reaction === "heart"){
