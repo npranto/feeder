@@ -2,14 +2,15 @@
   "name": "scripts",
   "version": "1.0.0",
   "description": "To run local scripts",
-  "main": "populateNewsSource.js",
+  "main": "populateNewsSources.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "pop-news": "node populateNewsSource.js"
+    "pop-source-ids": "node populateNewsSources.js"
   },
   "author": "Nazmuz Shakib Pranto",
   "license": "ISC",
   "dependencies": {
+    "lodash": "^4.17.2",
     "uuid": "^3.0.1"
   }
 }
