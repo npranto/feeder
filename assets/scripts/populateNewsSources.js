@@ -38,6 +38,38 @@ function addNewsSourcesIds(){
   })
 }
 
+function createNewsSourceObjWithLogoUrl() {
+  jsonfile.readFile(newsSourceJSON, function(err, obj) {
+    returnJSON = obj;
+    _.map(returnJSON.newsSources, function (currNewsSource) {
+
+      let currLogoUrl = currNewsSource.newsSourceLogo;
+
+      let newsSourceFormat = getNewsSourceFormat(currLogoUrl);
+      console.log(newsSourceFormat);
+
+      let newsSourceTitle = getNewsSourceTitle(newsSourceFormat);
+      console.log(newsSourceTitle);
+
+      let updatedNewsSourceLogo = updateNewsSourceLogo(currLogoUrl);
+      console.log(updatedNewsSourceLogo);
+
+    })
+
+    // jsonfile.writeFileSync(newsSourceJSON, returnJSON, {spaces: 2});
+  })
+}
+function getNewsSourceFormat (currLogoUrl) {
+  return _.replace(_.replace(currLogoUrl, '/Users/npranto/Downloads/feeder/assets/img/news-sources/', ''), '.png', '');
+}
+function getNewsSourceTitle(newsSourceFormat) {
+  return newsSourceFormat.toUpperCase().split('-').join(' ');
+}
+function updateNewsSourceLogo(currLogoUrl) {
+  return _.replace(currLogoUrl, '/Users/npranto/Downloads/feeder/', '');
+}
+
 
 ///////////////////
-addNewsSourcesIds();
+createNewsSourceObjWithLogoUrl();
+// addNewsSourcesIds();

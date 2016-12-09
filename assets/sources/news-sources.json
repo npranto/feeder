@@ -1,10 +1,10 @@
 {
   "newsSources": [
     {
-      "newsSourceLogo": "./../img/news-sources/cnn.png",
-      "newsSourceTitle": "CNN",
-      "newsSourceFormat": "cnn",
-      "id": "5d21a872-fb95-4cbf-909a-916e3a044fba"
+      "newsSourceLogo": "/Users/npranto/Downloads/feeder/assets/img/news-sources/abc-news-au.png"
+    },
+    {
+      "newsSourceLogo": "/Users/npranto/Downloads/feeder/assets/img/news-sources/entertainment-weekly.png"
     }
   ]
 }
