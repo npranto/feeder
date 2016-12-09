@@ -22,9 +22,9 @@ angular.module('feeder')
         function getLatestNews(){
             let route = newsAPI.article.endpoint +
                         newsAPI.article.source +
-                        "the-next-web" +
+                        "cnn" +
                         newsAPI.and +
-                        newsAPI.article.sortBy.latest +
+                        newsAPI.article.sortBy.top +
                         newsAPI.and +
                         newsAPI.apiKey;
             homeServices.getLatestNews(route)
@@ -33,20 +33,16 @@ angular.module('feeder')
             })
         }
 
-        function getLatestNewsJSON(){
-            homeServices.getNewsSourceInfo()
+        function getAllNewsSources(){
+            homeServices.getAllNewsSources()
             .then(function(response) {
                 console.log(response);
             })
         }
 
-        function generateUUID (uuid){
-            var hash = uuid.v4();
-            // console.log(hash);
-        }
 
-        getLatestNewsJSON();
-        generateUUID(uuid);
+
+        // getLatestNewsJSON();
         // getLatestNews();
 
     })
