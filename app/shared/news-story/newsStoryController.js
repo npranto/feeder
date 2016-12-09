@@ -42,7 +42,7 @@ angular.module('feeder')
 
         function generateUUID (uuid){
             var hash = uuid.v4();
-            console.log(hash);
+            // console.log(hash);
         }
 
         getLatestNewsJSON();
