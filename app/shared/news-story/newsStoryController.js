@@ -34,8 +34,10 @@ angular.module('feeder')
         }
 
         function getLatestNewsJSON(){
-            let data = homeServices.getNewsSourceInfo()
-            console.log(data);
+            homeServices.getNewsSourceInfo()
+            .then(function(response) {
+                console.log(response);
+            })
         }
 
         function generateUUID (uuid){

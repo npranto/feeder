@@ -2,10 +2,7 @@ angular.module('feeder')
     .service('homeServices', function ($http) {
 
         this.getNewsSourceInfo = function () {
-            $http.get('assets/data/news-sources.json').success(function(response) {
-                console.log(response);
-                return response;
-            });
+            return $http.get('assets/sources/news-sources.json');
         }
 
         this.getLatestNews = function (latestNewsRoute) {
