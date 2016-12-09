@@ -3,7 +3,24 @@
     {
       "newsSourceLogo": "./../img/news-sources/cnn.png",
       "newsSourceTitle": "CNN",
-      "newsSourceFormat": "cnn"
+      "newsSourceFormat": "cnn",
+      "id": "451371e8-b5e9-4633-8539-07e07a85e913"
+    }
+    {
+      "newsSourceLogo": "./../img/news-sources/cnn.png",
+      "newsSourceTitle": "CNN",
+      "newsSourceFormat": "cnn",
+    }
+    {
+      "newsSourceLogo": "./../img/news-sources/cnn.png",
+      "newsSourceTitle": "CNN",
+      "newsSourceFormat": "cnn",
+    }
+    {
+      "newsSourceLogo": "./../img/news-sources/cnn.png",
+      "newsSourceTitle": "CNN",
+      "newsSourceFormat": "cnn",
+      "id": "451371e8-b5e9-4633-8539-07e07a85e913"
     }
   ]
 }
