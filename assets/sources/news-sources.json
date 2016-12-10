@@ -1,354 +1,424 @@
 {
   "newsSources": [
     {
-      "newsSourceLogo": "/Users/Shaheen/Desktop/feeder/assets/img/news-sources/abc-news-au.png",
-      "newsSourceTitle": "",
-      "newsSourceFormat": "abc-news-au"
+      "newsSourceLogo": "assets/img/news-sources/abc-news-au.png",
+      "newsSourceTitle": "ABC NEWS AU",
+      "newsSourceFormat": "abc-news-au",
+      "sourceId": "85dc78e3-1dfd-4d06-b31b-859682ca7833"
     },
     {
-      "newsSourceLogo": "/Users/Shaheen/Desktop/feeder/assets/img/news-sources/ars-technica.png",
-      "newsSourceTitle": "",
-      "newsSourceFormat": "ars-technica.png"
+      "newsSourceLogo": "assets/img/news-sources/ars-technica.png",
+      "newsSourceTitle": "ARS TECHNICA",
+      "newsSourceFormat": "ars-technica",
+      "sourceId": "ec170184-7141-4097-815c-9f0e8ce4912c"
     },
     {
-      "newsSourceLogo": "/Users/Shaheen/Desktop/feeder/assets/img/news-sources/associated-press.png",
-      "newsSourceTitle": "",
-      "newsSourceFormat": "associated-press.png"
+      "newsSourceLogo": "assets/img/news-sources/associated-press.png",
+      "newsSourceTitle": "ASSOCIATED PRESS",
+      "newsSourceFormat": "associated-press",
+      "sourceId": "1d58f60e-798b-4a8d-ae08-f1e5193726ec"
     },
     {
-      "newsSourceLogo": "/Users/Shaheen/Desktop/feeder/assets/img/news-sources/bbc-news.png",
-      "newsSourceTitle": "",
-      "newsSourceFormat": "bbc-news.png"
+      "newsSourceLogo": "assets/img/news-sources/bbc-news.png",
+      "newsSourceTitle": "BBC NEWS",
+      "newsSourceFormat": "bbc-news",
+      "sourceId": "772ffbd8-8db4-4bce-aba0-c44039297cec"
     },
     {
-      "newsSourceLogo": "/Users/Shaheen/Desktop/feeder/assets/img/news-sources/bbc-sport.png",
-      "newsSourceTitle": "",
-      "newsSourceFormat": "bbc-sport.png"
+      "newsSourceLogo": "assets/img/news-sources/bbc-sport.png",
+      "newsSourceTitle": "BBC SPORT",
+      "newsSourceFormat": "bbc-sport",
+      "sourceId": "3022246a-707b-425b-a9e0-63c3a71f73e8"
     },
     {
-      "newsSourceLogo": "/Users/Shaheen/Desktop/feeder/assets/img/news-sources/bild.png",
-      "newsSourceTitle": "",
-      "newsSourceFormat": "bild.png"
+      "newsSourceLogo": "assets/img/news-sources/bild.png",
+      "newsSourceTitle": "BILD",
+      "newsSourceFormat": "bild",
+      "sourceId": "773241ed-50e9-44c6-88ed-7df8e7e92452"
     },
     {
-      "newsSourceLogo": "/Users/Shaheen/Desktop/feeder/assets/img/news-sources/bloomberg.png",
-      "newsSourceTitle": "",
-      "newsSourceFormat": "bloomberg.png"
+      "newsSourceLogo": "assets/img/news-sources/bloomberg.png",
+      "newsSourceTitle": "BLOOMBERG",
+      "newsSourceFormat": "bloomberg",
+      "sourceId": "2b97d7aa-5a00-4c3b-a23a-cda8802b8e4c"
     },
     {
-      "newsSourceLogo": "/Users/Shaheen/Desktop/feeder/assets/img/news-sources/business-insider.png",
-      "newsSourceTitle": "",
-      "newsSourceFormat": "business-insider.png"
+      "newsSourceLogo": "assets/img/news-sources/business-insider.png",
+      "newsSourceTitle": "BUSINESS INSIDER",
+      "newsSourceFormat": "business-insider",
+      "sourceId": "04f4653a-77d1-4d2c-8572-3ebbb4691b96"
     },
     {
-      "newsSourceLogo": "/Users/Shaheen/Desktop/feeder/assets/img/news-sources/business-insider-uk.png",
-      "newsSourceTitle": "",
-      "newsSourceFormat": "business-insider-uk.png"
+      "newsSourceLogo": "assets/img/news-sources/business-insider-uk.png",
+      "newsSourceTitle": "BUSINESS INSIDER UK",
+      "newsSourceFormat": "business-insider-uk",
+      "sourceId": "3cf19bb5-917a-4395-8ba2-9c0b260fd81a"
     },
     {
-      "newsSourceLogo": "/Users/Shaheen/Desktop/feeder/assets/img/news-sources/buzzfeed.png",
-      "newsSourceTitle": "",
-      "newsSourceFormat": "buzzfeed.png"
+      "newsSourceLogo": "assets/img/news-sources/buzzfeed.png",
+      "newsSourceTitle": "BUZZFEED",
+      "newsSourceFormat": "buzzfeed",
+      "sourceId": "28dd24ff-64d4-40a6-b3c0-88676c144fec"
     },
     {
-      "newsSourceLogo": "/Users/Shaheen/Desktop/feeder/assets/img/news-sources/cnbc.png",
-      "newsSourceTitle": "",
-      "newsSourceFormat": "cnbc.png"
+      "newsSourceLogo": "assets/img/news-sources/cnbc.png",
+      "newsSourceTitle": "CNBC",
+      "newsSourceFormat": "cnbc",
+      "sourceId": "2ed01935-7547-4746-b7ec-950f35d4f392"
     },
     {
-      "newsSourceLogo": "/Users/Shaheen/Desktop/feeder/assets/img/news-sources/cnn.png",
-      "newsSourceTitle": "",
-      "newsSourceFormat": "cnn.png"
+      "newsSourceLogo": "assets/img/news-sources/cnn.png",
+      "newsSourceTitle": "CNN",
+      "newsSourceFormat": "cnn",
+      "sourceId": "dda8b4bd-c362-467e-9a26-96474d3f387f"
     },
     {
-      "newsSourceLogo": "/Users/Shaheen/Desktop/feeder/assets/img/news-sources/daily-mail.png",
-      "newsSourceTitle": "",
-      "newsSourceFormat": "daily-mail.png"
+      "newsSourceLogo": "assets/img/news-sources/daily-mail.png",
+      "newsSourceTitle": "DAILY MAIL",
+      "newsSourceFormat": "daily-mail",
+      "sourceId": "97e93670-817c-49e4-9c98-fd63b75e4a15"
     },
     {
-      "newsSourceLogo": "/Users/Shaheen/Desktop/feeder/assets/img/news-sources/der-tagesspiegel.png",
-      "newsSourceTitle": "",
-      "newsSourceFormat": "der-tagesspiegel.png"
+      "newsSourceLogo": "assets/img/news-sources/der-tagesspiegel.png",
+      "newsSourceTitle": "DER TAGESSPIEGEL",
+      "newsSourceFormat": "der-tagesspiegel",
+      "sourceId": "3896f869-f170-4833-bae3-93d9e5b58540"
     },
     {
-      "newsSourceLogo": "/Users/Shaheen/Desktop/feeder/assets/img/news-sources/die-zeit.png",
-      "newsSourceTitle": "",
-      "newsSourceFormat": "die-zeit.png"
+      "newsSourceLogo": "assets/img/news-sources/die-zeit.png",
+      "newsSourceTitle": "DIE ZEIT",
+      "newsSourceFormat": "die-zeit",
+      "sourceId": "b23b1238-a826-4b4c-859f-aa13285ba520"
     },
     {
-      "newsSourceLogo": "/Users/Shaheen/Desktop/feeder/assets/img/news-sources/engadget.png",
-      "newsSourceTitle": "",
-      "newsSourceFormat": "engadget.png"
+      "newsSourceLogo": "assets/img/news-sources/engadget.png",
+      "newsSourceTitle": "ENGADGET",
+      "newsSourceFormat": "engadget",
+      "sourceId": "bef53833-73ed-45b5-b8f2-7ea8bb6a9f2c"
     },
     {
-      "newsSourceLogo": "/Users/Shaheen/Desktop/feeder/assets/img/news-sources/entertainment-weekly.png",
-      "newsSourceTitle": "",
-      "newsSourceFormat": "entertainment-weekly.png"
+      "newsSourceLogo": "assets/img/news-sources/entertainment-weekly.png",
+      "newsSourceTitle": "ENTERTAINMENT WEEKLY",
+      "newsSourceFormat": "entertainment-weekly",
+      "sourceId": "e3e3d594-4b13-4cac-8d39-2f9448a6ae07"
     },
     {
-      "newsSourceLogo": "/Users/Shaheen/Desktop/feeder/assets/img/news-sources/espn.png",
-      "newsSourceTitle": "",
-      "newsSourceFormat": "espn.png"
+      "newsSourceLogo": "assets/img/news-sources/espn.png",
+      "newsSourceTitle": "ESPN",
+      "newsSourceFormat": "espn",
+      "sourceId": "45ed5e74-d993-4ca8-b809-c1d96a0b7217"
     },
     {
-      "newsSourceLogo": "/Users/Shaheen/Desktop/feeder/assets/img/news-sources/espn-cric-info.png",
-      "newsSourceTitle": "",
-      "newsSourceFormat": "espn-cric-info.png"
+      "newsSourceLogo": "assets/img/news-sources/espn-cric-info.png",
+      "newsSourceTitle": "ESPN CRIC INFO",
+      "newsSourceFormat": "espn-cric-info",
+      "sourceId": "eeee62fe-9c4f-4487-8eeb-f5616ebf5559"
     },
     {
-      "newsSourceLogo": "/Users/Shaheen/Desktop/feeder/assets/img/news-sources/financial-times.png",
-      "newsSourceTitle": "",
-      "newsSourceFormat": "financial-times.png"
+      "newsSourceLogo": "assets/img/news-sources/financial-times.png",
+      "newsSourceTitle": "FINANCIAL TIMES",
+      "newsSourceFormat": "financial-times",
+      "sourceId": "9c9e4d77-860c-4b58-a183-25477b461d79"
     },
     {
-      "newsSourceLogo": "/Users/Shaheen/Desktop/feeder/assets/img/news-sources/focus.png",
-      "newsSourceTitle": "",
-      "newsSourceFormat": "focus.png"
+      "newsSourceLogo": "assets/img/news-sources/focus.png",
+      "newsSourceTitle": "FOCUS",
+      "newsSourceFormat": "focus",
+      "sourceId": "af2674f7-39c3-4735-91c6-8e700e43b080"
     },
     {
-      "newsSourceLogo": "/Users/Shaheen/Desktop/feeder/assets/img/news-sources/football-italia.png",
-      "newsSourceTitle": "",
-      "newsSourceFormat": "football-italia.png"
+      "newsSourceLogo": "assets/img/news-sources/football-italia.png",
+      "newsSourceTitle": "FOOTBALL ITALIA",
+      "newsSourceFormat": "football-italia",
+      "sourceId": "10056d93-0327-4805-ae23-d1c475988719"
     },
     {
-      "newsSourceLogo": "/Users/Shaheen/Desktop/feeder/assets/img/news-sources/fortune.png",
-      "newsSourceTitle": "",
-      "newsSourceFormat": "fortune.png"
+      "newsSourceLogo": "assets/img/news-sources/fortune.png",
+      "newsSourceTitle": "FORTUNE",
+      "newsSourceFormat": "fortune",
+      "sourceId": "974fd0a7-4aa6-47de-8cef-43647f89968d"
     },
     {
-      "newsSourceLogo": "/Users/Shaheen/Desktop/feeder/assets/img/news-sources/four-four-two.png",
-      "newsSourceTitle": "",
-      "newsSourceFormat": "four-four-two.png"
+      "newsSourceLogo": "assets/img/news-sources/four-four-two.png",
+      "newsSourceTitle": "FOUR FOUR TWO",
+      "newsSourceFormat": "four-four-two",
+      "sourceId": "861fab74-5c9d-470e-bc9d-38fd3e5ed4fb"
     },
     {
-      "newsSourceLogo": "/Users/Shaheen/Desktop/feeder/assets/img/news-sources/fox-sports.png",
-      "newsSourceTitle": "",
-      "newsSourceFormat": "fox-sports.png"
+      "newsSourceLogo": "assets/img/news-sources/fox-sports.png",
+      "newsSourceTitle": "FOX SPORTS",
+      "newsSourceFormat": "fox-sports",
+      "sourceId": "f4af19a3-2c85-4e57-ad16-ff140c5a719b"
     },
     {
-      "newsSourceLogo": "/Users/Shaheen/Desktop/feeder/assets/img/news-sources/google-news.png",
-      "newsSourceTitle": "",
-      "newsSourceFormat": "google-news.png"
+      "newsSourceLogo": "assets/img/news-sources/google-news.png",
+      "newsSourceTitle": "GOOGLE NEWS",
+      "newsSourceFormat": "google-news",
+      "sourceId": "5421d01a-dd95-4306-8f33-947465d2b7a3"
     },
     {
-      "newsSourceLogo": "/Users/Shaheen/Desktop/feeder/assets/img/news-sources/gruenderszene.png",
-      "newsSourceTitle": "",
-      "newsSourceFormat": "gruenderszene.png"
+      "newsSourceLogo": "assets/img/news-sources/gruenderszene.png",
+      "newsSourceTitle": "GRUENDERSZENE",
+      "newsSourceFormat": "gruenderszene",
+      "sourceId": "348d86ef-41bb-46ac-b16f-5f237585cb92"
     },
     {
-      "newsSourceLogo": "/Users/Shaheen/Desktop/feeder/assets/img/news-sources/hacker-news.png",
-      "newsSourceTitle": "",
-      "newsSourceFormat": "hacker-news.png"
+      "newsSourceLogo": "assets/img/news-sources/hacker-news.png",
+      "newsSourceTitle": "HACKER NEWS",
+      "newsSourceFormat": "hacker-news",
+      "sourceId": "bb2664fc-c00b-4cf9-ac6f-6d9c39f1eaaf"
     },
     {
-      "newsSourceLogo": "/Users/Shaheen/Desktop/feeder/assets/img/news-sources/handelsblatt.png",
-      "newsSourceTitle": "",
-      "newsSourceFormat": "handelsblatt.png"
+      "newsSourceLogo": "assets/img/news-sources/handelsblatt.png",
+      "newsSourceTitle": "HANDELSBLATT",
+      "newsSourceFormat": "handelsblatt",
+      "sourceId": "7798ef4e-fd82-4c98-8c38-a0579e1d3f37"
     },
     {
-      "newsSourceLogo": "/Users/Shaheen/Desktop/feeder/assets/img/news-sources/ign.png",
-      "newsSourceTitle": "",
-      "newsSourceFormat": ""
+      "newsSourceLogo": "assets/img/news-sources/ign.png",
+      "newsSourceTitle": "IGN",
+      "newsSourceFormat": "ign",
+      "sourceId": "d7527938-8c35-4abf-bb13-d10ca0bd226e"
     },
     {
-      "newsSourceLogo": "/Users/Shaheen/Desktop/feeder/assets/img/news-sources/independent.png",
-      "newsSourceTitle": "",
-      "newsSourceFormat": ""
+      "newsSourceLogo": "assets/img/news-sources/independent.png",
+      "newsSourceTitle": "INDEPENDENT",
+      "newsSourceFormat": "independent",
+      "sourceId": "bbfcaa03-46dd-4bba-89c7-ef02a9e230e3"
     },
     {
-      "newsSourceLogo": "/Users/Shaheen/Desktop/feeder/assets/img/news-sources/mashable.png",
-      "newsSourceTitle": "",
-      "newsSourceFormat": ""
+      "newsSourceLogo": "assets/img/news-sources/mashable.png",
+      "newsSourceTitle": "MASHABLE",
+      "newsSourceFormat": "mashable",
+      "sourceId": "c86aacfb-a1dc-4de1-924b-97cf08b6a9b8"
     },
     {
-      "newsSourceLogo": "/Users/Shaheen/Desktop/feeder/assets/img/news-sources/metro.png",
-      "newsSourceTitle": "",
-      "newsSourceFormat": ""
+      "newsSourceLogo": "assets/img/news-sources/metro.png",
+      "newsSourceTitle": "METRO",
+      "newsSourceFormat": "metro",
+      "sourceId": "4e54ecae-4487-48fa-be54-a4426664c3fb"
     },
     {
-      "newsSourceLogo": "/Users/Shaheen/Desktop/feeder/assets/img/news-sources/mirror.png",
-      "newsSourceTitle": "",
-      "newsSourceFormat": ""
+      "newsSourceLogo": "assets/img/news-sources/mirror.png",
+      "newsSourceTitle": "MIRROR",
+      "newsSourceFormat": "mirror",
+      "sourceId": "117b7383-0889-43c3-9545-299bb418e23a"
     },
     {
-      "newsSourceLogo": "/Users/Shaheen/Desktop/feeder/assets/img/news-sources/mtv-news.png",
-      "newsSourceTitle": "",
-      "newsSourceFormat": ""
+      "newsSourceLogo": "assets/img/news-sources/mtv-news.png",
+      "newsSourceTitle": "MTV NEWS",
+      "newsSourceFormat": "mtv-news",
+      "sourceId": "492fe8ec-7bb5-4d2c-8f7e-21fc7d24b2e6"
     },
     {
-      "newsSourceLogo": "/Users/Shaheen/Desktop/feeder/assets/img/news-sources/mtv-news-uk.png",
-      "newsSourceTitle": "",
-      "newsSourceFormat": ""
+      "newsSourceLogo": "assets/img/news-sources/mtv-news-uk.png",
+      "newsSourceTitle": "MTV NEWS UK",
+      "newsSourceFormat": "mtv-news-uk",
+      "sourceId": "54075f7f-acf4-4ee3-95f8-b30b5be0d79e"
     },
     {
-      "newsSourceLogo": "/Users/Shaheen/Desktop/feeder/assets/img/news-sources/national-geographic.png",
-      "newsSourceTitle": "",
-      "newsSourceFormat": ""
+      "newsSourceLogo": "assets/img/news-sources/national-geographic.png",
+      "newsSourceTitle": "NATIONAL GEOGRAPHIC",
+      "newsSourceFormat": "national-geographic",
+      "sourceId": "b922db74-3533-4650-abf2-a60f87d78edd"
     },
     {
-      "newsSourceLogo": "/Users/Shaheen/Desktop/feeder/assets/img/news-sources/new-scientist.png",
-      "newsSourceTitle": "",
-      "newsSourceFormat": ""
+      "newsSourceLogo": "assets/img/news-sources/new-scientist.png",
+      "newsSourceTitle": "NEW SCIENTIST",
+      "newsSourceFormat": "new-scientist",
+      "sourceId": "ae36b1b1-39ec-4426-b100-3d2ea5e1bff0"
     },
     {
-      "newsSourceLogo": "/Users/Shaheen/Desktop/feeder/assets/img/news-sources/new-york-magazine.png",
-      "newsSourceTitle": "",
-      "newsSourceFormat": ""
+      "newsSourceLogo": "assets/img/news-sources/new-york-magazine.png",
+      "newsSourceTitle": "NEW YORK MAGAZINE",
+      "newsSourceFormat": "new-york-magazine",
+      "sourceId": "7a813a80-ba40-4c1a-a4dc-fae17a4a4e79"
     },
     {
-      "newsSourceLogo": "/Users/Shaheen/Desktop/feeder/assets/img/news-sources/newsweek.png",
-      "newsSourceTitle": "",
-      "newsSourceFormat": ""
+      "newsSourceLogo": "assets/img/news-sources/newsweek.png",
+      "newsSourceTitle": "NEWSWEEK",
+      "newsSourceFormat": "newsweek",
+      "sourceId": "2746c382-54f0-4517-b9fc-516cc43347c5"
     },
     {
-      "newsSourceLogo": "/Users/Shaheen/Desktop/feeder/assets/img/news-sources/nfl-news.png",
-      "newsSourceTitle": "",
-      "newsSourceFormat": ""
+      "newsSourceLogo": "assets/img/news-sources/nfl-news.png",
+      "newsSourceTitle": "NFL NEWS",
+      "newsSourceFormat": "nfl-news",
+      "sourceId": "fe310642-e191-43a8-ae35-68e7597b2ca9"
     },
     {
-      "newsSourceLogo": "/Users/Shaheen/Desktop/feeder/assets/img/news-sources/polygon.png",
-      "newsSourceTitle": "",
-      "newsSourceFormat": ""
+      "newsSourceLogo": "assets/img/news-sources/polygon.png",
+      "newsSourceTitle": "POLYGON",
+      "newsSourceFormat": "polygon",
+      "sourceId": "9082737e-bd9c-4d9a-a13a-2f67816c5bf3"
     },
     {
-      "newsSourceLogo": "/Users/Shaheen/Desktop/feeder/assets/img/news-sources/recode.png",
-      "newsSourceTitle": "",
-      "newsSourceFormat": ""
+      "newsSourceLogo": "assets/img/news-sources/recode.png",
+      "newsSourceTitle": "RECODE",
+      "newsSourceFormat": "recode",
+      "sourceId": "4b20b024-4efa-4db1-8b6b-ca1beabe5604"
     },
     {
-      "newsSourceLogo": "/Users/Shaheen/Desktop/feeder/assets/img/news-sources/reddit-r-all.png",
-      "newsSourceTitle": "",
-      "newsSourceFormat": ""
+      "newsSourceLogo": "assets/img/news-sources/reddit-r-all.png",
+      "newsSourceTitle": "REDDIT R ALL",
+      "newsSourceFormat": "reddit-r-all",
+      "sourceId": "db4f9e2a-3a46-4a97-be12-5271d0b1ac14"
     },
     {
-      "newsSourceLogo": "/Users/Shaheen/Desktop/feeder/assets/img/news-sources/reuters.png",
-      "newsSourceTitle": "",
-      "newsSourceFormat": ""
+      "newsSourceLogo": "assets/img/news-sources/reuters.png",
+      "newsSourceTitle": "REUTERS",
+      "newsSourceFormat": "reuters",
+      "sourceId": "567381cd-349e-405e-b658-a06edd263fdf"
     },
     {
-      "newsSourceLogo": "/Users/Shaheen/Desktop/feeder/assets/img/news-sources/sky-news.png",
-      "newsSourceTitle": "",
-      "newsSourceFormat": ""
+      "newsSourceLogo": "assets/img/news-sources/sky-news.png",
+      "newsSourceTitle": "SKY NEWS",
+      "newsSourceFormat": "sky-news",
+      "sourceId": "e9d0e5a7-3142-4c2f-b821-1270fdadfe21"
     },
     {
-      "newsSourceLogo": "/Users/Shaheen/Desktop/feeder/assets/img/news-sources/sky-sports-news.png",
-      "newsSourceTitle": "",
-      "newsSourceFormat": ""
+      "newsSourceLogo": "assets/img/news-sources/sky-sports-news.png",
+      "newsSourceTitle": "SKY SPORTS NEWS",
+      "newsSourceFormat": "sky-sports-news",
+      "sourceId": "03ab80ce-68de-4af7-87ae-7fb4bfb172de"
     },
     {
-      "newsSourceLogo": "/Users/Shaheen/Desktop/feeder/assets/img/news-sources/spiegel-online.png",
-      "newsSourceTitle": "",
-      "newsSourceFormat": ""
+      "newsSourceLogo": "assets/img/news-sources/spiegel-online.png",
+      "newsSourceTitle": "SPIEGEL ONLINE",
+      "newsSourceFormat": "spiegel-online",
+      "sourceId": "4a39adfd-5e03-4331-aa56-dbabaadea79c"
     },
     {
-      "newsSourceLogo": "/Users/Shaheen/Desktop/feeder/assets/img/news-sources/t3n.png",
-      "newsSourceTitle": "",
-      "newsSourceFormat": ""
+      "newsSourceLogo": "assets/img/news-sources/t3n.png",
+      "newsSourceTitle": "T3N",
+      "newsSourceFormat": "t3n",
+      "sourceId": "83a9ae24-f345-40ef-8bc9-9eed37e15792"
     },
     {
-      "newsSourceLogo": "/Users/Shaheen/Desktop/feeder/assets/img/news-sources/talksport.png",
-      "newsSourceTitle": "",
-      "newsSourceFormat": ""
+      "newsSourceLogo": "assets/img/news-sources/talksport.png",
+      "newsSourceTitle": "TALKSPORT",
+      "newsSourceFormat": "talksport",
+      "sourceId": "235f1886-460f-4531-ab72-4f5ad30dc89f"
     },
     {
-      "newsSourceLogo": "/Users/Shaheen/Desktop/feeder/assets/img/news-sources/techcrunch.png",
-      "newsSourceTitle": "",
-      "newsSourceFormat": ""
+      "newsSourceLogo": "assets/img/news-sources/techcrunch.png",
+      "newsSourceTitle": "TECHCRUNCH",
+      "newsSourceFormat": "techcrunch",
+      "sourceId": "42ddef90-4e1e-4b99-b419-d41e058d13aa"
     },
     {
-      "newsSourceLogo": "/Users/Shaheen/Desktop/feeder/assets/img/news-sources/techradar.png",
-      "newsSourceTitle": "",
-      "newsSourceFormat": ""
+      "newsSourceLogo": "assets/img/news-sources/techradar.png",
+      "newsSourceTitle": "TECHRADAR",
+      "newsSourceFormat": "techradar",
+      "sourceId": "6908afca-cd04-493e-b299-126a5e1750d2"
     },
     {
-      "newsSourceLogo": "/Users/Shaheen/Desktop/feeder/assets/img/news-sources/the-economist.png",
-      "newsSourceTitle": "",
-      "newsSourceFormat": ""
+      "newsSourceLogo": "assets/img/news-sources/the-economist.png",
+      "newsSourceTitle": "THE ECONOMIST",
+      "newsSourceFormat": "the-economist",
+      "sourceId": "1a4e4804-4c32-4f8b-b9bf-21c2ed6fc23e"
     },
     {
-      "newsSourceLogo": "/Users/Shaheen/Desktop/feeder/assets/img/news-sources/the-guardian-au.png",
-      "newsSourceTitle": "",
-      "newsSourceFormat": ""
+      "newsSourceLogo": "assets/img/news-sources/the-guardian-au.png",
+      "newsSourceTitle": "THE GUARDIAN AU",
+      "newsSourceFormat": "the-guardian-au",
+      "sourceId": "8cd72de4-b104-42b7-8979-2342ee078e21"
     },
     {
-      "newsSourceLogo": "/Users/Shaheen/Desktop/feeder/assets/img/news-sources/the-guardian-uk.png",
-      "newsSourceTitle": "",
-      "newsSourceFormat": ""
+      "newsSourceLogo": "assets/img/news-sources/the-guardian-uk.png",
+      "newsSourceTitle": "THE GUARDIAN UK",
+      "newsSourceFormat": "the-guardian-uk",
+      "sourceId": "306a2e41-3483-4805-a444-a7a641ccb18a"
     },
     {
-      "newsSourceLogo": "/Users/Shaheen/Desktop/feeder/assets/img/news-sources/the-hindu.png",
-      "newsSourceTitle": "",
-      "newsSourceFormat": ""
+      "newsSourceLogo": "assets/img/news-sources/the-hindu.png",
+      "newsSourceTitle": "THE HINDU",
+      "newsSourceFormat": "the-hindu",
+      "sourceId": "26803280-a418-4407-8fea-2c72af5c97a3"
     },
     {
-      "newsSourceLogo": "/Users/Shaheen/Desktop/feeder/assets/img/news-sources/the-huffington-post.png",
-      "newsSourceTitle": "",
-      "newsSourceFormat": ""
+      "newsSourceLogo": "assets/img/news-sources/the-huffington-post.png",
+      "newsSourceTitle": "THE HUFFINGTON POST",
+      "newsSourceFormat": "the-huffington-post",
+      "sourceId": "ac7bf694-b197-48ca-9812-2414e63b0a1f"
     },
     {
-      "newsSourceLogo": "/Users/Shaheen/Desktop/feeder/assets/img/news-sources/the-lad-bible.png",
-      "newsSourceTitle": "",
-      "newsSourceFormat": ""
+      "newsSourceLogo": "assets/img/news-sources/the-lad-bible.png",
+      "newsSourceTitle": "THE LAD BIBLE",
+      "newsSourceFormat": "the-lad-bible",
+      "sourceId": "8b5706cc-a327-4b50-a07a-b8c9014764ee"
     },
     {
-      "newsSourceLogo": "/Users/Shaheen/Desktop/feeder/assets/img/news-sources/the-new-york-times.png",
-      "newsSourceTitle": "",
-      "newsSourceFormat": ""
+      "newsSourceLogo": "assets/img/news-sources/the-new-york-times.png",
+      "newsSourceTitle": "THE NEW YORK TIMES",
+      "newsSourceFormat": "the-new-york-times",
+      "sourceId": "756e9797-6f47-4cad-af48-757de8597f4c"
     },
     {
-      "newsSourceLogo": "/Users/Shaheen/Desktop/feeder/assets/img/news-sources/the-next-web.png",
-      "newsSourceTitle": "",
-      "newsSourceFormat": ""
+      "newsSourceLogo": "assets/img/news-sources/the-next-web.png",
+      "newsSourceTitle": "THE NEXT WEB",
+      "newsSourceFormat": "the-next-web",
+      "sourceId": "e53b6010-0d14-4b0a-8083-08ac0308d300"
     },
     {
-      "newsSourceLogo": "/Users/Shaheen/Desktop/feeder/assets/img/news-sources/the-sport-bible.png",
-      "newsSourceTitle": "",
-      "newsSourceFormat": ""
+      "newsSourceLogo": "assets/img/news-sources/the-sport-bible.png",
+      "newsSourceTitle": "THE SPORT BIBLE",
+      "newsSourceFormat": "the-sport-bible",
+      "sourceId": "36a90e42-497a-4e45-9cfd-fe4532895ee5"
     },
     {
-      "newsSourceLogo": "/Users/Shaheen/Desktop/feeder/assets/img/news-sources/the-telegraph.png",
-      "newsSourceTitle": "",
-      "newsSourceFormat": ""
+      "newsSourceLogo": "assets/img/news-sources/the-telegraph.png",
+      "newsSourceTitle": "THE TELEGRAPH",
+      "newsSourceFormat": "the-telegraph",
+      "sourceId": "d0e2e229-0a1f-4471-9ca8-0d625eecbb57"
     },
     {
-      "newsSourceLogo": "/Users/Shaheen/Desktop/feeder/assets/img/news-sources/the-times-of-india.png",
-      "newsSourceTitle": "",
-      "newsSourceFormat": ""
+      "newsSourceLogo": "assets/img/news-sources/the-times-of-india.png",
+      "newsSourceTitle": "THE TIMES OF INDIA",
+      "newsSourceFormat": "the-times-of-india",
+      "sourceId": "63b33ad8-3353-4df8-b6ad-70fcfc5a17a3"
     },
     {
-      "newsSourceLogo": "/Users/Shaheen/Desktop/feeder/assets/img/news-sources/the-verge.png",
-      "newsSourceTitle": "",
-      "newsSourceFormat": ""
+      "newsSourceLogo": "assets/img/news-sources/the-verge.png",
+      "newsSourceTitle": "THE VERGE",
+      "newsSourceFormat": "the-verge",
+      "sourceId": "b1583898-a751-4e5e-8720-3a6c1b575623"
     },
     {
-      "newsSourceLogo": "/Users/Shaheen/Desktop/feeder/assets/img/news-sources/the-wall-street-journal.png",
-      "newsSourceTitle": "",
-      "newsSourceFormat": ""
+      "newsSourceLogo": "assets/img/news-sources/the-wall-street-journal.png",
+      "newsSourceTitle": "THE WALL STREET JOURNAL",
+      "newsSourceFormat": "the-wall-street-journal",
+      "sourceId": "7a31c753-ed8f-4883-b59b-99915c9dd199"
     },
     {
-      "newsSourceLogo": "/Users/Shaheen/Desktop/feeder/assets/img/news-sources/the-washington-post.png",
-      "newsSourceTitle": "",
-      "newsSourceFormat": ""
+      "newsSourceLogo": "assets/img/news-sources/the-washington-post.png",
+      "newsSourceTitle": "THE WASHINGTON POST",
+      "newsSourceFormat": "the-washington-post",
+      "sourceId": "e52c1d6c-28e7-4e6d-8fb6-c27169abb5f6"
     },
     {
-      "newsSourceLogo": "/Users/Shaheen/Desktop/feeder/assets/img/news-sources/time.png",
-      "newsSourceTitle": "",
-      "newsSourceFormat": ""
+      "newsSourceLogo": "assets/img/news-sources/time.png",
+      "newsSourceTitle": "TIME",
+      "newsSourceFormat": "time",
+      "sourceId": "e35bcf7b-b463-4f1b-84d7-f29ec3b57890"
     },
     {
-      "newsSourceLogo": "/Users/Shaheen/Desktop/feeder/assets/img/news-sources/usa-today.png",
-      "newsSourceTitle": "",
-      "newsSourceFormat": ""
+      "newsSourceLogo": "assets/img/news-sources/usa-today.png",
+      "newsSourceTitle": "USA TODAY",
+      "newsSourceFormat": "usa-today",
+      "sourceId": "3ef3d900-421c-431e-9ca2-8e6a1a1f6c1d"
     },
     {
-      "newsSourceLogo": "/Users/Shaheen/Desktop/feeder/assets/img/news-sources/wired-de.png",
-      "newsSourceTitle": "",
-      "newsSourceFormat": ""
+      "newsSourceLogo": "assets/img/news-sources/wired-de.png",
+      "newsSourceTitle": "WIRED DE",
+      "newsSourceFormat": "wired-de",
+      "sourceId": "20378124-c240-43bd-8a6a-a8d824cd9076"
     },
     {
-      "newsSourceLogo": "/Users/Shaheen/Desktop/feeder/assets/img/news-sources/wirtschafts-woche.png",
-      "newsSourceTitle": "",
-      "newsSourceFormat": ""
+      "newsSourceLogo": "assets/img/news-sources/wirtschafts-woche.png",
+      "newsSourceTitle": "WIRTSCHAFTS WOCHE",
+      "newsSourceFormat": "wirtschafts-woche",
+      "sourceId": "32940521-f51b-4ad8-a23d-0a99140e5a64"
     }
   ]
 }
