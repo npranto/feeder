@@ -1,10 +1,24 @@
 {
   "newsSources": [
     {
-      "newsSourceLogo": "feeder/assets/img/news-sources/abc-news-au.png",
+      "newsSourceLogo": "assets/img/news-sources/abc-news-au.png",
+      "newsSourceFormat": "abc-news-au",
+      "newsSourceTitle": "ABC NEWS AU",
+      "id": "f9cf5c59-ef9c-457f-a8fa-df9eca1b7036"
     },
     {
-      "newsSourceLogo": "feeder/assets/img/news-sources/entertainment-weekly.png",
+      "newsSourceLogo": "assets/img/news-sources/entertainment-weekly.png",
+      "newsSourceFormat": "entertainment-weekly",
+      "newsSourceTitle": "ENTERTAINMENT WEEKLY",
+      "id": "bcac47f0-bf7a-4c84-bcf0-8f99bb480ea3"
+    },
+    {
+      "newsSourceLogo": "feeder/assets/img/news-sources/ars-technica.png",
+      "id": "485664f1-1355-4ae9-8291-c5499cf82592"
+    }
+    {
+      "newsSourceLogo": "feeder/assets/img/news-sources/associated-press.png",
+      "id": "888c9f5a-6c59-470e-a328-d4e9f1ec915a"
     }
   ]
 }
