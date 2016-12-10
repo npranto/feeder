@@ -47,20 +47,19 @@ function createNewsSourceObjWithLogoUrl() {
 
       let newsSourceFormat = getNewsSourceFormat(currLogoUrl);
       console.log(newsSourceFormat);
-
       let newsSourceTitle = getNewsSourceTitle(newsSourceFormat);
-      console.log(newsSourceTitle);
-
       let updatedNewsSourceLogo = updateNewsSourceLogo(currLogoUrl);
-      console.log(updatedNewsSourceLogo);
+
+      currNewsSource['newsSourceFormat'] = newsSourceFormat;
+      currNewsSource['newsSourceTitle'] = newsSourceTitle;
+      currNewsSource['newsSourceLogo'] = updatedNewsSourceLogo;
 
     })
-
     // jsonfile.writeFileSync(newsSourceJSON, returnJSON, {spaces: 2});
   })
 }
 function getNewsSourceFormat (currLogoUrl) {
-  return _.replace(_.replace(currLogoUrl, '/Users/npranto/Downloads/feeder/assets/img/news-sources/', ''), '.png', '');
+  return _.replace(_.replace(currLogoUrl, 'feeder/assets/img/news-sources/', ''), '.png', '');
 }
 function getNewsSourceTitle(newsSourceFormat) {
   return newsSourceFormat.toUpperCase().split('-').join(' ');
@@ -72,4 +71,4 @@ function updateNewsSourceLogo(currLogoUrl) {
 
 ///////////////////
 createNewsSourceObjWithLogoUrl();
-// addNewsSourcesIds();
+addNewsSourcesIds();

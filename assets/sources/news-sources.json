@@ -1,10 +1,10 @@
 {
   "newsSources": [
     {
-      "newsSourceLogo": "/Users/npranto/Downloads/feeder/assets/img/news-sources/abc-news-au.png"
+      "newsSourceLogo": "feeder/assets/img/news-sources/abc-news-au.png",
     },
     {
-      "newsSourceLogo": "/Users/npranto/Downloads/feeder/assets/img/news-sources/entertainment-weekly.png"
+      "newsSourceLogo": "feeder/assets/img/news-sources/entertainment-weekly.png",
     }
   ]
 }
