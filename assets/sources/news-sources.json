@@ -1,24 +1,354 @@
 {
   "newsSources": [
     {
-      "newsSourceLogo": "assets/img/news-sources/abc-news-au.png",
-      "newsSourceFormat": "abc-news-au",
-      "newsSourceTitle": "ABC NEWS AU",
-      "id": "f9cf5c59-ef9c-457f-a8fa-df9eca1b7036"
+      "newsSourceLogo": "/Users/Shaheen/Desktop/feeder/assets/img/news-sources/abc-news-au.png",
+      "newsSourceTitle": "",
+      "newsSourceFormat": "abc-news-au"
     },
     {
-      "newsSourceLogo": "assets/img/news-sources/entertainment-weekly.png",
-      "newsSourceFormat": "entertainment-weekly",
-      "newsSourceTitle": "ENTERTAINMENT WEEKLY",
-      "id": "bcac47f0-bf7a-4c84-bcf0-8f99bb480ea3"
+      "newsSourceLogo": "/Users/Shaheen/Desktop/feeder/assets/img/news-sources/ars-technica.png",
+      "newsSourceTitle": "",
+      "newsSourceFormat": "ars-technica.png"
     },
     {
-      "newsSourceLogo": "feeder/assets/img/news-sources/ars-technica.png",
-      "id": "485664f1-1355-4ae9-8291-c5499cf82592"
-    }
+      "newsSourceLogo": "/Users/Shaheen/Desktop/feeder/assets/img/news-sources/associated-press.png",
+      "newsSourceTitle": "",
+      "newsSourceFormat": "associated-press.png"
+    },
     {
-      "newsSourceLogo": "feeder/assets/img/news-sources/associated-press.png",
-      "id": "888c9f5a-6c59-470e-a328-d4e9f1ec915a"
+      "newsSourceLogo": "/Users/Shaheen/Desktop/feeder/assets/img/news-sources/bbc-news.png",
+      "newsSourceTitle": "",
+      "newsSourceFormat": "bbc-news.png"
+    },
+    {
+      "newsSourceLogo": "/Users/Shaheen/Desktop/feeder/assets/img/news-sources/bbc-sport.png",
+      "newsSourceTitle": "",
+      "newsSourceFormat": "bbc-sport.png"
+    },
+    {
+      "newsSourceLogo": "/Users/Shaheen/Desktop/feeder/assets/img/news-sources/bild.png",
+      "newsSourceTitle": "",
+      "newsSourceFormat": "bild.png"
+    },
+    {
+      "newsSourceLogo": "/Users/Shaheen/Desktop/feeder/assets/img/news-sources/bloomberg.png",
+      "newsSourceTitle": "",
+      "newsSourceFormat": "bloomberg.png"
+    },
+    {
+      "newsSourceLogo": "/Users/Shaheen/Desktop/feeder/assets/img/news-sources/business-insider.png",
+      "newsSourceTitle": "",
+      "newsSourceFormat": "business-insider.png"
+    },
+    {
+      "newsSourceLogo": "/Users/Shaheen/Desktop/feeder/assets/img/news-sources/business-insider-uk.png",
+      "newsSourceTitle": "",
+      "newsSourceFormat": "business-insider-uk.png"
+    },
+    {
+      "newsSourceLogo": "/Users/Shaheen/Desktop/feeder/assets/img/news-sources/buzzfeed.png",
+      "newsSourceTitle": "",
+      "newsSourceFormat": "buzzfeed.png"
+    },
+    {
+      "newsSourceLogo": "/Users/Shaheen/Desktop/feeder/assets/img/news-sources/cnbc.png",
+      "newsSourceTitle": "",
+      "newsSourceFormat": "cnbc.png"
+    },
+    {
+      "newsSourceLogo": "/Users/Shaheen/Desktop/feeder/assets/img/news-sources/cnn.png",
+      "newsSourceTitle": "",
+      "newsSourceFormat": "cnn.png"
+    },
+    {
+      "newsSourceLogo": "/Users/Shaheen/Desktop/feeder/assets/img/news-sources/daily-mail.png",
+      "newsSourceTitle": "",
+      "newsSourceFormat": "daily-mail.png"
+    },
+    {
+      "newsSourceLogo": "/Users/Shaheen/Desktop/feeder/assets/img/news-sources/der-tagesspiegel.png",
+      "newsSourceTitle": "",
+      "newsSourceFormat": "der-tagesspiegel.png"
+    },
+    {
+      "newsSourceLogo": "/Users/Shaheen/Desktop/feeder/assets/img/news-sources/die-zeit.png",
+      "newsSourceTitle": "",
+      "newsSourceFormat": "die-zeit.png"
+    },
+    {
+      "newsSourceLogo": "/Users/Shaheen/Desktop/feeder/assets/img/news-sources/engadget.png",
+      "newsSourceTitle": "",
+      "newsSourceFormat": "engadget.png"
+    },
+    {
+      "newsSourceLogo": "/Users/Shaheen/Desktop/feeder/assets/img/news-sources/entertainment-weekly.png",
+      "newsSourceTitle": "",
+      "newsSourceFormat": "entertainment-weekly.png"
+    },
+    {
+      "newsSourceLogo": "/Users/Shaheen/Desktop/feeder/assets/img/news-sources/espn.png",
+      "newsSourceTitle": "",
+      "newsSourceFormat": "espn.png"
+    },
+    {
+      "newsSourceLogo": "/Users/Shaheen/Desktop/feeder/assets/img/news-sources/espn-cric-info.png",
+      "newsSourceTitle": "",
+      "newsSourceFormat": "espn-cric-info.png"
+    },
+    {
+      "newsSourceLogo": "/Users/Shaheen/Desktop/feeder/assets/img/news-sources/financial-times.png",
+      "newsSourceTitle": "",
+      "newsSourceFormat": "financial-times.png"
+    },
+    {
+      "newsSourceLogo": "/Users/Shaheen/Desktop/feeder/assets/img/news-sources/focus.png",
+      "newsSourceTitle": "",
+      "newsSourceFormat": "focus.png"
+    },
+    {
+      "newsSourceLogo": "/Users/Shaheen/Desktop/feeder/assets/img/news-sources/football-italia.png",
+      "newsSourceTitle": "",
+      "newsSourceFormat": "football-italia.png"
+    },
+    {
+      "newsSourceLogo": "/Users/Shaheen/Desktop/feeder/assets/img/news-sources/fortune.png",
+      "newsSourceTitle": "",
+      "newsSourceFormat": "fortune.png"
+    },
+    {
+      "newsSourceLogo": "/Users/Shaheen/Desktop/feeder/assets/img/news-sources/four-four-two.png",
+      "newsSourceTitle": "",
+      "newsSourceFormat": "four-four-two.png"
+    },
+    {
+      "newsSourceLogo": "/Users/Shaheen/Desktop/feeder/assets/img/news-sources/fox-sports.png",
+      "newsSourceTitle": "",
+      "newsSourceFormat": "fox-sports.png"
+    },
+    {
+      "newsSourceLogo": "/Users/Shaheen/Desktop/feeder/assets/img/news-sources/google-news.png",
+      "newsSourceTitle": "",
+      "newsSourceFormat": "google-news.png"
+    },
+    {
+      "newsSourceLogo": "/Users/Shaheen/Desktop/feeder/assets/img/news-sources/gruenderszene.png",
+      "newsSourceTitle": "",
+      "newsSourceFormat": "gruenderszene.png"
+    },
+    {
+      "newsSourceLogo": "/Users/Shaheen/Desktop/feeder/assets/img/news-sources/hacker-news.png",
+      "newsSourceTitle": "",
+      "newsSourceFormat": "hacker-news.png"
+    },
+    {
+      "newsSourceLogo": "/Users/Shaheen/Desktop/feeder/assets/img/news-sources/handelsblatt.png",
+      "newsSourceTitle": "",
+      "newsSourceFormat": "handelsblatt.png"
+    },
+    {
+      "newsSourceLogo": "/Users/Shaheen/Desktop/feeder/assets/img/news-sources/ign.png",
+      "newsSourceTitle": "",
+      "newsSourceFormat": ""
+    },
+    {
+      "newsSourceLogo": "/Users/Shaheen/Desktop/feeder/assets/img/news-sources/independent.png",
+      "newsSourceTitle": "",
+      "newsSourceFormat": ""
+    },
+    {
+      "newsSourceLogo": "/Users/Shaheen/Desktop/feeder/assets/img/news-sources/mashable.png",
+      "newsSourceTitle": "",
+      "newsSourceFormat": ""
+    },
+    {
+      "newsSourceLogo": "/Users/Shaheen/Desktop/feeder/assets/img/news-sources/metro.png",
+      "newsSourceTitle": "",
+      "newsSourceFormat": ""
+    },
+    {
+      "newsSourceLogo": "/Users/Shaheen/Desktop/feeder/assets/img/news-sources/mirror.png",
+      "newsSourceTitle": "",
+      "newsSourceFormat": ""
+    },
+    {
+      "newsSourceLogo": "/Users/Shaheen/Desktop/feeder/assets/img/news-sources/mtv-news.png",
+      "newsSourceTitle": "",
+      "newsSourceFormat": ""
+    },
+    {
+      "newsSourceLogo": "/Users/Shaheen/Desktop/feeder/assets/img/news-sources/mtv-news-uk.png",
+      "newsSourceTitle": "",
+      "newsSourceFormat": ""
+    },
+    {
+      "newsSourceLogo": "/Users/Shaheen/Desktop/feeder/assets/img/news-sources/national-geographic.png",
+      "newsSourceTitle": "",
+      "newsSourceFormat": ""
+    },
+    {
+      "newsSourceLogo": "/Users/Shaheen/Desktop/feeder/assets/img/news-sources/new-scientist.png",
+      "newsSourceTitle": "",
+      "newsSourceFormat": ""
+    },
+    {
+      "newsSourceLogo": "/Users/Shaheen/Desktop/feeder/assets/img/news-sources/new-york-magazine.png",
+      "newsSourceTitle": "",
+      "newsSourceFormat": ""
+    },
+    {
+      "newsSourceLogo": "/Users/Shaheen/Desktop/feeder/assets/img/news-sources/newsweek.png",
+      "newsSourceTitle": "",
+      "newsSourceFormat": ""
+    },
+    {
+      "newsSourceLogo": "/Users/Shaheen/Desktop/feeder/assets/img/news-sources/nfl-news.png",
+      "newsSourceTitle": "",
+      "newsSourceFormat": ""
+    },
+    {
+      "newsSourceLogo": "/Users/Shaheen/Desktop/feeder/assets/img/news-sources/polygon.png",
+      "newsSourceTitle": "",
+      "newsSourceFormat": ""
+    },
+    {
+      "newsSourceLogo": "/Users/Shaheen/Desktop/feeder/assets/img/news-sources/recode.png",
+      "newsSourceTitle": "",
+      "newsSourceFormat": ""
+    },
+    {
+      "newsSourceLogo": "/Users/Shaheen/Desktop/feeder/assets/img/news-sources/reddit-r-all.png",
+      "newsSourceTitle": "",
+      "newsSourceFormat": ""
+    },
+    {
+      "newsSourceLogo": "/Users/Shaheen/Desktop/feeder/assets/img/news-sources/reuters.png",
+      "newsSourceTitle": "",
+      "newsSourceFormat": ""
+    },
+    {
+      "newsSourceLogo": "/Users/Shaheen/Desktop/feeder/assets/img/news-sources/sky-news.png",
+      "newsSourceTitle": "",
+      "newsSourceFormat": ""
+    },
+    {
+      "newsSourceLogo": "/Users/Shaheen/Desktop/feeder/assets/img/news-sources/sky-sports-news.png",
+      "newsSourceTitle": "",
+      "newsSourceFormat": ""
+    },
+    {
+      "newsSourceLogo": "/Users/Shaheen/Desktop/feeder/assets/img/news-sources/spiegel-online.png",
+      "newsSourceTitle": "",
+      "newsSourceFormat": ""
+    },
+    {
+      "newsSourceLogo": "/Users/Shaheen/Desktop/feeder/assets/img/news-sources/t3n.png",
+      "newsSourceTitle": "",
+      "newsSourceFormat": ""
+    },
+    {
+      "newsSourceLogo": "/Users/Shaheen/Desktop/feeder/assets/img/news-sources/talksport.png",
+      "newsSourceTitle": "",
+      "newsSourceFormat": ""
+    },
+    {
+      "newsSourceLogo": "/Users/Shaheen/Desktop/feeder/assets/img/news-sources/techcrunch.png",
+      "newsSourceTitle": "",
+      "newsSourceFormat": ""
+    },
+    {
+      "newsSourceLogo": "/Users/Shaheen/Desktop/feeder/assets/img/news-sources/techradar.png",
+      "newsSourceTitle": "",
+      "newsSourceFormat": ""
+    },
+    {
+      "newsSourceLogo": "/Users/Shaheen/Desktop/feeder/assets/img/news-sources/the-economist.png",
+      "newsSourceTitle": "",
+      "newsSourceFormat": ""
+    },
+    {
+      "newsSourceLogo": "/Users/Shaheen/Desktop/feeder/assets/img/news-sources/the-guardian-au.png",
+      "newsSourceTitle": "",
+      "newsSourceFormat": ""
+    },
+    {
+      "newsSourceLogo": "/Users/Shaheen/Desktop/feeder/assets/img/news-sources/the-guardian-uk.png",
+      "newsSourceTitle": "",
+      "newsSourceFormat": ""
+    },
+    {
+      "newsSourceLogo": "/Users/Shaheen/Desktop/feeder/assets/img/news-sources/the-hindu.png",
+      "newsSourceTitle": "",
+      "newsSourceFormat": ""
+    },
+    {
+      "newsSourceLogo": "/Users/Shaheen/Desktop/feeder/assets/img/news-sources/the-huffington-post.png",
+      "newsSourceTitle": "",
+      "newsSourceFormat": ""
+    },
+    {
+      "newsSourceLogo": "/Users/Shaheen/Desktop/feeder/assets/img/news-sources/the-lad-bible.png",
+      "newsSourceTitle": "",
+      "newsSourceFormat": ""
+    },
+    {
+      "newsSourceLogo": "/Users/Shaheen/Desktop/feeder/assets/img/news-sources/the-new-york-times.png",
+      "newsSourceTitle": "",
+      "newsSourceFormat": ""
+    },
+    {
+      "newsSourceLogo": "/Users/Shaheen/Desktop/feeder/assets/img/news-sources/the-next-web.png",
+      "newsSourceTitle": "",
+      "newsSourceFormat": ""
+    },
+    {
+      "newsSourceLogo": "/Users/Shaheen/Desktop/feeder/assets/img/news-sources/the-sport-bible.png",
+      "newsSourceTitle": "",
+      "newsSourceFormat": ""
+    },
+    {
+      "newsSourceLogo": "/Users/Shaheen/Desktop/feeder/assets/img/news-sources/the-telegraph.png",
+      "newsSourceTitle": "",
+      "newsSourceFormat": ""
+    },
+    {
+      "newsSourceLogo": "/Users/Shaheen/Desktop/feeder/assets/img/news-sources/the-times-of-india.png",
+      "newsSourceTitle": "",
+      "newsSourceFormat": ""
+    },
+    {
+      "newsSourceLogo": "/Users/Shaheen/Desktop/feeder/assets/img/news-sources/the-verge.png",
+      "newsSourceTitle": "",
+      "newsSourceFormat": ""
+    },
+    {
+      "newsSourceLogo": "/Users/Shaheen/Desktop/feeder/assets/img/news-sources/the-wall-street-journal.png",
+      "newsSourceTitle": "",
+      "newsSourceFormat": ""
+    },
+    {
+      "newsSourceLogo": "/Users/Shaheen/Desktop/feeder/assets/img/news-sources/the-washington-post.png",
+      "newsSourceTitle": "",
+      "newsSourceFormat": ""
+    },
+    {
+      "newsSourceLogo": "/Users/Shaheen/Desktop/feeder/assets/img/news-sources/time.png",
+      "newsSourceTitle": "",
+      "newsSourceFormat": ""
+    },
+    {
+      "newsSourceLogo": "/Users/Shaheen/Desktop/feeder/assets/img/news-sources/usa-today.png",
+      "newsSourceTitle": "",
+      "newsSourceFormat": ""
+    },
+    {
+      "newsSourceLogo": "/Users/Shaheen/Desktop/feeder/assets/img/news-sources/wired-de.png",
+      "newsSourceTitle": "",
+      "newsSourceFormat": ""
+    },
+    {
+      "newsSourceLogo": "/Users/Shaheen/Desktop/feeder/assets/img/news-sources/wirtschafts-woche.png",
+      "newsSourceTitle": "",
+      "newsSourceFormat": ""
     }
   ]
 }

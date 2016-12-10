@@ -16,11 +16,10 @@
 
 const jsonfile = require('jsonfile');
 const uuidV4 = require('uuid/v4');
-var _ = require('lodash');
+const _ = require('lodash');
 
 
-const newsSourceJSON = "../sources/news-sources.json";
-
+const newsSourceJSON = "./../sources/news-sources.json";
 let returnJSON = {};
 
 function getAllNewsSources() {
@@ -31,54 +30,29 @@ function getAllNewsSources() {
 function addNewsSourcesIds() {
     jsonfile.readFile(newsSourceJSON, function (err, obj) {
         returnJSON = obj;
+
         _.map(returnJSON.newsSources, function (currNewsSource) {
-            currNewsSource['id'] = uuidV4();
-        })
+            currNewsSource['sourceId'] = uuidV4();
+        });
+
         jsonfile.writeFileSync(newsSourceJSON, returnJSON, {spaces: 2});
     })
 }
 
-function createNewsSourceObjWithLogoUrl() {
-    jsonfile.readFile(newsSourceJSON, function (err, obj) {
-        if (err || (obj === undefined)) {
-            const errorMessage = "[UNDEFINED] -- Check JSON Object for corrections";
-            console.log(errorMessage);
-            throw err;
-            // const errorMessage = "[UNDEFINED] -- Check JSON Object for corrections";
-            // return errorMessage + err;
-        }
-        returnJSON = obj;
-            _.map(returnJSON.newsSources, function (currNewsSource) {
-                if ((Object.keys(currNewsSource).length === 4) &&
-                    (currNewsSource['newsSourceFormat']) &&
-                    (currNewsSource['newsSourceTitle']) &&
-                    (currNewsSource['newsSourceLogo'])
-                ) {
-                    let currLogoUrl = currNewsSource.newsSourceLogo;
 
-                    let newsSourceFormat = getNewsSourceFormat(currLogoUrl);
-                    let newsSourceTitle = getNewsSourceTitle(newsSourceFormat);
-                    let updatedNewsSourceLogo = updateNewsSourceLogo(currLogoUrl);
 
-                    currNewsSource['newsSourceFormat'] = newsSourceFormat;
-                    currNewsSource['newsSourceTitle'] = newsSourceTitle;
-                    currNewsSource['newsSourceLogo'] = updatedNewsSourceLogo;
-                }
-            })
-            jsonfile.writeFileSync(newsSourceJSON, returnJSON, {spaces: 2});
-    })
-}
-function getNewsSourceFormat(currLogoUrl) {
-    return _.replace(_.replace(currLogoUrl, 'feeder/assets/img/news-sources/', ''), '.png', '');
-}
-function getNewsSourceTitle(newsSourceFormat) {
-    return newsSourceFormat.toUpperCase().split('-').join(' ');
-}
-function updateNewsSourceLogo(currLogoUrl) {
-    return _.replace(currLogoUrl, 'feeder/', '');
-}
+// function getNewsSourceFormat(currLogoUrl) {
+//     return _.replace(_.replace(currLogoUrl, 'feeder/assets/img/news-sources/', ''), '.png', '');
+// }
+// function getNewsSourceTitle(newsSourceFormat) {
+//     return newsSourceFormat.toUpperCase().split('-').join(' ');
+// }
+// function updateNewsSourceLogo(currLogoUrl) {
+//     return _.replace(currLogoUrl, 'feeder/', '');
+// }
 
 
 ///////////////////
-createNewsSourceObjWithLogoUrl();
 addNewsSourcesIds();
+// addNewsSourceFormats();
+// addNewsSourceTitles();
