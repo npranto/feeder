@@ -12,10 +12,12 @@ angular.module('feeder')
             homeServices.getAllNewsSources()
             .then(function(response) {
                 let newsSources = response.data.newsSources;
-                _.map(newsSourceJSON, function (newsSourceObj) {
+                _.map(newsSources, function (newsSourceObj) {
                     if(newsSourceObj.sourceId === sourceId){
-                        console.log(newsSourceObj);
-                        return newsSourceObj;
+                        homeServices.getNewsBySource(newsSourceObj.newsSourceFormat)
+                            .then(function (response) {
+                                console.log(response);
+                            })
                     }
                 })
             })

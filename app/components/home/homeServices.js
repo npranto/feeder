@@ -10,20 +10,8 @@ angular.module('feeder')
             return $http.get(latestNewsRoute);
         }
 
-        this.getNewsBySourceId = function (sourceId){
-            let newsSourceJSON = [];
-            return this.getAllNewsSources().then(function (response) {
+        this.getNewsBySource = function (newsSourceFormat){
 
-                newsSourceJSON = response.data.newsSources;
-
-                _.map(newsSourceJSON, function (newsSourceObj) {
-                    if(newsSourceObj.sourceId === sourceId){
-                        console.log(newsSourceObj);
-                        return newsSourceObj;
-                    }
-                })
-
-            })
         }
 
 
