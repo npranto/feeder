@@ -27,7 +27,7 @@
 
 .home-view .header-section header nav {
     justify-content: center;
-    overflow: auto;
+    overflow: auto !important;
 }
 
 .home-view .header-section section {
@@ -36,19 +36,17 @@
 
 .home-view .header-section section .aside-left {
     transition: all 0.5s ease;
-}
-
-.home-view .header-section section .aside-left:hover {
-    z-index: 100;
-}
-
-.home-view .header-section section .aside-left .news-source-gallery {
     overflow: auto;
 }
 
 .home-view .header-section section .aside-left .news-source-gallery .news-source-block {
     padding: 7.5% 5%;
     cursor: pointer;
+    outline: none;
+    transition: all 0.75s;
+}
+.home-view .header-section section .aside-left .news-source-gallery .news-source-block:hover{
+    /*border-left: 10px solid dodgerblue;*/
 }
 
 .home-view .header-section section .aside-left .news-source-gallery img {
