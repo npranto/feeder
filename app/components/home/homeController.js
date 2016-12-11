@@ -1,5 +1,5 @@
 angular.module('feeder')
-    .controller('homeController', function ($scope, homeServices, _) {
+    .controller('homeController', function ($scope, $rootScope, homeServices, _) {
     	// navigation newscategories
     	$scope.newsCategories = ["Business", "Entertainment", "Gaming", "General", "Music", "Science & Nature", "Sport", "Technology"];
 
@@ -14,10 +14,7 @@ angular.module('feeder')
                 let newsSources = response.data.newsSources;
                 _.map(newsSources, function (newsSourceObj) {
                     if(newsSourceObj.sourceId === sourceId){
-                        homeServices.getNewsBySource(newsSourceObj.newsSourceFormat)
-                            .then(function (response) {
-                                console.log(response);
-                            })
+                       console.log(newsSourceObj);
                     }
                 })
             })
@@ -32,5 +29,4 @@ angular.module('feeder')
         }
 
         getAllNewsSources();
-
     })

@@ -10,9 +10,5 @@ angular.module('feeder')
             return $http.get(latestNewsRoute);
         }
 
-        this.getNewsBySource = function (newsSourceFormat){
-
-        }
-
 
     })

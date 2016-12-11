@@ -1,5 +1,5 @@
 angular.module('feeder')
-    .controller("newsStoryController", function ($scope, $mdDialog, newsAPI, homeServices) {
+    .controller("newsStoryController", function ($scope, $mdDialog, $rootScope, newsAPI, homeServices) {
 
         $scope.changeReactionStatus = function(reaction){
             if(reaction === "heart"){
@@ -19,19 +19,6 @@ angular.module('feeder')
             }
         };
 
-        // function getLatestNews(){
-        //     let route = newsAPI.article.endpoint +
-        //                 newsAPI.article.source +
-        //                 "cnn" +
-        //                 newsAPI.and +
-        //                 newsAPI.article.sortBy.top +
-        //                 newsAPI.and +
-        //                 newsAPI.apiKey;
-        //     homeServices.getLatestNews(route)
-        //     .then(function (response) {
-        //         $scope.latestNews = response.data.articles;
-        //     })
-        // }
 
         function getLatestNews(){
             let route = newsAPI.article.endpoint +
