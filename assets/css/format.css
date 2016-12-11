@@ -1,61 +1,69 @@
 /*layout*/
-.flex-down{
+.flex-down {
     display: flex !important;
     flex-flow: column !important;
 }
-.flex-sides{
+
+.flex-sides {
     display: flex !important;
     flex-flow: row !important;
 }
-.text-center{
+
+.text-center {
     text-align: center;
 }
-.text-left{
+
+.text-left {
     text-align: left;
 }
-.text-right{
+
+.text-right {
     text-align: right;
 }
-.block-center{
+
+.block-center {
     margin: 0 auto;
 }
 
-
-
 /*text*/
-.roboto{
+.roboto {
     font-family: 'Roboto';
 }
-.lobster{
+
+.lobster {
     font-family: 'Lobster';
 }
-.baloo{
+
+.baloo {
     font-family: 'Baloo Bhaina', cursive;
 }
-.abril{
+
+.abril {
     font-family: 'Abril Fatface', cursive;
 }
-.fredoka{
+
+.fredoka {
     font-family: 'Fredoka One', cursive;
 }
-.raleway{
+
+.raleway {
     font-family: 'Raleway', sans-serif;
 }
-.exo{
+
+.exo {
     font-family: 'Exo', sans-serif;
 }
-.lucky{
+
+.lucky {
     font-family: 'Luckiest Guy', cursive;
 }
-a, button, a:hover, button:hover{
+
+a, button, a:hover, button:hover {
     text-decoration: none;
 }
-.bold{
+
+.bold {
     font-weight: bold;
 }
-
-
-
-
 
 /*images*/

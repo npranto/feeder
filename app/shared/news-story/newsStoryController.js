@@ -42,7 +42,7 @@ angular.module('feeder')
 
 
 
-        // getLatestNewsJSON();
+        getAllNewsSources();
         // getLatestNews();
 
     })

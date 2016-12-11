@@ -1,4 +1,4 @@
-.home-view{
+.home-view {
     border: 1px solid red;
     margin: 0 auto;
     height: 100VH;
@@ -6,46 +6,43 @@
     justify-content: center;
 }
 
-
-
-.home-view .header-section{
+.home-view .header-section {
     height: 95VH;
     justify-content: space-between;
 }
 
-
-
-.home-view .header-section header{
+.home-view .header-section header {
     height: 20VH;
     justify-content: center;
 }
-.home-view .header-section header img{
+
+.home-view .header-section header img {
     height: 20VH;
     width: auto;
 }
-.home-view .header-section header section{
+
+.home-view .header-section header section {
     justify-content: center;
 }
-.home-view .header-section header nav{
+
+.home-view .header-section header nav {
     justify-content: center;
     overflow: auto;
 }
 
-
-
-.home-view .header-section section{
+.home-view .header-section section {
     height: 75VH;
 }
 
-
-
-.home-view .header-section section .aside-left{
+.home-view .header-section section .aside-left {
     transition: all 0.5s ease;
 }
-.home-view .header-section section .aside-left:hover{
+
+.home-view .header-section section .aside-left:hover {
     z-index: 100;
 }
-.home-view .header-section section .aside-left .TLP-block{
+
+.home-view .header-section section .aside-left .TLP-block {
     width: 100%;
     height: calc((75VH / 3));
     margin: 0px auto;
@@ -56,66 +53,71 @@
     color: gray;
     cursor: pointer;
 }
-.home-view .header-section section .aside-left .TLP-block:hover{
+
+.home-view .header-section section .aside-left .TLP-block:hover {
     transform: scale(1.050);
     background: #F10026;
     color: white;
     width: 125%;
     z-index: 100 !important;
 }
-.home-view .header-section section .aside-left .TLP-block p{
+
+.home-view .header-section section .aside-left .TLP-block p {
     color: slategray;
     font-weight: 300;
 }
-.home-view .header-section section .aside-left .TLP-block:hover p{
+
+.home-view .header-section section .aside-left .TLP-block:hover p {
     font-weight: 300;
     color: white;
 }
 
-.home-view .header-section section .aside-left .TLP-block img{
-    height: calc( (75VH / 3) * 0.25);
+.home-view .header-section section .aside-left .TLP-block img {
+    height: calc((75VH / 3) * 0.25);
     width: auto;
     margin: 5% auto;
     padding: 3%;
     border-radius: 50%;
 }
-.home-view .header-section section .aside-left .TLP-block .TLP-title{
+
+.home-view .header-section section .aside-left .TLP-block .TLP-title {
     /*font-size: calc( (75VH / 3) * 0.125);*/
     font-size: 3VW;
     font-weight: 200;
 }
-.home-view .header-section section .aside-left .TLP-block .TLP-desc{
+
+.home-view .header-section section .aside-left .TLP-block .TLP-desc {
     color: gray;
 }
 
-
-
-.home-view .header-section section .aside-right{
+.home-view .header-section section .aside-right {
     transition: all 0.5s ease;
 }
-.home-view .header-section section .aside-right:hover{
+
+.home-view .header-section section .aside-right:hover {
     z-index: 100;
     transform: scale(1.050);
 }
-.home-view .header-section section .aside-right .categories-title{
+
+.home-view .header-section section .aside-right .categories-title {
     font-size: 1.75VW;;
     font-weight: 100;
     color: black;
     padding: 5%;
     margin: 0px 4%;
 }
-.home-view .header-section section .aside-right .categories{
+
+.home-view .header-section section .aside-right .categories {
     width: auto;
     margin: 0 auto;
     transition: all 0.75s ease;
 }
 
-
-
-.home-view .header-section section article{
+.home-view .header-section section article {
     overflow: auto;
     transition: all 0.75s ease;
 }
-.home-view .header-section section article:hover{
+
+.home-view .header-section section article:hover {
     z-index: 3;
 }

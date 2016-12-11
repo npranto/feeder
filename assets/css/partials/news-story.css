@@ -1,74 +1,83 @@
-.news-story{
-	width: 100%;
-	height: 100%;
+.news-story {
+    width: 100%;
+    height: 100%;
     overflow: auto;
     margin: 0 auto;
 }
-
-
 
 .news-story .news header {
     justify-content: space-between;
     height: 7.5VH;
 }
-.news-story .news header .news-source-info{
+
+.news-story .news header .news-source-info {
     justify-content: flex-start;
 }
-.news-story header .news-source-logo{
+
+.news-story header .news-source-logo {
     justify-content: center;
 }
-.news-story header .news-source-logo img{
+
+.news-story header .news-source-logo img {
     height: 4VW;
     border-radius: 50%;
     width: auto;
 }
-.news-story header .news-source{
+
+.news-story header .news-source {
     justify-content: center;
     padding-left: 5%;
 }
-.news-story header .news-source .news-source-company, .news-story header .news-source .news-source-author{
+
+.news-story header .news-source .news-source-company, .news-story header .news-source .news-source-author {
     margin-bottom: 0px;
 }
-.news-story header .news-source .news-source-company{
+
+.news-story header .news-source .news-source-company {
     font-weight: bold;
     font-size: 2VH;
 }
-.news-story header .news-source .news-source-company a{
+
+.news-story header .news-source .news-source-company a {
     color: #F10026;
     text-decoration: none;
 }
-.news-story header .news-source .news-source-author{
+
+.news-story header .news-source .news-source-author {
     font-size: 1.75VH;
     color: darkgrey;
 }
-.news-story header .share{
+
+.news-story header .share {
     justify-content: center;
 }
-.news-story header .share span{
+
+.news-story header .share span {
     font-size: 2.5VW;
     cursor: pointer;
     color: #F10026;
 }
 
-
-
-.news-story .thumbnail .news-title{
+.news-story .thumbnail .news-title {
     font-size: 2.75VW;
     color: slategray;
     font-weight: 800;
     margin-top: 1.5%;
     margin-bottom: 3%;
 }
-.news-story .thumbnail .news-desc{
+
+.news-story .thumbnail .news-desc {
     color: gray;
     font-size: 1.2VW;
 }
-.news-story .thumbnail .story-reactions-actions{
+
+.news-story .thumbnail .story-reactions-actions {
     justify-content: space-between;
     padding-top: 3%;
     padding-bottom: 3%;
 }
-.news-story .thumbnail .story-reactions-actions .left-reactions i{
+
+.news-story .thumbnail .story-reactions-actions .left-reactions i {
     padding-right: 2.5%;
     font-size: 3VW;
     font-weight: 100;
@@ -78,42 +87,47 @@
     outline: none;
     color: gray;
 }
-.news-story .thumbnail .story-reactions-actions .left-reactions i:hover{
+
+.news-story .thumbnail .story-reactions-actions .left-reactions i:hover {
     color: #8F0303;
 }
-.news-story .thumbnail .story-reactions-actions .left-reactions .reaction-chosen{
+
+.news-story .thumbnail .story-reactions-actions .left-reactions .reaction-chosen {
     color: #8F0303;
     font-weight: 900;
 }
 
-
-
-.news-story .thumbnail .story-reactions-actions .right-actions button{
-		width: 9VW;
-		font-size: 1.5VW;
+.news-story .thumbnail .story-reactions-actions .right-actions button {
+    width: 9VW;
+    font-size: 1.5VW;
     border-radius: 0px;
     margin-left: 0%;
     margin-right: 1.5%;
-		padding: 0px;
+    padding: 0px;
     border: none;
     outline: none;
     transition: all 0.5s ease;
-		text-decoration: none;
-		color: slategray;
+    text-decoration: none;
+    color: slategray;
 }
-.news-story .thumbnail .story-reactions-actions .right-actions button:hover{
-		color: black;
+
+.news-story .thumbnail .story-reactions-actions .right-actions button:hover {
+    color: black;
 }
-.news-story .thumbnail .story-reactions-actions .right-actions .bold{
-		font-weight: bold;
-		color: black;
+
+.news-story .thumbnail .story-reactions-actions .right-actions .bold {
+    font-weight: bold;
+    color: black;
 }
-.news-story .thumbnail .story-reactions-actions .right-actions i{
-		transition: all 0.5s ease;
+
+.news-story .thumbnail .story-reactions-actions .right-actions i {
+    transition: all 0.5s ease;
 }
-.news-story .thumbnail .story-reactions-actions .right-actions .interesting{
+
+.news-story .thumbnail .story-reactions-actions .right-actions .interesting {
     color: blue;
 }
-.news-story .thumbnail .story-reactions-actions .right-actions .save{
+
+.news-story .thumbnail .story-reactions-actions .right-actions .save {
     color: limegreen;
 }
