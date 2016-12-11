@@ -33,16 +33,9 @@ angular.module('feeder')
             })
         }
 
-        function getAllNewsSources(){
-            homeServices.getAllNewsSources()
-            .then(function(response) {
-                console.log(response);
-            })
-        }
 
 
-
-        getAllNewsSources();
+        // getAllNewsSources();
         // getLatestNews();
 
     })
