@@ -21,10 +21,10 @@ const _ = require('lodash');
 const newsSourceJSON = "./../sources/news-sources.json";
 let returnJSON = {};
 
-function getAllNewsSources() {
-    returnJSON = jsonfile.readFileSync(newsSourceJSON);
-    return returnJSON;
-}
+// function getAllNewsSources() {
+//     returnJSON = jsonfile.readFileSync(newsSourceJSON);
+//     return returnJSON;
+// }
 
 function addNewsSourcesIds() {
     jsonfile.readFile(newsSourceJSON, function (err, obj) {
