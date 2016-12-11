@@ -36,17 +36,19 @@
 
 .home-view .header-section section .aside-left {
     transition: all 0.5s ease;
+    /*overflow: auto;*/
+}
+
+.overflow-tlp-blocks{
     overflow: auto;
+    background: red;
 }
 
 .home-view .header-section section .aside-left .news-source-gallery .news-source-block {
     padding: 7.5% 5%;
     cursor: pointer;
     outline: none;
-    transition: all 0.75s;
-}
-.home-view .header-section section .aside-left .news-source-gallery .news-source-block:hover{
-    /*border-left: 10px solid dodgerblue;*/
+    transition: color 0.5s linear;
 }
 
 .home-view .header-section section .aside-left .news-source-gallery img {
