@@ -13,28 +13,28 @@
             <aside layout="column" flex="20" class="aside-left text-center exo">
 
                 <div class="news-source-gallery">
-                    <div layout="column" class="top card card-3" style="z-index: 3">
-                        <img src="assets/img/news-sources/abc-news-au.png" alt="new-source-icon">
+                    <div layout="column" class="news-source-block card" ng-repeat="newsSource in newsSources">
+                        <img ng-src="{{newsSource.newsSourceLogo}}" alt="new-source-icon">
                     </div>
                 </div>
 
-                <div class="TLP">
-                    <div layout="column" class="TLP-block top card card-3" style="z-index: 3">
-                        <img src="assets/img/TLP-blocks/top-news-icon.png" class="card card-5" alt="top-news-icon.png">
-                        <p class="TLP-title"> Top </p>
-                        <!-- <p class="TLP-desc"> Top News in Order </p> -->
-                    </div>
-                    <div layout="column" class="TLP-block latest card card-3" style="z-index: 2">
-                        <img src="assets/img/TLP-blocks/latest-news-icon.png" class="card card-5" alt="latest-news-icon.png">
-                        <p class="TLP-title"> Latest </p>
-                        <!-- <p class="TLP-desc"> Sorted in Chronological Order, Newest First </p> -->
-                    </div>
-                    <div layout="column" class="TLP-block popular card card-3" style="z-index: 1">
-                        <img src="assets/img/TLP-blocks/popular-news-icon.png" class="card card-5" alt="popular-news-icon.png">
-                        <p class="TLP-title"> Popular </p>
-                        <!-- <p class="TLP-desc"> Most Popular or Currently Trending  </p> -->
-                    </div>
-                </div>
+                <!--<div class="TLP">-->
+                    <!--<div layout="column" class="TLP-block top card card-3" style="z-index: 3">-->
+                        <!--<img src="assets/img/TLP-blocks/top-news-icon.png" class="card card-5" alt="top-news-icon.png">-->
+                        <!--<p class="TLP-title"> Top </p>-->
+                        <!--&lt;!&ndash; <p class="TLP-desc"> Top News in Order </p> &ndash;&gt;-->
+                    <!--</div>-->
+                    <!--<div layout="column" class="TLP-block latest card card-3" style="z-index: 2">-->
+                        <!--<img src="assets/img/TLP-blocks/latest-news-icon.png" class="card card-5" alt="latest-news-icon.png">-->
+                        <!--<p class="TLP-title"> Latest </p>-->
+                        <!--&lt;!&ndash; <p class="TLP-desc"> Sorted in Chronological Order, Newest First </p> &ndash;&gt;-->
+                    <!--</div>-->
+                    <!--<div layout="column" class="TLP-block popular card card-3" style="z-index: 1">-->
+                        <!--<img src="assets/img/TLP-blocks/popular-news-icon.png" class="card card-5" alt="popular-news-icon.png">-->
+                        <!--<p class="TLP-title"> Popular </p>-->
+                        <!--&lt;!&ndash; <p class="TLP-desc"> Most Popular or Currently Trending  </p> &ndash;&gt;-->
+                    <!--</div>-->
+                <!--</div>-->
 
             </aside>
 
