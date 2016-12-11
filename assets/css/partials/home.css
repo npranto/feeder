@@ -45,10 +45,13 @@
 .home-view .header-section section .aside-left .news-source-gallery {
     overflow: auto;
 }
-.home-view .header-section section .aside-left .news-source-gallery .news-source-block{
-    padding: 5%;
+
+.home-view .header-section section .aside-left .news-source-gallery .news-source-block {
+    padding: 7.5% 5%;
+    cursor: pointer;
 }
-.home-view .header-section section .aside-left .news-source-gallery img{
+
+.home-view .header-section section .aside-left .news-source-gallery img {
     width: 100%;
     height: 100%;
 }
