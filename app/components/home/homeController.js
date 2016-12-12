@@ -3,6 +3,8 @@ angular.module('feeder')
     	// navigation newscategories
     	$scope.newsCategories = ["Business", "Entertainment", "Gaming", "General", "Music", "Science & Nature", "Sport", "Technology"];
 
+        $scope.isLoading = false;
+
         $scope.changeReactionStatus = function(reaction){
             if(reaction === "heart"){
                 console.log($scope.content);
@@ -44,21 +46,26 @@ angular.module('feeder')
         }
         
         function getNewsBySourceId(sourceId) {
-            homeServices.getAllNewsSources()
-            .then(function(response) {
-                let newsSources = response.data.newsSources;
-                _.map(newsSources, function (newsSourceObj) {
-                    if(newsSourceObj.sourceId === sourceId){
-                        console.log(newsSourceObj);
-                        $scope.newsSource = newsSourceObj;
-                        homeServices.getNewsFromSource(newsSourceObj.newsSourceFormat)
-                            .then(function (response) {
-                                $scope.articles = response.data.articles;
-                                console.log(response);
-                            })
-                    }
-                })
-            })
+    	    $scope.isLoading = true;
+            setTimeout(function(){
+                homeServices.getAllNewsSources()
+                    .then(function(response) {
+                        let newsSources = response.data.newsSources;
+                        _.map(newsSources, function (newsSourceObj) {
+                            if(newsSourceObj.sourceId === sourceId){
+                                console.log(newsSourceObj);
+                                $scope.newsSource = newsSourceObj;
+                                homeServices.getNewsFromSource(newsSourceObj.newsSourceFormat)
+                                    .then(function (response) {
+                                        $scope.isLoading = false;
+                                        $scope.articles = response.data.articles;
+                                        console.log(response);
+                                    })
+                            }
+                        })
+                    })
+            },3000);
+
         }
 
     	function getAllNewsSources(){
