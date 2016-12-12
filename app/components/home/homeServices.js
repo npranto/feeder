@@ -10,7 +10,7 @@ angular.module('feeder')
             return $http.get(latestNewsRoute);
         }
 
-        this.getNewsFromSource = function (newsSourceFormat){
+        this.getNewsFromSource = function (newsSourceFormat) {
             let route = newsAPI.article.endpoint +
                 newsAPI.article.source +
                 newsSourceFormat +
@@ -19,8 +19,6 @@ angular.module('feeder')
                 newsAPI.and +
                 newsAPI.apiKey;
             return $http.get(route);
-
         }
-
 
     })
