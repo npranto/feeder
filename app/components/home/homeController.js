@@ -50,8 +50,10 @@ angular.module('feeder')
                 _.map(newsSources, function (newsSourceObj) {
                     if(newsSourceObj.sourceId === sourceId){
                         console.log(newsSourceObj);
+                        $scope.newsSource = newsSourceObj;
                         homeServices.getNewsFromSource(newsSourceObj.newsSourceFormat)
                             .then(function (response) {
+                                $scope.articles = response.data.articles;
                                 console.log(response);
                             })
                     }

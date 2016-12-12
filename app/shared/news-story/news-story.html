@@ -1,17 +1,17 @@
 <div class="row news-story">
 
-    <div class="news col-sm-12 col-md-12 col-lg-12" ng-repeat="story in latestNews">
+    <div class="news col-sm-12 col-md-12 col-lg-12" ng-repeat="story in articles">
 
         <header class="flex-sides">
             <div class="news-source-info flex-sides">
 
                 <div class="news-source-logo flex-down">
-                    <img src="assets/img/feeder-logo.png" alt="news-source-logo.png">
+                    <img ng-src="{{newsSource.newsSourceLogo}}" alt="news-source-logo.png">
                 </div>
 
                 <div class="news-source flex-down">
                     <p class="news-source-company exo">
-                        <a href=""> CNN </a>
+                        <a href=""> {{newsSource.newsSourceTitle}} </a>
                     </p>
                     <p class="news-source-author exo"> {{story.author}} </p>
                 </div>
