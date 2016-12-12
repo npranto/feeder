@@ -3,7 +3,7 @@ angular.module('feeder')
     	// navigation newscategories
     	$scope.newsCategories = ["Business", "Entertainment", "Gaming", "General", "Music", "Science & Nature", "Sport", "Technology"];
 
-        $scope.isLoading = false;
+        // $scope.isLoading = false;
 
         $scope.changeReactionStatus = function(reaction){
             if(reaction === "heart"){
@@ -64,8 +64,7 @@ angular.module('feeder')
                             }
                         })
                     })
-            },3000);
-
+            },1500);
         }
 
     	function getAllNewsSources(){
@@ -76,6 +75,5 @@ angular.module('feeder')
             })
         }
 
-        // getNewsBySourceId();
         getAllNewsSources();
     })
