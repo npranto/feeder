@@ -1,10 +1,16 @@
 Structure of Feeder
 
     app/
+
+    ----- APIs/
+    ---------- news-api/
+    --------------- news-api.md
+    --------------- newsAPI.js
+    ----- app.loaders/
+    ---------- includeLodashLibrary.js
     ----- shared/   // acts as reusable components or partials of our site
     ---------- news-story/
     --------------- newsStoryDirective.js
-    --------------- newsStoryController.js
     --------------- news-story.html
     ----- components/   // each component is treated as a mini view
     ---------- home/
@@ -15,11 +21,12 @@ Structure of Feeder
     ----- app.routes.js
     assets/
     ----- img/      // Images and icons for your app
-    ---------- cnn.png
+    ---------- news-sources/[ALL NEWS SOURCE LOGOS]
+    ---------- TLP-blocks/
+    --------------- latest-news-icon.png
+    --------------- popular-news-icon.png
+    --------------- top-news-icon.png
     ---------- feeder-logo.png
-    ---------- latest-news-icon.png.png
-    ---------- popular-news-icon.png
-    ---------- top-news-icon.png    
     ----- css/      // All styles and style related files (SCSS or LESS files)
     ---------- partials/
     --------------- home.css
@@ -27,6 +34,13 @@ Structure of Feeder
     ---------- format.css
     ---------- main.css
     ---------- material-box-shadows.css
-    ----- js/       // JavaScript files written for your app that are not for angular
-    ----- libs/     // Third-party libraries such as jQuery, Moment, Underscore, etc.
+    ----- scripts/      // All local scripts to run locally on the command line
+    ---------- node_modules/
+    ---------- package.json
+    ---------- populateNewsSources.js
+    node_modules/
+    README
+    ----- structure.md   // map of file structure of feeder
+    .gitignore
     index.html
+    package.json
