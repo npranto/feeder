@@ -34,6 +34,8 @@ angular.module('feeder')
                 $scope.latestNews = response.data.articles;
             })
         }
+        
+
 
 
 
