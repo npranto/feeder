@@ -40,13 +40,24 @@ angular.module('feeder')
                                 homeServices.getNewsFromSource(newsSourceObj.newsSourceFormat)
                                     .then(function (response) {
                                         $scope.articles = response.data.articles;
-                                        console.log(response);
+                                        // $scope.articles = formatNewsStoryDescriptions($scope.articles);
+                                        // console.log(">>>>>>>>>>>>>>>>>>>>>>>>", $scope.articles);
                                     })
                             }
                         })
                     })
             }, 1500);
         }
+
+        // function formatNewsStoryDescriptions(articles) {
+        //     return _.map(articles, function (story) {
+        //         let currDescription = story.description;
+        //         currDescription = _.trimEnd(currDescription, '...');
+        //         currDescription = _.trimEnd(currDescription, '.');
+        //         currDescription = currDescription + "... ";
+        //         story.description = currDescription;
+        //     })
+        // }
 
         function getAllNewsSources() {
             homeServices.getAllNewsSources()
