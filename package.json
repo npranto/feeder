@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "go": "npm install",
-    "go-deep": "npm install assets/scripts/"
+    "bundle": "webpack"
   },
   "author": "Nazmuz Shakib Pranto",
   "license": "ISC",
@@ -22,6 +21,7 @@
     "hover.css": "^2.0.2",
     "jquery": "1.9.1",
     "jsonfile": "^2.4.0",
-    "lodash": "^4.17.2"
+    "lodash": "^4.17.2",
+    "webpack": "^1.14.0"
   }
 }
