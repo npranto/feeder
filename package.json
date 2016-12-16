@@ -4,7 +4,9 @@
   "description": "Feeder - All You Need to Know",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "go": "npm install",
+    "go-deep": "npm install assets/scripts/"
   },
   "author": "Nazmuz Shakib Pranto",
   "license": "ISC",
