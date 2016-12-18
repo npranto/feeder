@@ -4,7 +4,10 @@
   "description": "Feeder - All You Need to Know",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "main": "npm install",
+    "local": "cd assets/scripts && npm install",
+    "all": "npm run main && npm run local"
   },
   "author": "Nazmuz Shakib Pranto",
   "license": "ISC",
@@ -17,9 +20,10 @@
     "angular-ui-router": "^0.3.2",
     "animate.css": "^3.5.2",
     "bootstrap": "^3.3.7",
+    "concurrently": "^3.1.0",
     "hover.css": "^2.0.2",
     "jquery": "1.9.1",
     "jsonfile": "^2.4.0",
-    "lodash": "^4.17.2",
+    "lodash": "^4.17.2"
   }
 }
