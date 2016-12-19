@@ -4,7 +4,10 @@
   "description": "Feeder - All You Need to Know",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "main": "npm install",
+    "local": "cd assets/scripts/ && npm install",
+    "all": "npm run main && npm run local"
   },
   "author": "Nazmuz Shakib Pranto",
   "license": "ISC",
