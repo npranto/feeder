@@ -4,7 +4,7 @@ import uirouter from 'angular-ui-router';
 import routing from './ex.routes';
 import ExController from './ex.controller';
 
-export default angular.module('app.ex', [uirouter])
+export default angular.module('feeder.ex', [uirouter])
   .config(routing)
   .controller('ExController', ExController)
   .name;
