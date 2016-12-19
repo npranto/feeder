@@ -68,4 +68,53 @@ angular.module('feeder')
         }
 
         getAllNewsSources();
+
     })
+
+
+
+
+
+HomeController.$inject = [$scope, $mdDialog, $rootScope, homeServices, _];
+
+export default class HomeController {
+    constructor() {
+        this.newsCategories = [
+            "Business",
+            "Entertainment",
+            "Gaming",
+            "General",
+            "Music",
+            "Science & Nature",
+            "Sport",
+            "Technology"
+        ],
+        this.changeReactionStatus = changeReactionStatus,
+
+        $scope.changeActionStatus = function (action) {
+            if (action === "interesting") {
+                $scope.showInterest = !$scope.showInterest;
+            } else {
+                $scope.saveNewsStory = !$scope.saveNewsStory;
+            }
+        };
+
+
+
+    }
+
+    changeReactionStatus (reaction) {
+        if (reaction === "heart") {
+            console.log($scope.content);
+            $scope.disableHeart = !$scope.disableHeart;
+            $scope.disableDislike = false;
+        } else {
+            $scope.disableDislike = !$scope.disableDislike;
+            $scope.disableHeart = false;
+        }
+    };
+
+    changeName() {
+        this.name = 'angular-tips';
+    }
+}
