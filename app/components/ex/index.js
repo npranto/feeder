@@ -1,10 +1,10 @@
 import angular from 'angular';
-import uirouter from 'angular-ui-router';
+import uiRouter from 'angular-ui-router';
 
-import routing from './ex.routes';
+import routes from './ex.routes';
 import ExController from './ex.controller';
 
-export default angular.module('feeder.ex', [uirouter])
-  .config(routing)
+export default angular.module('feeder.ex', [uiRouter])
+  .config(routes)
   .controller('ExController', ExController)
   .name;
