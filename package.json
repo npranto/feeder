@@ -4,10 +4,7 @@
   "description": "Feeder - All You Need to Know",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "main": "npm install",
-    "local": "cd assets/scripts && npm install",
-    "all": "npm run main && npm run local"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Nazmuz Shakib Pranto",
   "license": "ISC",
@@ -20,7 +17,6 @@
     "angular-ui-router": "^0.3.2",
     "animate.css": "^3.5.2",
     "bootstrap": "^3.3.7",
-    "concurrently": "^3.1.0",
     "hover.css": "^2.0.2",
     "jquery": "1.9.1",
     "jsonfile": "^2.4.0",
@@ -30,8 +26,6 @@
     "babel-core": "^6.21.0",
     "babel-loader": "^6.2.10",
     "babel-preset-es2015": "^6.18.0",
-    "html-loader": "^0.4.4",
-    "path": "^0.12.7",
     "webpack": "^1.14.0"
   }
 }

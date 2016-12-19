@@ -1,31 +1,13 @@
-// angular.module('feeder')
-//     .config(function ($stateProvider, $urlRouterProvider) {
-//
-//         $urlRouterProvider.otherwise('/');
-//
-//         $stateProvider
-//             .state('home', {
-//                 url: '/',
-//                 templateUrl: 'app/components/home/home-view.html',
-//                 controller: 'homeController'
-//             })
-//
-//     });
+angular.module('feeder')
+    .config(function ($stateProvider, $urlRouterProvider) {
 
-import './components/home/home-view.html';
+        $urlRouterProvider.otherwise('/');
 
-routing.$inject = ['$urlRouterProvider', '$locationProvider', '$stateProvider'];
+        $stateProvider
+            .state('home', {
+                url: '/',
+                templateUrl: 'app/components/home/home-view.html',
+                controller: 'homeController'
+            })
 
-export default function routing($urlRouterProvider, $locationProvider, $stateProvider) {
-    $locationProvider.html5Mode(true);
-
-    $urlRouterProvider.otherwise('/');
-
-    $stateProvider
-        .state('home', {
-            url: '/',
-            template: homeView,
-            controller: 'homeController',
-            controllerAs: 'home'
-        })
-}
+    });
