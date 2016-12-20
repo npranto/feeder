@@ -62,10 +62,43 @@
 
 
 export default class HomeController{
+
     constructor(){
-        this.name = "?"
+   		this.newsCategories = [
+   			"Business", 
+   			"Entertainment", 
+   			"Gaming", 
+   			"General", 
+   			"Music", 
+   			"Science & Nature", 
+   			"Sport", 
+   			"Technology"
+   		];
+   		console.log(this.newsCategories);
     }
-    save(){
-        this.name = "Shakib...";
-    }
+
+    
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -4,10 +4,10 @@
   "description": "Feeder - All You Need to Know",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "main": "npm install",
     "local": "cd assets/scripts/ && npm install",
-    "all": "npm run main && npm run local"
+    "all": "npm run main && npm run local",
+    "start": "webpack-dev-server --progress --colors"
   },
   "author": "Nazmuz Shakib Pranto",
   "license": "ISC",
@@ -32,6 +32,7 @@
     "css-loader": "^0.26.1",
     "html-loader": "^0.4.4",
     "style-loader": "^0.13.1",
-    "webpack": "^1.14.0"
+    "webpack": "^1.14.0",
+    "webpack-dev-server": "^1.16.2"
   }
 }
