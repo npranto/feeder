@@ -60,10 +60,12 @@
 //         getAllNewsSources();
 //     })
 
+
 export default class HomeController{
     constructor(){
+        this.name = "?"
     }
-
-
-
+    save(){
+        this.name = "Shakib...";
+    }
 }
