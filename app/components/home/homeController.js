@@ -61,23 +61,36 @@
 //     })
 
 
-export default class HomeController{
+export default class HomeController {
 
-    constructor(){
-   		this.newsCategories = [
-   			"Business", 
-   			"Entertainment", 
-   			"Gaming", 
-   			"General", 
-   			"Music", 
-   			"Science & Nature", 
-   			"Sport", 
-   			"Technology"
-   		];
-   		console.log(this.newsCategories);
-    }
+	constructor() {
+		this.newsCategories = [
+			"Business",
+			"Entertainment",
+			"Gaming",
+			"General",
+			"Music",
+			"Science & Nature",
+			"Sport",
+			"Technology"
+		];
+		console.log('newsCategories', this.newsCategories);
 
-    
+	}
+
+	changeReactionStatus(reaction) {
+		if (reaction === "heart") {
+			this.disableHeart = !this.disableHeart;
+			this.disableDislike = false;
+		} else {
+			this.disableDislike = !this.disableDislike;
+			this.disableHeart = false;
+		}
+		console.log(this.disableHeart);
+		console.log(this.disableDislike);
+	}
+
+
 }
 
 
