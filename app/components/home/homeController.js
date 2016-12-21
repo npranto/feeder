@@ -90,8 +90,52 @@ export default class HomeController {
 		console.log(this.disableDislike);
 	}
 
+	changeActionStatus(action) {
+		if (action === "interesting") {
+			this.showInterest = !this.showInterest;
+		} else {
+			this.saveNewsStory = !this.saveNewsStory;
+		}
+	};
+
+
+	alterTLPGalleryDisplay(sourceId) {
+		this.showNewsSourcesGallery = !this.showNewsSourcesGallery;
+		this.getNewsBySourceId(sourceId);
+	}
+
+	getNewsBySourceId(sourceId) {
+		// setTimeout(function () {
+		// 	homeServices.getAllNewsSources()
+		// 	.then(function (response) {
+		// 		let newsSources = response.data.newsSources;
+		// 		_.map(newsSources, function (newsSourceObj) {
+		// 			if (newsSourceObj.sourceId === sourceId) {
+		// 				console.log(newsSourceObj);
+		// 				$scope.newsSource = newsSourceObj;
+		// 				homeServices.getNewsFromSource(newsSourceObj.newsSourceFormat)
+		// 				.then(function (response) {
+		// 					$scope.articles = response.data.articles;
+		// 					// $scope.articles = formatNewsStoryDescriptions($scope.articles);
+		// 					// console.log(">>>>>>>>>>>>>>>>>>>>>>>>", $scope.articles);
+		// 				})
+		// 			}
+		// 		})
+		// 	})
+		// }, 1500);
+	}
+
+	static getAllNewsSources() {
+		// homeServices.getAllNewsSources()
+		// .then(function (response) {
+		// 	$scope.newsSources = response.data.newsSources;
+		// 	console.log($scope.newsSources);
+		// })
+	}
 
 }
+
+HomeController.getAllNewsSources();
 
 
 
