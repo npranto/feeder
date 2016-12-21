@@ -63,7 +63,8 @@
 
 export default class HomeController {
 
-	constructor() {
+	constructor(HomeServices) {
+		this.HomeServices = HomeServices;
 		this.newsCategories = [
 			"Business",
 			"Entertainment",
@@ -125,17 +126,18 @@ export default class HomeController {
 		// }, 1500);
 	}
 
-	static getAllNewsSources() {
-		// homeServices.getAllNewsSources()
-		// .then(function (response) {
-		// 	$scope.newsSources = response.data.newsSources;
-		// 	console.log($scope.newsSources);
-		// })
+	getAllNewsSources() {
+		this.HomeServices.getAllNewsSources()
+		.then(function (response) {
+			// this.newsSources = response.data.newsSources;
+			console.log(response);
+		})
 	}
 
 }
 
-HomeController.getAllNewsSources();
+HomeController.$inject = ['HomeServices'];
+
 
 
 
