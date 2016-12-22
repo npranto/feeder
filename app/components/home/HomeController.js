@@ -60,12 +60,12 @@
 //         getAllNewsSources();
 //     })
 
-import Promise from 'promise';
 
 export default class HomeController {
 
 	constructor(HomeServices) {
 		this.HomeServices = HomeServices;
+
 		this.newsCategories = [
 			"Business",
 			"Entertainment",
@@ -78,6 +78,8 @@ export default class HomeController {
 		];
 		console.log('newsCategories', this.newsCategories);
 
+
+		this.getAllNewsSources()
 
 	}
 
@@ -129,13 +131,15 @@ export default class HomeController {
 	}
 
 	getAllNewsSources() {
-		this.HomeServices.getAllNewsSources()
-		.then(function (response) {
-			// this.newsSources = response.data.newsSources;
-			console.log(response);
-			this.newsSources = response.data.newsSources;
-		})
-	}
+		// return new Promise((resolve, reject) => {
+				this.HomeServices.getAllNewsSources()
+				.then((response) => {
+					// resolve(response.data.newsSources);
+					this.newsSources = response.data.newsSources;
+				})
+			}
+		// )
+
 
 }
 
