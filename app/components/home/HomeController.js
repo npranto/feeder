@@ -60,6 +60,7 @@
 //         getAllNewsSources();
 //     })
 
+import Promise from 'promise';
 
 export default class HomeController {
 
@@ -76,6 +77,7 @@ export default class HomeController {
 			"Technology"
 		];
 		console.log('newsCategories', this.newsCategories);
+
 
 	}
 
@@ -131,6 +133,7 @@ export default class HomeController {
 		.then(function (response) {
 			// this.newsSources = response.data.newsSources;
 			console.log(response);
+			this.newsSources = response.data.newsSources;
 		})
 	}
 
