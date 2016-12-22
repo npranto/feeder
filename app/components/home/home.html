@@ -79,9 +79,12 @@
 
 </div> -->
 
-<h1>
-    <button ng-click="home.getAllNewsSources()"> NEWS </button>
-</h1>
+<button ng-click="home.getAllNewsSources()"> NEWS </button>
+
+<ui ng-repeat="news in home.newsSources">
+    <li> Hello </li>
+    <li> {{news.newsSourceFormat}} </li>
+</ui>
 
 
 
