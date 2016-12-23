@@ -25,8 +25,9 @@
 
 
 export default class HomeServices {
-	constructor($http) {
+	constructor($http, NewsAPI) {
 		this.$http = $http;
+		this.NewsAPI = NewsAPI;
 	}
 
 	getAllNewsSources() {
@@ -39,15 +40,15 @@ export default class HomeServices {
 	}
 
 	getNewsFromSource (newsSourceFormat) {
-		let route = newsAPI.article.endpoint +
-			newsAPI.article.source +
+		let route = this.NewsAPI.article.endpoint +
+			this.NewsAPI.article.source +
 			newsSourceFormat +
-			newsAPI.and +
-			newsAPI.article.sortBy.top +
-			newsAPI.and +
-			newsAPI.apiKey;
+			this.NewsAPI.and +
+			this.NewsAPI.article.sortBy.top +
+			this.NewsAPI.and +
+			this.NewsAPI.apiKey;
 		return this.$http.get(route);
 	}
 }
 
-HomeServices.$inject = ['$http'];
+HomeServices.$inject = ['$http', 'NewsAPI'];

@@ -64,6 +64,7 @@
 export default class HomeController {
 
 	constructor(HomeServices) {
+
 		this.HomeServices = HomeServices;
 
 		this.newsCategories = [
@@ -78,7 +79,6 @@ export default class HomeController {
 		];
 		console.log('newsCategories', this.newsCategories);
 
-
 		this.getAllNewsSources()
 
 	}
@@ -91,8 +91,6 @@ export default class HomeController {
 			this.disableDislike = !this.disableDislike;
 			this.disableHeart = false;
 		}
-		console.log(this.disableHeart);
-		console.log(this.disableDislike);
 	}
 
 	changeActionStatus(action) {
@@ -110,23 +108,36 @@ export default class HomeController {
 	}
 
 	getNewsBySourceId(sourceId) {
-		setTimeout(function () {
+		// setTimeout(function () {
 			this.HomeServices.getAllNewsSources()
-			.then(function (response) {
+			.then((response) => {
 				let newsSources = response.data.newsSources;
-				_.map(newsSources, function (newsSourceObj) {
+
+				// for(let i=0; i<newsSources.length; i++){
+				// 	if (newsSources[i].sourceId === sourceId) {
+				// 		// console.log(newsSourceObj);
+				// 		this.source = newsSources[i];
+				// 		console.log(this.source);
+				// 	}
+				// }
+
+				_.map(newsSources, (newsSourceObj) => {
 					if (newsSourceObj.sourceId === sourceId) {
 						// console.log(newsSourceObj);
 						this.newsSource = newsSourceObj;
+						console.log(this.newsSource);
+
 						this.HomeServices.getNewsFromSource(newsSourceObj.newsSourceFormat)
-						.then(function (response) {
-							console.log('response', response);
+						.then((response) => {
+							console.log(response);
 							this.articles = response.data.articles;
+							console.log(this.articles);
 						})
 					}
 				})
+
 			})
-		}, 1500);
+		// }, 1500);
 	}
 
 	getAllNewsSources() {
