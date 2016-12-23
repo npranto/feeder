@@ -11,12 +11,12 @@
             <div class="news-source-info flex-sides">
 
                 <div class="news-source-logo flex-down">
-                    <img ng-src="{{newsSource.newsSourceLogo}}" alt="news-source-logo.png">
+                    <img ng-src="{{home.newsSource.newsSourceLogo}}" alt="news-source-logo.png">
                 </div>
 
                 <div class="news-source flex-down">
                     <p class="news-source-company exo">
-                        <a href=""> {{newsSource.newsSourceTitle}} </a>
+                        <a ng-href=""> {{home.newsSource.newsSourceTitle}} </a>
                     </p>
                     <p class="news-source-author exo"> {{story.author}} </p>
                 </div>
@@ -45,9 +45,9 @@
                                 class="heart fa fa-heart-o button"
                                 aria-hidden="true"
                                 ng-class="{
-                                'reaction-chosen': disableHeart,
-                                animated: disableHeart,
-                                pulse: disableHeart,
+                                'reaction-chosen': home.disableHeart,
+                                animated: home.disableHeart,
+                                pulse: home.disableHeart,
                             }"
                                 ng-click="home.changeReactionStatus('heart')">
                         </i>
@@ -56,9 +56,9 @@
                                 class="dislike fa fa-thumbs-o-down button"
                                 aria-hidden="true"
                                 ng-class="{
-                                'reaction-chosen': disableDislike,
-                                animated: disableDislike,
-                                swing: disableDislike
+                                'reaction-chosen': home.disableDislike,
+                                animated: home.disableDislike,
+                                swing: home.disableDislike
                             }"
                                 ng-click="home.changeReactionStatus('dislike')">
                         </i>
@@ -70,10 +70,10 @@
                                     class="fa fa-lightbulb-o"
                                     aria-hidden="true"
                                     ng-class="{
-                                animated: showInterest,
-                                tada: showInterest,
-                                interesting: showInterest,
-                                'fa-lg': showInterest,
+                                animated: home.showInterest,
+                                tada: home.showInterest,
+                                interesting: home.showInterest,
+                                'fa-lg': home.showInterest,
                             }">
                             </i>
                             Interesting
@@ -83,10 +83,10 @@
                                     class="fa fa-check"
                                     aria-hidden="true"
                                     ng-class="{
-                                animated: saveNewsStory,
-                                tada: saveNewsStory,
-                                save: saveNewsStory,
-                                'fa-lg': saveNewsStory
+                                animated: home.saveNewsStory,
+                                tada: home.saveNewsStory,
+                                save: home.saveNewsStory,
+                                'fa-lg': home.saveNewsStory
                             }">
                             </i>
                             Save

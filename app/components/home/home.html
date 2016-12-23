@@ -18,7 +18,7 @@
                     <div layout="column"
                          class="news-source-block card button hvr-bob"
                          ng-repeat="newsSource in home.newsSources"
-                         ng-click="alterTLPGalleryDisplay(newsSource.sourceId)">
+                         ng-click="home.alterTLPGalleryDisplay(newsSource.sourceId)">
                          <span>
                             <img ng-src="{{newsSource.newsSourceLogo}}" alt="{{newsSource.newsSourceTitle}}">
                             <md-tooltip md-direction="right">
@@ -35,13 +35,13 @@
                         <p class="TLP-title"> Top </p>
                     </div>
                     <div layout="column" class="TLP-block latest card card-3 animated slideInLeft" style="z-index: 2"
-                         ng-click="alterTLPGalleryDisplay()">
+                         ng-click="home.alterTLPGalleryDisplay()">
                         <img ng-src="assets/img/TLP-blocks/latest-news-icon.png" class="card card-5"
                              alt="latest-news-icon.png">
                         <p class="TLP-title"> Latest </p>
                     </div>
                     <div layout="column" class="TLP-block popular card card-3 animated slideInDown" style="z-index: 1"
-                         ng-click="alterTLPGalleryDisplay()">
+                         ng-click="home.alterTLPGalleryDisplay()">
                         <img ng-src="assets/img/TLP-blocks/popular-news-icon.png" class="card card-5"
                              alt="popular-news-icon.png">
                         <p class="TLP-title"> Popular </p>
