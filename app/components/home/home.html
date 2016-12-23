@@ -1,4 +1,4 @@
-<!-- <div layout="column" class="home-view flex-down">
+<div layout="column" class="home-view flex-down">
 
     <div class="header-section flex-down">
 
@@ -11,13 +11,13 @@
         <section layout="row">
 
             <aside layout="column" flex="20" class="aside-left text-center exo card card-3" ng-class="{
-                                'overflow-tlp-blocks': !showNewsSourcesGallery
+                                'overflow-tlp-blocks': !home.showNewsSourcesGallery
                             }">
 
-                <div class="news-source-gallery" ng-hide="showNewsSourcesGallery">
+                <div class="news-source-gallery" ng-hide="home.showNewsSourcesGallery">
                     <div layout="column"
                          class="news-source-block card button hvr-bob"
-                         ng-repeat="newsSource in newsSources"
+                         ng-repeat="newsSource in home.newsSources"
                          ng-click="alterTLPGalleryDisplay(newsSource.sourceId)">
                          <span>
                             <img ng-src="{{newsSource.newsSourceLogo}}" alt="{{newsSource.newsSourceTitle}}">
@@ -28,9 +28,9 @@
                     </div>
                 </div>
 
-                <div class="TLP" ng-show="showNewsSourcesGallery">
+                <div class="TLP" ng-show="home.showNewsSourcesGallery">
                     <div layout="column" class="TLP-block top card card-3 animated slideInUp" style="z-index: 3"
-                         ng-click="alterTLPGalleryDisplay()">
+                         ng-click="home.alterTLPGalleryDisplay()">
                         <img ng-src="assets/img/TLP-blocks/top-news-icon.png" class="card card-5" alt="top-news-icon.png">
                         <p class="TLP-title"> Top </p>
                     </div>
@@ -66,7 +66,7 @@
                     <md-button
                             class="md-primary text-left button hvr-grow hvr-sweep-to-left"
                             style="transition: all 0.5s ease; font-size: 1.50VW; padding: 1.50%; margin: 1.50%;"
-                            ng-repeat="category in newsCategories">
+                            ng-repeat="category in home.newsCategories">
                         {{category}}
                     </md-button>
                 </div>
@@ -77,13 +77,10 @@
 
     </div>
 
-</div> -->
+</div>
 
-<!--<button ng-click="home.getAllNewsSources()"> NEWS </button>-->
 
-<ul ng-repeat="news in home.newsSources">
-    <li> {{news.newsSourceFormat}} </li>
-</ul>
+
 
 
 

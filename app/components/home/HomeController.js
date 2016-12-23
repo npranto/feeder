@@ -110,35 +110,31 @@ export default class HomeController {
 	}
 
 	getNewsBySourceId(sourceId) {
-		// setTimeout(function () {
-		// 	homeServices.getAllNewsSources()
-		// 	.then(function (response) {
-		// 		let newsSources = response.data.newsSources;
-		// 		_.map(newsSources, function (newsSourceObj) {
-		// 			if (newsSourceObj.sourceId === sourceId) {
-		// 				console.log(newsSourceObj);
-		// 				$scope.newsSource = newsSourceObj;
-		// 				homeServices.getNewsFromSource(newsSourceObj.newsSourceFormat)
-		// 				.then(function (response) {
-		// 					$scope.articles = response.data.articles;
-		// 					// $scope.articles = formatNewsStoryDescriptions($scope.articles);
-		// 					// console.log(">>>>>>>>>>>>>>>>>>>>>>>>", $scope.articles);
-		// 				})
-		// 			}
-		// 		})
-		// 	})
-		// }, 1500);
+		setTimeout(function () {
+			this.HomeServices.getAllNewsSources()
+			.then(function (response) {
+				let newsSources = response.data.newsSources;
+				_.map(newsSources, function (newsSourceObj) {
+					if (newsSourceObj.sourceId === sourceId) {
+						// console.log(newsSourceObj);
+						this.newsSource = newsSourceObj;
+						this.HomeServices.getNewsFromSource(newsSourceObj.newsSourceFormat)
+						.then(function (response) {
+							console.log('response', response);
+							this.articles = response.data.articles;
+						})
+					}
+				})
+			})
+		}, 1500);
 	}
 
 	getAllNewsSources() {
-		// return new Promise((resolve, reject) => {
-				this.HomeServices.getAllNewsSources()
-				.then((response) => {
-					// resolve(response.data.newsSources);
-					this.newsSources = response.data.newsSources;
-				})
-			}
-		// )
+		this.HomeServices.getAllNewsSources()
+		.then((response) => {
+			this.newsSources = response.data.newsSources;
+		})
+	}
 
 
 }

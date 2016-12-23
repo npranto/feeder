@@ -34,19 +34,19 @@ export default class HomeServices {
 	}
 
 	getLatestNews(latestNewsRoute) {
-		// console.log(latestNewsRoute);
-		// return this.$http.get(latestNewsRoute);
+		console.log(latestNewsRoute);
+		return this.$http.get(latestNewsRoute);
 	}
 
 	getNewsFromSource (newsSourceFormat) {
-		// let route = newsAPI.article.endpoint +
-		// 	newsAPI.article.source +
-		// 	newsSourceFormat +
-		// 	newsAPI.and +
-		// 	newsAPI.article.sortBy.top +
-		// 	newsAPI.and +
-		// 	newsAPI.apiKey;
-		// return this.$http.get(route);
+		let route = newsAPI.article.endpoint +
+			newsAPI.article.source +
+			newsSourceFormat +
+			newsAPI.and +
+			newsAPI.article.sortBy.top +
+			newsAPI.and +
+			newsAPI.apiKey;
+		return this.$http.get(route);
 	}
 }
 

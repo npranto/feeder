@@ -5,7 +5,7 @@
     <!--<h3 class="text-center exo"> Loading... </h3>-->
     <!--</div>-->
 
-    <div class="news col-sm-12 col-md-12 col-lg-12" ng-repeat="story in articles">
+    <div class="news col-sm-12 col-md-12 col-lg-12" ng-repeat="story in home.articles">
 
         <header class="flex-sides">
             <div class="news-source-info flex-sides">
@@ -49,7 +49,7 @@
                                 animated: disableHeart,
                                 pulse: disableHeart,
                             }"
-                                ng-click="changeReactionStatus('heart')">
+                                ng-click="home.changeReactionStatus('heart')">
                         </i>
                         <i
                                 ng-init=""
@@ -60,12 +60,12 @@
                                 animated: disableDislike,
                                 swing: disableDislike
                             }"
-                                ng-click="changeReactionStatus('dislike')">
+                                ng-click="home.changeReactionStatus('dislike')">
                         </i>
                     </div>
 
                     <div class="right-actions flex-sides">
-                        <button type="button" class="btn btn-link exo" ng-click=changeActionStatus('interesting')>
+                        <button type="button" class="btn btn-link exo" ng-click=home.changeActionStatus('interesting')>
                             <i
                                     class="fa fa-lightbulb-o"
                                     aria-hidden="true"
@@ -78,7 +78,7 @@
                             </i>
                             Interesting
                         </button>
-                        <button type="button" class="btn btn-link exo" ng-click="changeActionStatus('save')">
+                        <button type="button" class="btn btn-link exo" ng-click="home.changeActionStatus('save')">
                             <i
                                     class="fa fa-check"
                                     aria-hidden="true"
@@ -102,3 +102,4 @@
     </div>
 
 </div>
+
