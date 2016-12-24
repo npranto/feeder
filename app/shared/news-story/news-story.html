@@ -4,24 +4,34 @@
     <!--<md-progress-circular md-mode="indeterminate" class="md-accent block-center" md-diameter="96"></md-progress-circular>-->
     <!--<h3 class="text-center exo"> Loading... </h3>-->
     <!--</div>-->
+    <!--ng-repeat="story in home.articles track by $index"-->
 
-    <div class="news col-sm-12 col-md-12 col-lg-12" ng-repeat="story in home.articles track by $index">
+    <div class="news col-sm-12 col-md-12 col-lg-12">
 
         <header class="flex-sides">
             <div class="news-source-info flex-sides">
 
                 <div class="news-source-logo flex-down">
-                    <img ng-src="{{home.newsSource.newsSourceLogo}}" alt="news-source-logo.png">
+                    <img ng-src="assets/img/news-sources/cnn.png" alt="news-source-logo.png">
                 </div>
 
                 <div class="news-source flex-down">
                     <p class="news-source-company exo">
-                        <a ng-href=""> {{home.newsSource.newsSourceTitle}} </a>
+                        <a ng-href="www.google.com"> CNN </a>
                     </p>
-                    <p class="news-source-author exo"> {{story.author}} </p>
                 </div>
 
             </div>
+
+            <div class="flex-down article-info">
+                <p class="article-author exo">
+                    Bob Lemire
+                </p>
+                <p class="article-date exo">
+                    Dec 13
+                </p>
+            </div>
+
         </header>
 
         <div class="thumbnail card card-2">
