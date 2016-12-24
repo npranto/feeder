@@ -1,74 +1,83 @@
 export default class HomeController {
 
-	constructor(HomeServices) {
-		this.HomeServices = HomeServices;
-		this.newsCategories = [
-			"Business",
-			"Entertainment",
-			"Gaming",
-			"General",
-			"Music",
-			"Science & Nature",
-			"Sport",
-			"Technology"
-		];
-		this.getAllNewsSources();
-	}
+    constructor(HomeServices) {
+        this.HomeServices = HomeServices;
+        this.newsCategories = [
+            "Business",
+            "Entertainment",
+            "Gaming",
+            "General",
+            "Music",
+            "Science & Nature",
+            "Sport",
+            "Technology"
+        ];
+        this.getAllNewsSources();
+    }
 
-	changeReactionStatus(reaction) {
-		if (reaction === "heart") {
-			this.disableHeart = !this.disableHeart;
-			this.disableDislike = false;
-		} else {
-			this.disableDislike = !this.disableDislike;
-			this.disableHeart = false;
-		}
-	}
+    changeReactionStatus(reaction) {
+        if (reaction === "heart") {
+            this.disableHeart = !this.disableHeart;
+            this.disableDislike = false;
+        } else {
+            this.disableDislike = !this.disableDislike;
+            this.disableHeart = false;
+        }
+    }
 
-	changeActionStatus(action) {
-		if (action === "interesting") {
-			this.showInterest = !this.showInterest;
-		} else {
-			this.saveNewsStory = !this.saveNewsStory;
-		}
-	};
+    changeActionStatus(action) {
+        if (action === "interesting") {
+            this.showInterest = !this.showInterest;
+        } else {
+            this.saveNewsStory = !this.saveNewsStory;
+        }
+    };
 
 
-	alterTLPGalleryDisplay(sourceId) {
-		this.showNewsSourcesGallery = !this.showNewsSourcesGallery;
-		this.getNewsBySourceId(sourceId);
-	}
+    alterTLPGalleryDisplay(sourceId) {
+        this.showNewsSourcesGallery = !this.showNewsSourcesGallery;
+        this.getNewsBySourceId(sourceId);
+    }
 
-	getNewsBySourceId(sourceId) {
-		setTimeout(() => {
-			this.HomeServices.getAllNewsSources()
-			.then((response) => {
-				let newsSources = response.data.newsSources;
-				_.map(newsSources, (newsSourceObj) => {
-					if (newsSourceObj.sourceId === sourceId) {
-						// console.log(newsSourceObj);
-						this.newsSource = newsSourceObj;
-						console.log(this.newsSource);
+    getNewsBySourceId(sourceId) {
+        setTimeout(() => {
+            this.HomeServices.getAllNewsSources().then((response) => {
+                let newsSources = response.data.newsSources;
+                _.map(newsSources, (newsSourceObj) => {
+                    if (newsSourceObj.sourceId === sourceId) {
+                        this.newsSource = newsSourceObj;
+                        this.HomeServices.getNewsFromSource(newsSourceObj.newsSourceFormat).then((response) => {
+                            this.articles = this.formatArticles(response.data.articles);
+                            console.log(this.articles);
+                        })
+                    }
+                })
+            })
+        }, 1500);
+    }
 
-						this.HomeServices.getNewsFromSource(newsSourceObj.newsSourceFormat)
-						.then((response) => {
-							console.log(response);
-							this.articles = response.data.articles;
-							console.log(this.articles);
-						})
-					}
-				})
+    formatArticles(articles) {
+        _.map(articles, (article) => {
+            let eachDesc = article.description;
+            while (!this.isLetter(eachDesc.charAt(eachDesc.length - 1))) {
+                eachDesc = eachDesc.slice(0, -1);
+            }
+            eachDesc = eachDesc + "... ";
+            return article.description = eachDesc;
+        })
+        return articles;
+    }
 
-			})
-		}, 1500);
-	}
+    isLetter(char) {
+        return (char.length === 1) && (char.match(/[a-z]/i));
+    }
 
-	getAllNewsSources() {
-		this.HomeServices.getAllNewsSources()
-		.then((response) => {
-			this.newsSources = response.data.newsSources;
-		})
-	}
+    getAllNewsSources() {
+        this.HomeServices.getAllNewsSources()
+            .then((response) => {
+                this.newsSources = response.data.newsSources;
+            })
+    }
 
 }
 
