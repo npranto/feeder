@@ -2,15 +2,15 @@
 
 /*
  SCRIPT
-    populateNewsSources.js
+ populateNewsSources.js
 
  USAGE
-    By default, running populateNewsSources.js will create generate an "id" key with a random uuid value inside news-sources.json
+ By default, running populateNewsSources.js will create generate an "id" key with a random uuid value inside news-sources.json
 
  COMMAND
-    - go into project directory on command line
-    - move to 'assets/scripts'
-    - run 'npm run-script pop-source-ids'
+ - go into project directory on command line
+ - move to 'assets/scripts'
+ - run 'npm run-script pop-source-ids'
  */
 
 const jsonfile = require('jsonfile');

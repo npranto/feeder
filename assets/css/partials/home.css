@@ -87,11 +87,12 @@
 }
 
 .home-view .header-section section .aside-left .TLP-block img {
-    height: calc((75VH / 3) * 0.25);
+    height: calc((75VH / 3) * 0.30);
     width: auto;
     margin: 5% auto;
     padding: 3%;
     border-radius: 50%;
+    backface-visibility: hidden;
 }
 
 .home-view .header-section section .aside-left .TLP-block .TLP-title {

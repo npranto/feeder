@@ -5,7 +5,7 @@ import routes from './app.config';
 import home from './components/home'
 
 angular.module('feeder', [uiRouter, 'ngMaterial', home])
-	.config(routes);
+    .config(routes);
 
 
 
