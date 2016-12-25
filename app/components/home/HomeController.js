@@ -1,3 +1,5 @@
+import moment from 'moment';
+
 export default class HomeController {
 
     constructor(HomeServices) {
@@ -58,12 +60,18 @@ export default class HomeController {
 
     formatArticles(articles) {
         _.map(articles, (article) => {
+
+            // formats story description by adding ellipsis at the end
             let eachDesc = article.description;
             while (!this.isLetter(eachDesc.charAt(eachDesc.length - 1))) {
                 eachDesc = eachDesc.slice(0, -1);
             }
             eachDesc = eachDesc + "... ";
-            return article.description = eachDesc;
+            article.description = eachDesc;
+
+            // formats published date for each story using moment.js library
+            article.publishedAt = moment(article.publishedAt).fromNow();
+            return article;
         })
         return articles;
     }

@@ -13,6 +13,16 @@
 .news-story .news header .news-source-info {
     justify-content: flex-start;
 }
+.news-story .news header .article-info {
+    justify-content: center;
+}
+.news-story .news header .article-info p{
+    margin: 0px;
+    padding: 0px;
+    text-align: right;
+    color: gray;
+    /*font-size: 85%;*/
+}
 
 .news-story header .news-source-logo {
     justify-content: center;
@@ -26,7 +36,7 @@
 
 .news-story header .news-source {
     justify-content: center;
-    padding-left: 1%;
+    padding-left: 5%;
 }
 
 .news-story header .news-source .news-source-company, .news-story header .news-source .news-source-author {
