@@ -51,10 +51,14 @@
             </aside>
 
             <article flex="60" class="">
-
-                <news-story-directive></news-story-directive>
-
+                <div>
+                    <news-story-directive></news-story-directive>
+                </div>
+                <div>
+                    <news-category-directive></news-category-directive>
+                </div>
             </article>
+
 
             <aside flex="20" class="aside-right text-center card card-3">
 
@@ -66,7 +70,8 @@
                     <md-button
                             class="md-primary text-left button hvr-grow hvr-sweep-to-left"
                             style="transition: all 0.5s ease; font-size: 1.50VW; padding: 1.50%; margin: 1.50%;"
-                            ng-repeat="category in home.newsCategories">
+                            ng-repeat="category in home.newsCategories"
+                            ng-click="home.getNewsByCategory(category)">
                         {{category}}
                     </md-button>
                 </div>

@@ -15,7 +15,7 @@ Structure of Feeder
     ----- shared/   // acts as reusable components or partials of our site
     ---------- news-story/
     --------------- news-story.html
-    --------------- NewsStoryDirective.js
+    --------------- NewsCategoryDirective.js
 
     ----- app.module.js
     ----- app.routes.js

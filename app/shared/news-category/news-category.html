@@ -1,0 +1,106 @@
+<div class="row news-category">
+
+    <!--<div class="progress-zone" ng-show="home.isLoading">-->
+    <!--<md-progress-circular md-mode="indeterminate" class="md-accent block-center" md-diameter="96"></md-progress-circular>-->
+    <!--<h3 class="text-center exo"> Loading... </h3>-->
+    <!--</div>-->
+
+    <div class="news col-sm-12 col-md-12 col-lg-12">
+
+        <header class="flex-sides">
+            <div class="news-source-info flex-sides">
+
+                <div class="news-source-logo flex-down">
+                    <img ng-src="assets/img/feeder-logo.png" alt="news-source-logo.png">
+                </div>
+
+                <div class="news-source flex-down">
+                    <p class="news-source-company exo">
+                        <a ng-href="www.google.com"> BBC News </a>
+                    </p>
+                </div>
+
+            </div>
+
+        </header>
+
+        <div class="thumbnail card card-2">
+
+            <div class="caption">
+                <div class="news-tags flex-sides">
+                    <md-button class="md-raised"> Business </md-button>
+                    <md-button class="md-raised"> Top </md-button>
+                    <md-button class="md-raised"> Latest </md-button>
+                </div>
+                <h2 class="news-desc roboto">
+                    "Australia's most trusted source of local, national and world news. Comprehensive, independent,
+                    in-depth analysis, the latest business, sport, weather and more."
+                    <span class="bold exo">
+                        <a ng-href="www.google.com"> Read More</a>
+                    </span>
+                </h2>
+                <div class="story-reactions-actions flex-sides">
+
+                    <div class="left-reactions flex roboto" ng-cloak>
+                        <i
+                                class="heart fa fa-heart-o button"
+                                aria-hidden="true"
+                                ng-class="{
+                                'reaction-chosen': home.disableHeart,
+                                animated: home.disableHeart,
+                                pulse: home.disableHeart,
+                            }"
+                                ng-click="home.changeReactionStatus('heart')">
+                        </i>
+                        <i
+                                ng-init=""
+                                class="dislike fa fa-thumbs-o-down button"
+                                aria-hidden="true"
+                                ng-class="{
+                                'reaction-chosen': home.disableDislike,
+                                animated: home.disableDislike,
+                                swing: home.disableDislike
+                            }"
+                                ng-click="home.changeReactionStatus('dislike')">
+                        </i>
+                    </div>
+
+                    <div class="right-actions flex-sides">
+                        <button type="button" class="btn btn-link exo" ng-click=home.changeActionStatus('interesting')>
+                            <i
+                                    class="fa fa-lightbulb-o"
+                                    aria-hidden="true"
+                                    ng-class="{
+                                animated: home.showInterest,
+                                tada: home.showInterest,
+                                interesting: home.showInterest,
+                                'fa-lg': home.showInterest,
+                            }">
+                            </i>
+                            Interesting
+                        </button>
+                        <button type="button" class="btn btn-link exo" ng-click="home.changeActionStatus('save')">
+                            <i
+                                    class="fa fa-check"
+                                    aria-hidden="true"
+                                    ng-class="{
+                                animated: home.saveNewsStory,
+                                tada: home.saveNewsStory,
+                                save: home.saveNewsStory,
+                                'fa-lg': home.saveNewsStory
+                            }">
+                            </i>
+                            Save
+                        </button>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+

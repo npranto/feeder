@@ -23,6 +23,10 @@ export default class HomeServices {
 			this.NewsAPI.apiKey;
 		return this.$http.get(route);
 	}
+
+    getNewsByCategory(category){
+
+	}
 }
 
 HomeServices.$inject = ['$http', 'NewsAPI'];
