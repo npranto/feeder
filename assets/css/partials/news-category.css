@@ -1,22 +1,22 @@
-.news-story {
+.news-category {
     width: 100%;
     height: 100%;
     overflow: auto;
     margin: 0 auto;
 }
 
-.news-story .news header {
+.news-category .news header {
     justify-content: space-between;
     height: 7.5VH;
 }
 
-.news-story .news header .news-source-info {
+.news-category .news header .news-source-info {
     justify-content: flex-start;
 }
-.news-story .news header .article-info {
+.news-category .news header .article-info {
     justify-content: center;
 }
-.news-story .news header .article-info p{
+.news-category .news header .article-info p{
     margin: 0px;
     padding: 0px;
     text-align: right;
@@ -24,36 +24,36 @@
     /*font-size: 85%;*/
 }
 
-.news-story header .news-source-logo {
+.news-category header .news-source-logo {
     justify-content: center;
 }
 
-.news-story header .news-source-logo img {
+.news-category header .news-source-logo img {
     height: 4VW;
     border-radius: 50%;
     width: auto;
 }
 
-.news-story header .news-source {
+.news-category header .news-source {
     justify-content: center;
     padding-left: 5%;
 }
 
-.news-story header .news-source .news-source-company, .news-category header .news-source .news-source-author {
+.news-category header .news-source .news-source-company, .news-category header .news-source .news-source-author {
     margin-bottom: 0px;
 }
 
-.news-story header .news-source .news-source-company {
+.news-category header .news-source .news-source-company {
     font-weight: bold;
     font-size: 2VH;
 }
 
-.news-story header .news-source .news-source-company a {
+.news-category header .news-source .news-source-company a {
     color: #F10026;
     text-decoration: none;
 }
 
-.news-story header .news-source .news-source-author {
+.news-category header .news-source .news-source-author {
     font-size: 1.75VH;
     color: darkgrey;
 }
@@ -78,8 +78,8 @@
 }
 
 .news-category .thumbnail .news-desc {
-    color: gray;
-    font-size: 1.4VW;
+    color: #F10026;
+    font-size: 2VW;
 }
 
 .news-category .thumbnail .story-reactions-actions {
