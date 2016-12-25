@@ -12,6 +12,11 @@ export default class NewsAPI {
                 popular: "sortBy=popular",
             },
         }
+        // https://newsapi.org/v1/sources?category=general&language=en
+        this.source = {
+            endpoint: "https://newsapi.org/v1/sources?",
+            category: "category="
+        }
     }
 
 }

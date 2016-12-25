@@ -83,20 +83,16 @@ export default class HomeController {
     }
 
     getNewsByCategory(category){
-        // https://newsapi.org/v1/sources?category=general&language=en
         let currCategory = this.formatCategory(category);
-        // this.HomeServices.getNewsByCategory()
-        //     .then((response) => {
-        //         console.log(response);
-        //     })
+        this.HomeServices.getNewsByCategory(currCategory)
+            .then((response) => {
+                this.sources = response.data.sources;
+                console.log(this.sources);
+            })
     }
 
     formatCategory(category){
-        category = category.toLowerCase();
-        category = _.replace(category, ' ', '-');
-
-
-        console.log(category);
+        return category.toLowerCase().replace(/ /g , '-').replace(/&/g , 'and');
     }
 
     getAllNewsSources() {

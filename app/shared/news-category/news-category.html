@@ -5,21 +5,23 @@
     <!--<h3 class="text-center exo"> Loading... </h3>-->
     <!--</div>-->
 
-    <div class="news col-sm-12 col-md-12 col-lg-12">
+    <div class="news col-sm-12 col-md-12 col-lg-12" ng-repeat="source in home.sources track by $index">
 
         <header class="flex-sides">
             <div class="news-source-info flex-sides">
 
                 <div class="news-source-logo flex-down">
-                    <img ng-src="assets/img/feeder-logo.png" alt="news-source-logo.png">
+                    <img ng-src="{{source.urlsToLogos.large}}" alt="news-source-logo">
                 </div>
 
+            </div>
+
+            <div class="flex-down">
                 <div class="news-source flex-down">
                     <p class="news-source-company exo">
-                        <a ng-href="www.google.com"> BBC News </a>
+                        <a ng-href="www.google.com"> {{source.name.toUpperCase()}} </a>
                     </p>
                 </div>
-
             </div>
 
         </header>
@@ -33,11 +35,10 @@
                     <md-button class="md-raised"> Latest </md-button>
                 </div>
                 <h2 class="news-desc roboto">
-                    "Australia's most trusted source of local, national and world news. Comprehensive, independent,
-                    in-depth analysis, the latest business, sport, weather and more."
-                    <span class="bold exo">
-                        <a ng-href="www.google.com"> Read More</a>
-                    </span>
+                    {{source.description}}
+                    <!--<span class="bold exo">-->
+                        <!--<a ng-href="www.google.com"> Read More</a>-->
+                    <!--</span>-->
                 </h2>
                 <div class="story-reactions-actions flex-sides">
 

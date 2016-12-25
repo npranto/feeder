@@ -25,7 +25,10 @@ export default class HomeServices {
 	}
 
     getNewsByCategory(category){
-
+		let route = this.NewsAPI.source.endpoint +
+				this.NewsAPI.source.category +
+            	category;
+        return this.$http.get(route);
 	}
 }
 
