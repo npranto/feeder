@@ -30,7 +30,7 @@
 
 .news-category header .news-source-logo img {
     height: 4VW;
-    border-radius: 50%;
+    /*border-radius: 50%;*/
     width: auto;
 }
 
