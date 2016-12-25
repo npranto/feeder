@@ -48,10 +48,11 @@ export default class HomeController {
                 _.map(newsSources, (newsSourceObj) => {
                     if (newsSourceObj.sourceId === sourceId) {
                         this.newsSource = newsSourceObj;
-                        this.HomeServices.getNewsFromSource(newsSourceObj.newsSourceFormat).then((response) => {
-                            this.articles = this.formatArticles(response.data.articles);
-                            console.log(this.articles);
-                        })
+                        this.HomeServices.getNewsFromSource(newsSourceObj.newsSourceFormat)
+                            .then((response) => {
+                                this.articles = this.formatArticles(response.data.articles);
+                                console.log(this.articles);
+                            })
                     }
                 })
             })
