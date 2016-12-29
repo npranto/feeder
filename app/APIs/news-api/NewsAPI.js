@@ -1,7 +1,7 @@
 export default class NewsAPI {
 
     constructor() {
-        this.apiKey = "apiKey=API_KEY",
+        this.apiKey = "apiKey=981b122a68d54125b9ed9d2165e3b268",
         this.and =  "&",
         this.article =  {
             endpoint: "https://newsapi.org/v1/articles?",
@@ -12,7 +12,6 @@ export default class NewsAPI {
                 popular: "sortBy=popular",
             },
         }
-        // https://newsapi.org/v1/sources?category=general&language=en
         this.source = {
             endpoint: "https://newsapi.org/v1/sources?",
             category: "category="
@@ -20,4 +19,3 @@ export default class NewsAPI {
     }
 
 }
-
