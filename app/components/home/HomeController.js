@@ -17,6 +17,7 @@ export default class HomeController {
         ];
         this.showNewsStory = false;
         this.showNewsCategory = false;
+        this.showProgressBar = false;
         this.getAllNewsSources();
     }
 
@@ -48,8 +49,7 @@ export default class HomeController {
         // change view by article or category
         this.showNewsStory = true;
         this.showNewsCategory = false;
-        console.log('Article', this.showNewsStory);
-        console.log('Category', this.showNewsCategory);
+        this.showProgressBar = true;
 
         setTimeout(() => {
             this.HomeServices.getAllNewsSources().then((response) => {
@@ -59,6 +59,7 @@ export default class HomeController {
                         this.newsSource = newsSourceObj;
                         this.HomeServices.getNewsFromSource(newsSourceObj.newsSourceFormat)
                             .then((response) => {
+                                this.showProgressBar = false;
                                 this.articles = this.formatArticles(response.data.articles);
                                 console.log(this.articles);
                             })
@@ -94,12 +95,12 @@ export default class HomeController {
         // change view by article or category
         this.showNewsStory = false;
         this.showNewsCategory = true;
-        console.log('Article', this.showNewsStory);
-        console.log('Category', this.showNewsCategory);
+        this.showProgressBar = true;
 
         let currCategory = this.formatCategory(category);
         this.HomeServices.getNewsByCategory(currCategory)
             .then((response) => {
+                this.showProgressBar = false;
                 this.sources = response.data.sources;
                 console.log(this.sources);
             })
