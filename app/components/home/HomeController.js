@@ -15,6 +15,8 @@ export default class HomeController {
             "Sport",
             "Technology"
         ];
+        this.showNewsStory = false;
+        this.showNewsCategory = false;
         this.getAllNewsSources();
     }
 
@@ -43,6 +45,12 @@ export default class HomeController {
     }
 
     getNewsBySourceId(sourceId) {
+        // change view by article or category
+        this.showNewsStory = true;
+        this.showNewsCategory = false;
+        console.log('Article', this.showNewsStory);
+        console.log('Category', this.showNewsCategory);
+
         setTimeout(() => {
             this.HomeServices.getAllNewsSources().then((response) => {
                 let newsSources = response.data.newsSources;
@@ -83,6 +91,12 @@ export default class HomeController {
     }
 
     getNewsByCategory(category){
+        // change view by article or category
+        this.showNewsStory = false;
+        this.showNewsCategory = true;
+        console.log('Article', this.showNewsStory);
+        console.log('Category', this.showNewsCategory);
+
         let currCategory = this.formatCategory(category);
         this.HomeServices.getNewsByCategory(currCategory)
             .then((response) => {
@@ -105,27 +119,3 @@ export default class HomeController {
 }
 
 HomeController.$inject = ['HomeServices'];
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -1,7 +1,7 @@
 export default class NewsAPI {
 
     constructor() {
-        this.apiKey = "apiKey=981b122a68d54125b9ed9d2165e3b268",
+        this.apiKey = "apiKey=API_KEY",
         this.and =  "&",
         this.article =  {
             endpoint: "https://newsapi.org/v1/articles?",
