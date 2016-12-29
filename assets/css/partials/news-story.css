@@ -39,7 +39,7 @@
     padding-left: 5%;
 }
 
-.news-story header .news-source .news-source-company, .news-category header .news-source .news-source-author {
+.news-story header .news-source .news-source-company, .news-story header .news-source .news-source-author {
     margin-bottom: 0px;
 }
 
@@ -58,17 +58,17 @@
     color: darkgrey;
 }
 
-.news-category header .share {
+.news-story header .share {
     justify-content: center;
 }
 
-.news-category header .share span {
+.news-story header .share span {
     font-size: 2.5VW;
     cursor: pointer;
     color: #F10026;
 }
 
-.news-category .thumbnail .news-title {
+.news-story .thumbnail .news-title {
     font-size: 2.75VW;
     color: slategray;
     font-weight: 800;
@@ -77,18 +77,18 @@
     color: #F10026;
 }
 
-.news-category .thumbnail .news-desc {
+.news-story .thumbnail .news-desc {
     color: gray;
     font-size: 1.4VW;
 }
 
-.news-category .thumbnail .story-reactions-actions {
+.news-story .thumbnail .story-reactions-actions {
     justify-content: space-between;
     padding-top: 3%;
     padding-bottom: 3%;
 }
 
-.news-category .thumbnail .story-reactions-actions .left-reactions i {
+.news-story .thumbnail .story-reactions-actions .left-reactions i {
     padding-right: 2.5%;
     font-size: 3VW;
     font-weight: 100;
@@ -99,16 +99,16 @@
     color: gray;
 }
 
-.news-category .thumbnail .story-reactions-actions .left-reactions i:hover {
+.news-story .thumbnail .story-reactions-actions .left-reactions i:hover {
     color: #8F0303;
 }
 
-.news-category .thumbnail .story-reactions-actions .left-reactions .reaction-chosen {
+.news-story .thumbnail .story-reactions-actions .left-reactions .reaction-chosen {
     color: #8F0303;
     font-weight: 900;
 }
 
-.news-category .thumbnail .story-reactions-actions .right-actions button {
+.news-story .thumbnail .story-reactions-actions .right-actions button {
     width: 9VW;
     font-size: 1.5VW;
     border-radius: 0px;
@@ -122,23 +122,23 @@
     color: slategray;
 }
 
-.news-category .thumbnail .story-reactions-actions .right-actions button:hover {
+.news-story .thumbnail .story-reactions-actions .right-actions button:hover {
     color: black;
 }
 
-.news-category .thumbnail .story-reactions-actions .right-actions .bold {
+.news-story .thumbnail .story-reactions-actions .right-actions .bold {
     font-weight: bold;
     color: black;
 }
 
-.news-category .thumbnail .story-reactions-actions .right-actions i {
+.news-story .thumbnail .story-reactions-actions .right-actions i {
     transition: all 0.5s ease;
 }
 
-.news-category .thumbnail .story-reactions-actions .right-actions .interesting {
+.news-story .thumbnail .story-reactions-actions .right-actions .interesting {
     color: blue;
 }
 
-.news-category .thumbnail .story-reactions-actions .right-actions .save {
+.news-story .thumbnail .story-reactions-actions .right-actions .save {
     color: limegreen;
 }
