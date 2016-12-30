@@ -18,6 +18,7 @@ export default class HomeController {
         this.showNewsStory = false;
         this.showNewsCategory = false;
         this.showProgressBar = false;
+        this.currentSourceId = "";
         this.getAllNewsSources();
     }
 
@@ -41,23 +42,30 @@ export default class HomeController {
 
 
     alterTLPGalleryDisplay(sourceId) {
+        console.log(this.currentSourceId);
         this.showNewsSourcesGallery = !this.showNewsSourcesGallery;
-        this.getNewsBySourceId(sourceId);
+        this.currentSourceId = sourceId;
+        console.log(this.currentSourceId);
     }
 
-    getNewsBySourceId(sourceId) {
+    getNewsBySourceId(sortBy) {
         // change view by article or category
         this.showNewsStory = true;
         this.showNewsCategory = false;
         this.showProgressBar = true;
 
+        console.log(sortBy);
+
+        console.log(this.currentSourceId);
+
         setTimeout(() => {
             this.HomeServices.getAllNewsSources().then((response) => {
                 let newsSources = response.data.newsSources;
                 _.map(newsSources, (newsSourceObj) => {
-                    if (newsSourceObj.sourceId === sourceId) {
+                    if (newsSourceObj.sourceId === this.currentSourceId) {
+                        console.log(newsSourceObj);
                         this.newsSource = newsSourceObj;
-                        this.HomeServices.getNewsFromSource(newsSourceObj.newsSourceFormat)
+                        this.HomeServices.getNewsFromSource(newsSourceObj.newsSourceFormat, sortBy)
                             .then((response) => {
                                 this.showProgressBar = false;
                                 this.articles = this.formatArticles(response.data.articles);
@@ -67,6 +75,7 @@ export default class HomeController {
                 })
             })
         }, 1500);
+        this.showNewsSourcesGallery = !this.showNewsSourcesGallery;
     }
 
     formatArticles(articles) {
