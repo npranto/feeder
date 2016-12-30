@@ -13,14 +13,16 @@ export default class HomeServices {
 		return this.$http.get(latestNewsRoute);
 	}
 
-	getNewsFromSource (newsSourceFormat) {
+	getNewsFromSource (newsSourceFormat, sortBy) {
 		let route = this.NewsAPI.article.endpoint +
 			this.NewsAPI.article.source +
 			newsSourceFormat +
 			this.NewsAPI.and +
-			this.NewsAPI.article.sortBy.top +
+			this.NewsAPI.article.sortBy +
+			sortBy +
 			this.NewsAPI.and +
 			this.NewsAPI.apiKey;
+			console.log(route);
 		return this.$http.get(route);
 	}
 
