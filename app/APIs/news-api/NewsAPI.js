@@ -6,7 +6,7 @@ export default class NewsAPI {
         this.article =  {
             endpoint: "https://newsapi.org/v1/articles?",
             source: "source=",
-            sortBy: "sortBy"
+            sortBy: "sortBy="
         }
         this.source = {
             endpoint: "https://newsapi.org/v1/sources?",
