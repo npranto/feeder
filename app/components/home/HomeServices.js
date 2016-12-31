@@ -22,7 +22,7 @@ export default class HomeServices {
 			sortBy +
 			this.NewsAPI.and +
 			this.NewsAPI.apiKey;
-			console.log(route);
+			console.log("ROUTE: ", route);
 		return this.$http.get(route);
 	}
 
