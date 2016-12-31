@@ -5,23 +5,23 @@ Endpoints
     Using News API is simple. There are only 2 endpoints:
         GET https://newsapi.org/v1/articles
         GET https://newsapi.org/v1/sources
-       
+
 Articles
 
     GET https://newsapi.org/v1/articles
         Provides a list of live article metadata from a news source or blog (99% of the time this is the one you want!).
 
         Parameters
-            source	(required) - The identifer for the news source or blog you want headlines from. Use the /sources endpoint to locate this or use the sources index.
+            source	(required) - The identifier for the news source or blog you want headlines from. Use the /sources endpoint to locate this or use the sources index.
             apiKey	(required) - Your API key. Alternatively you can provide this via the X-Api-Key HTTP header.
             sortBy	(optional) - Specify which type of list you want. The possible options are top, latest and popular. Note: not all options are available for all sources. Default: top.
                 top	Requests a list of the source's headlines sorted in the order they appear on its homepage.
                 latest	Requests a list of the source's headlines sorted in chronological order, newest first.
                 popular	Requests a list of the source's current most popular or currently trending headlines.
-    
+
     Request
         GET https://newsapi.org/v1/articles?source=the-next-web&sortBy=latest&apiKey=API_KEY
-        
+
     Result
         status	(string) - If the request was successful or not. Options: ok, error. In the case of error a message property will be populated.
         source	(string) - The identifier of the source requested.
@@ -38,7 +38,7 @@ Sources
 
     GET https://newsapi.org/v1/sources
         Provides a list of the news sources and blogs available on News API. You will need this to programmatically locate the identifier for the source you want articles from when querying the /articles endpoint.
-    
+
         Parameters
             category	(optional) - The category you would like to get sources for.
             Possible options: business, entertainment, gaming, general, music, science-and-nature, sport, technology.
@@ -49,10 +49,10 @@ Sources
             country	(optional) - The 2-letter ISO 3166-1 code of the country you would like to get sources for.
             Possible options: au, de, gb, in, it, us.
             Default: empty (all sources returned)
-    
+
     Request  
         GET https://newsapi.org/v1/sources?language=en
-    
+
     Result:
         status	(string) - If the request was successful or not. Options: ok, error. In the case of error a message property will be populated.
         sources	(array) - A list of the news sources and blogs available on News API.
@@ -74,4 +74,3 @@ Sources
                 top	Indicates this source can return a list of headlines sorted in the order they appear on the source' homepage.
                 latest	Indicates this source can return a list of headlines sorted in chronological order, newest first.
                 popular	Indicates this source can return a list of its current most popular headlines.
-
