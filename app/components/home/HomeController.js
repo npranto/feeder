@@ -18,13 +18,6 @@ export default class HomeController {
             "Technology"
         ];
 
-        // getColors("http://www.drodd.com/images15/nature21.jpg", (err, colors) => {
-        //     if (err) {throw err}
-        //     else {
-        //         console.log(colors);
-        //     }
-        // })
-
         this.showNewsStory = false;
         this.showNewsCategory = false;
         this.showProgressBar = false;
@@ -79,6 +72,7 @@ export default class HomeController {
                             .then((response) => {
                                 this.showProgressBar = false;
                                 this.articles = this.formatArticles(response.data.articles);
+                                console.log(this.articles);
                                 // this.colorizeCover(newsSourceObj.newsSourceLogo);
                             })
                     }
@@ -123,8 +117,6 @@ export default class HomeController {
     setCoverColor(colors) {
         let result = "";
         let allColors = [];
-        // rgba(255,0,0,0)
-        // background: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
 
         _.map(colors, (color)=>{
             let eachColor = "rgba" + "(" +color._rgb.join() + ")";
@@ -132,8 +124,6 @@ export default class HomeController {
         })
 
         result = "background: linear-gradient(to right, " +  allColors.join() + ")";
-        console.log(result);
-
         this.coverColor = result;
     }
 

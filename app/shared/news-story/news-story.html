@@ -11,7 +11,7 @@
 
                 <div class="news-source flex-down">
                     <p class="news-source-company exo">
-                        <a ng-href="www.google.com"> {{home.newsSource.newsSourceTitle}} </a>
+                        {{home.newsSource.newsSourceTitle}}
                     </p>
                 </div>
 
@@ -30,7 +30,15 @@
 
         <div class="thumbnail card card-2">
 
-            <img class="news-media" ng-src="{{story.urlToImage}}" alt="...">
+            <img
+                class="news-media"
+                ng-mouseover="this.mouseOverStory = true"
+                ng-class="{
+                    button: this.mouseOverStory,
+                    'hvr-float': this.mouseOverStory
+                }"
+                ng-src="{{story.urlToImage}}"
+                alt="...">
 
             <div class="caption">
                 <h3 class="news-title exo"> {{story.title}} </h3>
