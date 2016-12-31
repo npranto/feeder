@@ -8,6 +8,10 @@
 .news-category .news header {
     justify-content: space-between;
     height: 7.5VH;
+    background-color: white;
+    padding-left: 1%;
+    padding-right: 1%;
+    border-bottom: 3px solid gray;
 }
 
 .news-category .news header .news-source-info {

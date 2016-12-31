@@ -17,8 +17,16 @@ module.exports = {
             {
                 test: /\.css$/,
                 loader: 'style!css'
+            },
+            {
+                test: /\.json$/,
+                include: /node_modules/,
+                loader: 'json-loader'
             }
         ]
+    },
+    node: {
+        fs: "empty"
     }
     // , plugins: [
     //     new webpack.optimize.UglifyJsPlugin({

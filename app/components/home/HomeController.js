@@ -1,5 +1,7 @@
 import _ from 'lodash';
 import moment from 'moment';
+import getColors from 'get-image-colors';
+
 
 export default class HomeController {
 
@@ -15,10 +17,22 @@ export default class HomeController {
             "Sport",
             "Technology"
         ];
+
+        // getColors("http://www.drodd.com/images15/nature21.jpg", (err, colors) => {
+        //     if (err) {throw err}
+        //     else {
+        //         console.log(colors);
+        //     }
+        // })
+
         this.showNewsStory = false;
         this.showNewsCategory = false;
         this.showProgressBar = false;
+
         this.currentSourceId = "";
+
+        this.coverColor = "background: white";
+
         this.getAllNewsSources();
     }
 
@@ -54,22 +68,18 @@ export default class HomeController {
         this.showNewsCategory = false;
         this.showProgressBar = true;
 
-        console.log(sortBy);
-
-        console.log(this.currentSourceId);
-
         setTimeout(() => {
             this.HomeServices.getAllNewsSources().then((response) => {
                 let newsSources = response.data.newsSources;
                 _.map(newsSources, (newsSourceObj) => {
                     if (newsSourceObj.sourceId === this.currentSourceId) {
-                        console.log(newsSourceObj);
                         this.newsSource = newsSourceObj;
+                        this.colorizeCover(newsSourceObj.newsSourceLogo);
                         this.HomeServices.getNewsFromSource(newsSourceObj.newsSourceFormat, sortBy)
                             .then((response) => {
                                 this.showProgressBar = false;
                                 this.articles = this.formatArticles(response.data.articles);
-                                console.log(this.articles);
+                                // this.colorizeCover(newsSourceObj.newsSourceLogo);
                             })
                     }
                 })
@@ -99,6 +109,34 @@ export default class HomeController {
     isLetter(char) {
         return (char.length === 1) && (char.match(/[a-z]/i));
     }
+
+    colorizeCover(logoPath) {
+        getColors(logoPath, (err, colors) => {
+            if (err) {throw err}
+            else {
+                console.log(colors);
+                this.setCoverColor(colors);
+            }
+        })
+    }
+
+    setCoverColor(colors) {
+        let result = "";
+        let allColors = [];
+        // rgba(255,0,0,0)
+        // background: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+
+        _.map(colors, (color)=>{
+            let eachColor = "rgba" + "(" +color._rgb.join() + ")";
+            allColors.push(eachColor);
+        })
+
+        result = "background: linear-gradient(to right, " +  allColors.join() + ")";
+        console.log(result);
+
+        this.coverColor = result;
+    }
+
 
     getNewsByCategory(category){
         // change view by article or category
