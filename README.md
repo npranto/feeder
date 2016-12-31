@@ -1,4 +1,4 @@
-# feeder
+# Feeder
 Feeder - All You Need to Know
 
 Structure of Feeder
