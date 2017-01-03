@@ -41,7 +41,9 @@
                 alt="...">
 
             <div class="caption">
-                <h3 class="news-title exo"> {{story.title}} </h3>
+                <a ng-href="{{story.url}}">
+                    <h3 class="news-title exo"> {{story.title}} </h3>
+                </a>
                 <p class="news-desc roboto">
                     {{story.description}}
                     <span class="bold exo">
