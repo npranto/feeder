@@ -123,7 +123,7 @@ export default class HomeController {
             allColors.push(eachColor);
         })
 
-        result = "background: linear-gradient(to right, " +  allColors.join() + ")";
+        result = "background: radial-gradient(circle, " +  allColors.join() + ")";
         this.coverColor = result;
     }
 
