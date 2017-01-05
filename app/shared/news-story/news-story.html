@@ -30,15 +30,17 @@
 
         <div class="thumbnail card card-2">
 
-          <img
-              class="news-media"
-              ng-mouseover="this.mouseOverStory = true"
-              ng-class="{
-                  button: this.mouseOverStory,
-                  'hvr-float': this.mouseOverStory
-              }"
-              ng-src="{{story.urlToImage}}"
-              alt="...">
+            <a href="{{story.urlToImage}}" data-lightbox="{{story.urlToImage}}" data-title="{{story.title}}">
+              <img
+                  class="news-media"
+                  ng-mouseover="this.mouseOverStory = true"
+                  ng-class="{
+                      button: this.mouseOverStory,
+                      'hvr-float': this.mouseOverStory
+                  }"
+                  ng-src="{{story.urlToImage}}"
+                  alt="...">
+            </a>
 
             <div class="caption">
                 <a ng-href="{{story.url}}">

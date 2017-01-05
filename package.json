@@ -24,6 +24,7 @@
     "hover.css": "^2.0.2",
     "jquery": "1.9.1",
     "jsonfile": "^2.4.0",
+    "lightbox2": "^2.9.0",
     "lodash": "^4.17.2",
     "moment": "^2.17.1"
   },
