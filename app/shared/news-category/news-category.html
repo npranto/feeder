@@ -30,9 +30,7 @@
 
             <div class="caption">
                 <div class="news-tags flex-sides">
-                    <md-button class="md-raised"> Business </md-button>
-                    <md-button class="md-raised"> Top </md-button>
-                    <md-button class="md-raised"> Latest </md-button>
+                    <md-button class="md-raised" ng-repeat="tag in source.tags track by $index"> {{ tag }} </md-button>
                 </div>
                 <h2 class="news-desc roboto">
                     {{source.description}}
