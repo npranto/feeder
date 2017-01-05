@@ -139,12 +139,27 @@ export default class HomeController {
             .then((response) => {
                 this.showProgressBar = false;
                 this.sources = response.data.sources;
-                console.log(this.sources);
+                this.addNewsTags(this.sources);
+                console.log("SOURCES...", this.sources);
             })
     }
 
     formatCategory(category){
         return category.toLowerCase().replace(/ /g , '-').replace(/&/g , 'and');
+    }
+
+    addNewsTags(sources){
+      let allTags = [];
+      _.map(sources, (source)=>{
+        if (source.category) {
+          allTags.push(source.category);
+        }
+        _.map(source.sortBysAvailable, (sortBy)=>{
+          allTags.push(sortBy);
+        })
+        source.tags = allTags;
+        allTags = [];
+      })
     }
 
     getAllNewsSources() {
