@@ -30,29 +30,15 @@
 
         <div class="thumbnail card card-2">
 
-            <a ng-href="{{story.urlToImage}}" class="image-link">
-               <img
-                   class="news-media"
-                   ng-mouseover="this.mouseOverStory = true"
-                   ng-class="{
-                       button: this.mouseOverStory,
-                       'hvr-float': this.mouseOverStory
-                   }"
-                   ng-src="{{story.urlToImage}}"
-                   alt="...">
-            </a>
-
-            <!-- <a class="image-popup-vertical-fit" ng-href="{{story.urlToImage}}" title="Caption. Can be aligned to any side and contain any HTML.">
-              <img
-                  class="news-media"
-                  ng-mouseover="this.mouseOverStory = true"
-                  ng-class="{
-                      button: this.mouseOverStory,
-                      'hvr-float': this.mouseOverStory
-                  }"
-                  ng-src="{{story.urlToImage}}"
-                  alt="...">
-            </a> -->
+          <img
+              class="news-media"
+              ng-mouseover="this.mouseOverStory = true"
+              ng-class="{
+                  button: this.mouseOverStory,
+                  'hvr-float': this.mouseOverStory
+              }"
+              ng-src="{{story.urlToImage}}"
+              alt="...">
 
             <div class="caption">
                 <a ng-href="{{story.url}}">
