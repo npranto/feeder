@@ -22,10 +22,10 @@
     "bootstrap": "^3.3.7",
     "get-image-colors": "^1.8.0",
     "hover.css": "^2.0.2",
-    "image2colors": "^2.0.7",
     "jquery": "1.9.1",
     "jsonfile": "^2.4.0",
     "lodash": "^4.17.2",
+    "magnific-popup": "^1.1.0",
     "moment": "^2.17.1"
   },
   "devDependencies": {
