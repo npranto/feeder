@@ -2,6 +2,7 @@
 @import './partials/home.css';
 @import './partials/news-story.css';
 @import './partials/news-category.css';
+@import './partials/progress-bar.css';
 @import './material-box-shadows.css';
 
 @media only screen and (max-width: 480px) {
