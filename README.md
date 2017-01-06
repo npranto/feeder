@@ -1,7 +1,7 @@
 # Feeder
-Feeder - All You Need to Know
+Feeder: All You Need to Know
 
-Structure of Feeder
+## Structure of Feeder
 
     app/
     ----- APIs/
