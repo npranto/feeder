@@ -16,8 +16,8 @@
 }
 
 .home-view .header-section header img {
-    height: 20VH;
-    width: auto;
+    height: 18VH;
+    max-width: 15VW;
 }
 
 .home-view .header-section header section {
