@@ -29,24 +29,24 @@ export default class HomeController {
         this.getAllNewsSources();
     }
 
-    changeReactionStatus(reaction) {
+    changeReactionStatus(reaction, story) {
+        console.log(story);
         if (reaction === "heart") {
-            this.disableHeart = !this.disableHeart;
-            this.disableDislike = false;
+            story.disableHeart = !story.disableHeart;
+            story.disableDislike = false;
         } else {
-            this.disableDislike = !this.disableDislike;
-            this.disableHeart = false;
+            story.disableDislike = !story.disableDislike;
+            story.disableHeart = false;
         }
     }
 
-    changeActionStatus(action) {
+    changeActionStatus(action, story) {
         if (action === "interesting") {
-            this.showInterest = !this.showInterest;
+            story.showInterest = !story.showInterest;
         } else {
-            this.saveNewsStory = !this.saveNewsStory;
+            story.saveNewsStory = !story.saveNewsStory;
         }
     };
-
 
     alterTLPGalleryDisplay(sourceId) {
         console.log(this.currentSourceId);
@@ -72,6 +72,7 @@ export default class HomeController {
                             .then((response) => {
                                 this.showProgressBar = false;
                                 this.articles = this.formatArticles(response.data.articles);
+                                this.articles = this.addReactionProps(response.data.articles);
                                 console.log(this.articles);
                                 // this.colorizeCover(newsSourceObj.newsSourceLogo);
                             })
@@ -80,6 +81,25 @@ export default class HomeController {
             })
         }, 1500);
         this.showNewsSourcesGallery = !this.showNewsSourcesGallery;
+    }
+
+    addReactionProps(articles){
+        _.map(articles, (article) => {
+            // adds 'disableHeart' and 'disableDislike' properties to each article
+            article.disableHeart = false;
+            article.disableDislike = false;
+            return article;
+        })
+        return articles;
+    }
+    addReactionProps(articles){
+        _.map(articles, (article) => {
+            // adds 'showInterest' and 'saveNewsStory' properties to each article
+            article.showInterest = false;
+            article.saveNewsStory = false;
+            return article;
+        })
+        return articles;
     }
 
     formatArticles(articles) {
