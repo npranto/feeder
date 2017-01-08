@@ -26,7 +26,36 @@ export default class HomeController {
 
         this.coverColor = "background: white";
 
+        this.array = [1,2,3,4,5,6,7,8,9,10];
+        this.randomHeadlines = [];
+
         this.getAllNewsSources();
+        this.getRandomHeadlines()
+    }
+
+    getRandomHeadlines(){
+        const NEWS_LIMIT = 3;
+
+        let counter = 0
+        while(counter < NEWS_LIMIT){
+            let randomValue = _.random(this.array.length);
+            if (this.randomHeadlines.length === this.array.length){
+                console.log("ALL DONE...!");
+                return;
+            }
+            else if (_.indexOf(this.randomHeadlines, randomValue) === -1){
+                this.randomHeadlines.push(randomValue);
+                console.log(randomValue);
+                counter++;
+            }
+        }
+
+        // this.HomeServices.getAllNewsSources().then((response) => {
+        //     let newsSources = response.data.newsSources;
+        //     _.map(newsSources, (newsSourceObj) => {
+        //
+        //     })
+        // })
     }
 
     changeReactionStatus(reaction, story) {
