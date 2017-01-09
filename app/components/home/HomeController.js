@@ -20,8 +20,6 @@ export default class HomeController {
             "Technology"
         ];
 
-        this.articles;
-
         this.showNewsStory = false;
         this.showNewsCategory = false;
         this.showProgressBar = false;
@@ -33,18 +31,17 @@ export default class HomeController {
         this.randomHeadlines = [];
 
         this.getAllNewsSources();
-        this.getRandomHeadlines()
+        this.getRandomHeadlines();
+
     }
 
     getRandomHeadlines(){
-        let _this = this;
+        this.showNewsStory = true;
+
         const NEWS_LIMIT = 3;
         let counter = 0;
         let randomSourcesFormat = [];
         let routes = [];
-
-        _this.showNewsStory = true;
-        _this.showNewsCategory = false;
 
         // gets news sources info from news-sources.json
         this.HomeServices.getAllNewsSources().then((response) => {
@@ -67,38 +64,39 @@ export default class HomeController {
                 }
             }
 
-            window.$.when(
-                window.$.ajax({
-                    url: routes.pop(),
-                    success: (data) => {
-                        _this.randomHeadlines = _.union(_this.randomHeadlines, data.articles);
-                    }
-                }),
-                window.$.ajax({
-                    url: routes.pop(),
-                    success: (data) => {
-                        _this.randomHeadlines = _.union(_this.randomHeadlines, data.articles);
-                    }
-                }),
-                window.$.ajax({
-                    url: routes.pop(),
-                    success: (data) => {
-                        _this.randomHeadlines = _.union(_this.randomHeadlines, data.articles);
-                    }
-                })
-            ).then(() => {
-                console.log("HEADLINES: ", _this.randomHeadlines);
-                _this.articles = _this.randomHeadlines;
-                _this.articles = _this.formatArticles(_this.articles);
-                _this.articles = _this.addReactionProps(_this.articles);
-                console.log(_this.articles);
-            });
+            console.log(routes);
+
+            // window.$.when(
+            //     window.$.ajax({
+            //         url: routes.pop(),
+            //         success: (data) => {
+            //             this.randomHeadlines = _.union(this.randomHeadlines, data.articles);
+            //         }
+            //     }),
+            //     window.$.ajax({
+            //         url: routes.pop(),
+            //         success: (data) => {
+            //             this.randomHeadlines = _.union(this.randomHeadlines, data.articles);
+            //         }
+            //     }),
+            //     window.$.ajax({
+            //         url: routes.pop(),
+            //         success: (data) => {
+            //             this.randomHeadlines = _.union(this.randomHeadlines, data.articles);
+            //         }
+            //     })
+            // ).then(() => {
+            //     console.log("HEADLINES: ", this.randomHeadlines);
+            //     this.articles = this.randomHeadlines;
+            //     this.articles = this.formatArticles(this.articles);
+            //     this.articles = this.addReactionProps(this.articles);
+            //     this.articles = this.addActionProps(this.articles);
+            //     console.log(this.articles);
+            //     this.showNewsStory = true;
+            //     this.showNewsCategory = false;
+            // });
 
         })
-
-
-
-
     }
 
     changeReactionStatus(reaction, story) {
@@ -145,6 +143,7 @@ export default class HomeController {
                                 this.showProgressBar = false;
                                 this.articles = this.formatArticles(response.data.articles);
                                 this.articles = this.addReactionProps(response.data.articles);
+                                this.articles = this.addActionProps(response.data.articles);
                                 console.log(this.articles);
                                 // this.colorizeCover(newsSourceObj.newsSourceLogo);
                             })
@@ -164,7 +163,7 @@ export default class HomeController {
         })
         return articles;
     }
-    addReactionProps(articles){
+    addActionProps(articles){
         _.map(articles, (article) => {
             // adds 'showInterest' and 'saveNewsStory' properties to each article
             article.showInterest = false;
