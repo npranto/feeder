@@ -66,36 +66,17 @@ export default class HomeController {
 
             console.log(routes);
 
-
-            // window.$.when(
-            //     window.$.ajax({
-            //         url: routes.pop(),
-            //         success: (data) => {
-            //             this.randomHeadlines = _.union(this.randomHeadlines, data.articles);
-            //         }
-            //     }),
-            //     window.$.ajax({
-            //         url: routes.pop(),
-            //         success: (data) => {
-            //             this.randomHeadlines = _.union(this.randomHeadlines, data.articles);
-            //         }
-            //     }),
-            //     window.$.ajax({
-            //         url: routes.pop(),
-            //         success: (data) => {
-            //             this.randomHeadlines = _.union(this.randomHeadlines, data.articles);
-            //         }
-            //     })
-            // ).then(() => {
-            //     console.log("HEADLINES: ", this.randomHeadlines);
-            //     this.articles = this.randomHeadlines;
-            //     this.articles = this.formatArticles(this.articles);
-            //     this.articles = this.addReactionProps(this.articles);
-            //     this.articles = this.addActionProps(this.articles);
-            //     console.log(this.articles);
-            //     this.showNewsStory = true;
-            //     this.showNewsCategory = false;
-            // });
+            while(routes[routes.length-1]){
+                this.HomeServices.getTopNews(routes.pop()).then((data)=>{
+                    this.randomHeadlines.push(data.data.articles);
+                }).then(()=>{
+                    console.log(routes.length);
+                    if (routes.length === 0){
+                        this.articles = _.flattenDeep(this.randomHeadlines);
+                        console.log(this.articles);
+                    }
+                })
+            }
 
         })
     }
