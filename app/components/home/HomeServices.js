@@ -32,6 +32,10 @@ export default class HomeServices {
             	category;
         return this.$http.get(route);
 	}
+
+	getTopNews(route){
+        return this.$http.get(route);
+    }
 }
 
 HomeServices.$inject = ['$http', 'NewsAPI'];
