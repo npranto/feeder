@@ -5,8 +5,10 @@ import getColors from 'get-image-colors';
 
 export default class HomeController {
 
-    constructor(HomeServices) {
+    constructor(HomeServices, NewsAPI) {
         this.HomeServices = HomeServices;
+        this.NewsAPI = NewsAPI;
+
         this.newsCategories = [
             "Business",
             "Entertainment",
@@ -18,6 +20,8 @@ export default class HomeController {
             "Technology"
         ];
 
+        this.articles;
+
         this.showNewsStory = false;
         this.showNewsCategory = false;
         this.showProgressBar = false;
@@ -26,7 +30,6 @@ export default class HomeController {
 
         this.coverColor = "background: white";
 
-        this.array = [1,2,3,4,5,6,7,8,9,10];
         this.randomHeadlines = [];
 
         this.getAllNewsSources();
@@ -34,28 +37,68 @@ export default class HomeController {
     }
 
     getRandomHeadlines(){
+        let _this = this;
         const NEWS_LIMIT = 3;
+        let counter = 0;
+        let randomSourcesFormat = [];
+        let routes = [];
 
-        let counter = 0
-        while(counter < NEWS_LIMIT){
-            let randomValue = _.random(this.array.length);
-            if (this.randomHeadlines.length === this.array.length){
-                console.log("ALL DONE...!");
-                return;
-            }
-            else if (_.indexOf(this.randomHeadlines, randomValue) === -1){
-                this.randomHeadlines.push(randomValue);
-                console.log(randomValue);
-                counter++;
-            }
-        }
+        _this.showNewsStory = true;
+        _this.showNewsCategory = false;
 
-        // this.HomeServices.getAllNewsSources().then((response) => {
-        //     let newsSources = response.data.newsSources;
-        //     _.map(newsSources, (newsSourceObj) => {
-        //
-        //     })
-        // })
+        // gets news sources info from news-sources.json
+        this.HomeServices.getAllNewsSources().then((response) => {
+            let newsSources = response.data.newsSources;
+
+            // gets 10 unique newsSourceFormat and stores them in randomSourcesFormat
+            while(counter < NEWS_LIMIT){
+                let randomValue = _.random(newsSources.length);
+                if (_.indexOf(randomSourcesFormat, randomValue) === -1){
+                    let eachRoute = this.NewsAPI.article.endpoint +
+                        this.NewsAPI.article.source +
+                        newsSources[randomValue].newsSourceFormat +
+                        this.NewsAPI.and +
+                        this.NewsAPI.article.sortBy +
+                        'top' +
+                        this.NewsAPI.and +
+                        this.NewsAPI.apiKey;
+                    routes.push(eachRoute);
+                    counter++;
+                }
+            }
+
+            window.$.when(
+                window.$.ajax({
+                    url: routes.pop(),
+                    success: (data) => {
+                        _this.randomHeadlines = _.union(_this.randomHeadlines, data.articles);
+                    }
+                }),
+                window.$.ajax({
+                    url: routes.pop(),
+                    success: (data) => {
+                        _this.randomHeadlines = _.union(_this.randomHeadlines, data.articles);
+                    }
+                }),
+                window.$.ajax({
+                    url: routes.pop(),
+                    success: (data) => {
+                        _this.randomHeadlines = _.union(_this.randomHeadlines, data.articles);
+                    }
+                })
+            ).then(() => {
+                console.log("HEADLINES: ", _this.randomHeadlines);
+                _this.articles = _this.randomHeadlines;
+                _this.articles = _this.formatArticles(_this.articles);
+                _this.articles = _this.addReactionProps(_this.articles);
+                console.log(_this.articles);
+            });
+
+        })
+
+
+
+
     }
 
     changeReactionStatus(reaction, story) {
@@ -136,7 +179,7 @@ export default class HomeController {
 
             // formats story description by adding ellipsis at the end
             let eachDesc = article.description;
-            while (!this.isLetter(eachDesc.charAt(eachDesc.length - 1))) {
+            while (article.description && (article.description.length > 0) && (!this.isLetter(eachDesc.charAt(eachDesc.length - 1)))) {
                 eachDesc = eachDesc.slice(0, -1);
             }
             eachDesc = eachDesc + "... ";
@@ -221,4 +264,4 @@ export default class HomeController {
 
 }
 
-HomeController.$inject = ['HomeServices'];
+HomeController.$inject = ['HomeServices', 'NewsAPI'];
