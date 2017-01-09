@@ -66,6 +66,7 @@ export default class HomeController {
 
             console.log(routes);
 
+
             // window.$.when(
             //     window.$.ajax({
             //         url: routes.pop(),
