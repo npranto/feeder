@@ -13,6 +13,8 @@
 .home-view .header-section header {
     height: 20VH;
     justify-content: center;
+    transition: all 1s ease;
+    outline: none;
 }
 
 .home-view .header-section header img {

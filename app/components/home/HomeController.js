@@ -26,7 +26,15 @@ export default class HomeController {
 
         this.currentSourceId = "";
 
-        this.coverColor = "background: white";
+        this.coverColor = ` 
+            background: linear-gradient(270deg, #eb4209, #efa600, #30ef00, #11c1c7, #0b13eb, #d20beb, #e0f22e);
+            background-size: 1400% 1400%;
+
+            -webkit-animation: AnimationName 30s ease infinite;
+            -moz-animation: AnimationName 30s ease infinite;
+            -o-animation: AnimationName 30s ease infinite;
+            animation: AnimationName 30s ease infinite;
+        `;
 
         this.randomHeadlines = [];
 
@@ -36,6 +44,7 @@ export default class HomeController {
     }
 
     getRandomHeadlines(){
+        this.hideHeaderOnRandomHeadlines = true;
         this.showNewsStory = true;
 
         const NEWS_LIMIT = 3;
@@ -73,6 +82,9 @@ export default class HomeController {
                     console.log(routes.length);
                     if (routes.length === 0){
                         this.articles = _.flattenDeep(this.randomHeadlines);
+                        this.articles = this.formatArticles(this.articles);
+                        this.articles = this.addReactionProps(this.articles);
+                        this.articles = this.addActionProps(this.articles);
                         console.log(this.articles);
                     }
                 })
@@ -109,6 +121,7 @@ export default class HomeController {
 
     getNewsBySourceId(sortBy) {
         // change view by article or category
+        this.hideHeaderOnRandomHeadlines = false;
         this.showNewsStory = true;
         this.showNewsCategory = false;
         this.showProgressBar = true;
