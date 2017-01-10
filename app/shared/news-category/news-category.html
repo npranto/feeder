@@ -45,48 +45,48 @@
                                 class="heart fa fa-heart-o button"
                                 aria-hidden="true"
                                 ng-class="{
-                                'reaction-chosen': home.disableHeart,
-                                animated: home.disableHeart,
-                                pulse: home.disableHeart,
+                                'reaction-chosen': story.disableHeart,
+                                animated: story.disableHeart,
+                                pulse: story.disableHeart
                             }"
-                                ng-click="home.changeReactionStatus('heart')">
+                                ng-click="home.changeReactionStatus('heart', story)">
                         </i>
                         <i
                                 ng-init=""
                                 class="dislike fa fa-thumbs-o-down button"
                                 aria-hidden="true"
                                 ng-class="{
-                                'reaction-chosen': home.disableDislike,
-                                animated: home.disableDislike,
-                                swing: home.disableDislike
+                                'reaction-chosen': story.disableDislike,
+                                animated: story.disableDislike,
+                                swing: story.disableDislike
                             }"
-                                ng-click="home.changeReactionStatus('dislike')">
+                                ng-click="home.changeReactionStatus('dislike', story)">
                         </i>
                     </div>
 
                     <div class="right-actions flex-sides">
-                        <button type="button" class="btn btn-link exo" ng-click=home.changeActionStatus('interesting')>
+                        <button type="button" class="btn btn-link exo" ng-click="home.changeActionStatus('interesting', story)">
                             <i
                                     class="fa fa-lightbulb-o"
                                     aria-hidden="true"
                                     ng-class="{
-                                animated: home.showInterest,
-                                tada: home.showInterest,
-                                interesting: home.showInterest,
-                                'fa-lg': home.showInterest,
+                                animated: story.showInterest,
+                                tada: story.showInterest,
+                                interesting: story.showInterest,
+                                'fa-lg': story.showInterest,
                             }">
                             </i>
                             Interesting
                         </button>
-                        <button type="button" class="btn btn-link exo" ng-click="home.changeActionStatus('save')">
+                        <button type="button" class="btn btn-link exo" ng-click="home.changeActionStatus('save', story)">
                             <i
                                     class="fa fa-check"
                                     aria-hidden="true"
                                     ng-class="{
-                                animated: home.saveNewsStory,
-                                tada: home.saveNewsStory,
-                                save: home.saveNewsStory,
-                                'fa-lg': home.saveNewsStory
+                                animated: story.saveNewsStory,
+                                tada: story.saveNewsStory,
+                                save: story.saveNewsStory,
+                                'fa-lg': story.saveNewsStory
                             }">
                             </i>
                             Save
