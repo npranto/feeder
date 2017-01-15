@@ -171,6 +171,13 @@ export default class HomeController {
     formatArticles(articles) {
         _.map(articles, (article) => {
 
+            let img = document.createElement("img");
+            img.src = article.urlToImage;
+            img.onload = function(){
+                document.body.appendChild(img);
+                console.log(img.clientWidth + " X " + img.clientHeight);
+            }
+
             // formats story description by adding ellipsis at the end
             let eachDesc = article.description;
             while (article.description && (article.description.length > 0) && (!this.isLetter(eachDesc.charAt(eachDesc.length - 1)))) {
